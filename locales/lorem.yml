@@ -1,0 +1,359 @@
+# Navigation menu items
+nav:
+  upload: Lorem # Link to the upload page
+  players: Ipsum # Link to the player search page
+  replays: Dolor # Link to the replay search page
+  myReplays: Sit Amet # Link to the user's personal replays (only shown when logged in)
+  faq: Consectetur # Link to the FAQ page
+  admin: Adipiscing # Link to the admin dashboard (only shown to admins)
+  login: Elit # Button to open login/signup panel
+  logout: Sed # Button to log out the current user
+
+# Home page content
+home:
+  welcome: Lorem ipsum dolor sit amet {name}. # Main welcome message on the home page
+  glad: Consectetur adipiscing elit. # Sub-heading on the home page
+  p1: '{name} sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' # First paragraph of home page description
+  p2: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+    ex ea commodo consequat. # Second paragraph
+  p3: '{name} duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+    dolore eu fugiat nulla pariatur.' # Third paragraph regarding availability
+  footer: Excepteur Sint # Signature in the footer of the home page
+
+# Site header components
+header:
+  toggleTheme: 'Occaecat cupidatat: {theme}' # Tooltip for the theme toggle button
+  bannerAlt: '{name} non proident' # Alt text for the site's banner image
+
+# Site-wide footer and server/session information modals
+footer:
+  privacy: sunt # Link to privacy policy
+  serverInfo: culpa # Link to open server info modal
+  sessionInfo: qui # Link to open session info modal
+  jumpToTop: officia # Scroll to top button
+  serverInformation: Deserunt mollit # Title of the server info modal
+  sessionInformation: Anim id est # Title of the session info modal
+  loading: Laborum… # Loading state for modal content
+  version: perspiciatis # Label for server version
+  timestamp: unde # Label for server build timestamp
+  environment: omnis # Label for server environment (dev, pre, prod)
+  apiHost: iste # Label for API backend host
+  allowedOrigins: natus # Label for CORS allowed origins
+  username: error # Label for current user's name in session info
+  role: sit # Label for current user's role
+  assumeRole: voluptatem # Label for the role-switching feature
+  accessExpires: accusantium # Label for JWT access token expiration
+  refreshExpires: doloremque # Label for JWT refresh token expiration
+  close: X # Button to close modals
+  discord: lorem accusantium # Link to Discord join modal
+  joinDiscord: Ipsum Dolor Sit Amet # Title of Discord join modal
+  discordBotProtection: Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+    ut labore et dolore magna aliqua. # Description for Discord bot protection
+  join: Lorem # Button to join Discord after passing check
+  joinCheckingBots: Lorem ipsum - checking bots # Message while validating captcha/bot status
+  joinChallengeError: Lorem ipsum dolor sit amet consectetur. # Error message for captcha failure
+  retryChallenge: Lorem # Button to retry captcha
+  joinError: Lorem ipsum. Consectetur adipiscing. # General error for Discord joining
+
+# FAQ page content
+faq:
+  title: Lorem {name} Ipsum Dolor Sit # Main title of the FAQ page
+  q1: Quid est {name}?
+  a1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  q2: Quis est {name}?
+  a2: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+  q3: Estne {name} gratis?
+  a3_1: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+    et quasi architecto beatae vitae dicta sunt explicabo.
+  a3_2: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+  q4: Quomodo utor {name}?
+  a4: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+    adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+    magnam aliquam quaerat voluptatem.
+  q5: Quomodo inscribo?
+  a5: Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+    laboriosam, nisi ut aliquid ex ea commodi consequatur?
+  q6: Privata?
+  a6: Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+    molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+  q7: Analysis?
+  a7: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+    voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+    occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+    mollitia animi, id est laborum et dolorum fuga.
+  q8: Download?
+  a8: Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore,
+    cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+    placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+  q9: Expect?
+  a9_p1: Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
+    saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+  a9_li1: Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus
+    maiores alias consequatur aut perferendis doloribus asperiores repellat.
+  a9_li2: Hanc ego cum teneam, sentit alia te sapere, hinc veni.
+  a9_li3: Ea possimus est, qui totum hoc beatum esse deserere quare subesse eius modi
+    tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+  q10: Quibusdam?
+  a10: Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
+    ex ea commodi consequatur?
+  q11: Linguae?
+  a11: Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+    laboriosam, nisi ut aliquid ex ea commodi consequatur?
+  q12: Lux?
+  a12: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+    voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+    occaecati cupiditate non provident.
+
+# Replay search and listing components
+replays:
+  search: Lorem Dolor # Title for the replay search box
+  myReplays: Ipsum Sit # Header for user's personal replays
+  myUploads: Ipsum Uploads # Header for user's uploaded replays
+  favoriteReplays: Laboris nisi # Header for user's favorited replays
+  replaysIn: Consectetur replays # Header for replays where the user is a player
+  replays: Dolor # Generic replays header
+  replayList: Ipsum Dolor # Title for the replay list tile
+  date: LOREM # Table column header
+  map: IPSUM # Table column header
+  players: DOLOR # Table column header
+  ver: ABC # Table column header (game version)
+  noReplays: Ut enim ad minim veniam. # Empty state message
+  noPlayers: Duis aute irure dolor. # Empty state message for player search
+  downloadReplay: Excepteur Sint # Tooltip for download button
+  noDownloadTooltip: Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. # Tooltip when download is disabled
+  addToPack: Duis Aute # Tooltip for adding to download pack
+  dateTooltip: Lorem ipsum dolor sit amet # Tooltip for date column
+  mapTooltip: Consectetur adipiscing elit, sed do eiusmod tempor incididunt # Tooltip for map column
+  playersTooltip: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi # Tooltip for players column
+  placeholder: Consectetur adipiscing elit, sed do eiusmod tempor incididunt # Search input placeholder
+  missingPlayerProfile:
+    title: Lorem Profile # Tile title when no player profile is linked
+    body: 'Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.
+
+
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+      eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.' # Instructions for linking profile
+    primaryRace: Lorem Race # Form label
+    raceNone: Lorem None # Race option
+    country: Lorem Country # Form label
+    countryPlaceholder: XX # Input placeholder
+    invalidCountry: Lorem Alpha-2 only. # Validation error
+    createButton: Lorem Create # Submit button
+    creating: Lorem… # Loading state for submit
+    createFailed: Dolor sit amet failed. # Error message
+
+# Replay pack (batch download) functionality
+pack:
+  pack: Lorem ({count}) # Button label showing current number of replays in pack
+  clear: ipsum # Button to empty the pack
+  download: dolor # Button to download the zipped pack
+  downloading: sit amet… # Loading state for pack download
+
+# Replay upload page
+upload:
+  uploadFiles: Lorem Ipsum # Button to open file picker
+  instructions: Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+    {zipInfo} Ut enim ad minim veniam. # General upload instructions
+  zipInfo: ' Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.' # Admin-only instruction
+  warning: 'LOREM: Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor!' # Privacy warning
+  privacyHint: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+    {link} dolore eu fugiat nulla pariatur. # Link to policy
+  privacyPolicy: lorem ipsum # Link text for privacy policy
+
+# Individual replay analysis page
+replay_page:
+  gameVersion: 'Lorem Ipsum: {version}' # Label for game version
+  jumpTo: 'DOLOR SIT:' # Quick navigation label
+  graphs: lorem # Link to graphs section
+  minimap: ipsum # Link to minimap section
+  chat: dolor # Link to chat section
+  unitsStructures: sit/amet # Link to units/structures section
+  buildOrders: consectetur # Link to build orders section
+  summaryTags: 'ADIPISCING ELIT:' # Label for automatic analysis tags
+  player1: Lorem 1 # Label for the first player
+  player2: Ipsum 2 # Label for the second player
+  showResult: Dolor sit # Button to reveal winner (anti-spoiler)
+  downloadReplay: Excepteur Sint # Button to download the file
+  addToPack: + Lorem Ipsum # Button to add to download pack
+  analyzeReplay: Duis Aute # Button to trigger (re-)analysis
+  analyzing: Irure dolor… # Loading state for analysis trigger
+  copyLink: lorem ipsum # Button to copy URL to clipboard
+  copyReplayId: dolor sit amet # Button to copy internal ID to clipboard
+  showDuration: consectetur # Button to reveal game length (anti-spoiler)
+  showTags: adipiscing elit! # Button to reveal tags
+  noAnalysis: Sed do eiusmod tempor. # Message when no analysis data exists
+  lastAnalysis: lorem ipsum {time} # Timestamp of most recent analysis
+  timeWarp: LOREM IPSUM # Label for the game timeline slider
+  income: Lorem # Label for income graph
+  bank: Ipsum # Label for bank graph
+  armyValue: Dolor Sit # Label for army value graph
+  resourcesLost: Amet Consectetur # Label for resources lost graph
+  oracle: LOREM # Label for ORACLE ML insights tab
+  combinedMG: Adipiscing A/B # Label for Minerals/Gas graph
+  standard: LOREM # Standard analysis label
+  difference: IPSUM # Analysis difference label
+  oracleUnlocked: LOREM ML ADIPISCING # Success message when ML features are available
+  unlockOracle: DOLOR LOREM SIT # Button to unlock ML features
+  generating: CONSECTETUR... # Loading state for ML generation
+  workers: Laborum # Label for workers graph/stat
+  structures: Perspiciatis # Label for structures list
+  structuresProducing: Perspiciatis (Unde) # Label for active production
+  units: Omnis # Label for units list
+  upgrades: Iste # Label for upgrades list
+  chatLog: DOLOREMQUE LAUDANTIUM # Section header for in-game chat
+  syncWithTimeWarp: Totam rem aperiam eaque ipsa # Checkbox label
+  noMessages: Quae ab illo inventore veritatis. # Empty state for chat
+  left: explicabo # Indicator that a player left the game
+  showBuildDetails: Nemo enim ipsam # Button to expand build order
+  hideBuildDetails: Voluptatem quia voluptas # Button to collapse build order
+  showMore: sit aspernatur… # Button to show more build steps
+  buildTitle: '{name}''s Lorem' # Header for build order section
+  copySALT: LOREM # Button to copy SALT encoded build
+  noBuildSteps: Neque porro quisquam est. # Empty state for build order
+  axisValue: lorem # Label for Y-axis on most graphs
+  axisWinChances: Ipsum dolor # Label for Y-axis on win probability graph
+  workersActive: 'Laborum active: {count}' # Label showing worker count at current time
+  probabilityToWin: FACILISIS VINCERE PROBABILITAS # Label for win probability metric
+  victory: LOREM # Status label
+  defeat: IPSUM # Status label
+  noSalt: Sed LOREM nullus # Error when copying SALT fails
+  saltCopied: LOREM ipsum copied # Success message
+  saltCopyFailed: LOREM ipsum failed # Error message
+  favoriteRequiresAccount: Quisque aliquet ut login requiret # Tooltip when logged out
+  addToPackRequiresAccount: Quisque aliquet ut pack requiret # Tooltip when logged out
+
+# Player profile page
+player_page:
+  statistics: Lorem # Section header
+  aligulacRating: Ipsum Dolor # External rating label
+  primaryRace: Sit Amet # Label for player's main race
+  country: Consectetur # Label for player's country
+  team: Adipiscing # Label for player's team
+  replayList: Dolor Sit # Title for the replay list on the player page
+  profile: LOREM # Section header
+  search: Ipsum # Title for player search box
+  cc: ABC # Country Code column header
+  player: LOREM # Player name column header
+  rating: IPSUM # Rating column header
+  report:
+    title: Lorem Report # Tooltip for report button
+    modalTitle: Lorem Report Profile # Title for report modal
+    modalBody: Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. # Instructions for reporting
+    reasonPlaceholder: Lorem ipsum... # Textarea placeholder
+    reasonRequired: Ut enim ad minim veniam. # Validation error
+    submit: Lorem Submit # Submit button
+    submitted: Duis aute irure dolor in. # Success message
+    failed: Excepteur sint occaecat. # Error message
+  placeholder: Dolor sit amet =) # Search input placeholder
+  searchTooltip: Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua. # Search help tooltip
+  claim:
+    title: Lorem # Section header
+    button: Dolor amit # Button to start claim process
+    linkedToYou: Consectetur adipiscing elit, sed do eiusmod. # Indicator when already linked
+    alreadyLinkedElsewhere: Nemo nisi ut aliquip # Error message
+    alreadyLinked: Magna aliqua nulla pariatur. # Error message
+    requestSubmitted: lorem tempor incididunt ut labore. # Success message
+    submitFailed: Exercitation ullamo laboris # Error message
+    modalTitle: Sunt in culpa # Modal title
+    modalBody1: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+    modalBody2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    modalBody2b: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat.
+    modalBody3: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+      dolore eu fugiat nulla pariatur.
+    modalBody4: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+      officia deserunt mollit anim id est laborum.
+    cancel: Lorem ipsum # Button to close modal
+    submit: Dolor sit amet # Button to submit claim
+    submitting: Laborum… # Loading state
+
+# Signup and account creation components
+signup:
+  title: Lorem ipsum {name} # Title for the signup page
+  invited: Consectetur adipiscing elit, sed do eiusmod tempor! # Success message
+  reopen: Ut enim ad minim veniam # Link to show form again
+  signUp: lorem ipsum # Button label
+  fillDetails: Duis aute irure dolor in reprehenderit {name}! Ut enim ad minim veniam. # Instructions
+  displayName: Lorem ipsum # Form label
+  displayNamePlaceholder: Dolor sit amet # Input placeholder
+  emailAddress: Consectetur # Form label
+  emailPlaceholder: you{'@'}example.com # Input placeholder
+  createAccount: Lorem ipsum # Submit button
+  creatingAccount: Dolor sit amet… # Loading state
+  accountCreated: Excepteur sint! # Success message
+  welcomeEmailSentPre: 'Duis aute irure dolor in reprehenderit ' # Success message part 1
+  welcomeEmailSentPost: . # Success message part 2
+  enterCodeToSignIn: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat. # Instructions for second step
+  enterCode: Lorem ipsum # Button to move to login step
+  nameAndEmailRequired: Duis aute irure dolor in reprehenderit. # Validation error
+  invalidEmail: Ut enim ad minim veniam. # Validation error
+  signupFailed: Lorem ipsum ({status}). Dolor sit amet. # General error
+  networkError: Excepteur sint occaecat. # Connectivity error
+
+# 404 error page
+not_found:
+  title: Lorem ipsum dolor.
+  message: Consectetur adipiscing elit, sed do.
+  goBack: Ut enim ad minim # Link to return to home page
+
+# Diagnostic and privacy consent banner
+consent:
+  title: Lorem ipsum # Accessible label for the banner
+  text: Duis aute irure dolor in reprehenderit in voluptate {name} velit esse cillum
+    dolore eu fugiat {link} nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident. # Description of data collection
+  privacyLink: lorem/ipsum # Link text for privacy policy
+  allow: Lorem Ipsum Dolor Sit # Button to opt-in
+  decline: Sed Ut Perspiciatis Unde # Button to opt-out
+
+# Authentication and login components
+auth:
+  login: lorem ipsum # Header for login panel
+  enterEmail: 'Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod:' # Label for email input
+  sendCode: Lorem ipsum # Button to request login code
+  verify: Dolor # Button to submit login code
+  enterCode8: Sit amet-consectetur # Input placeholder for code
+  codeHintPre: 'Adipiscing elit, sed do eiusmod tempor ' # Hint message part 1
+  codeHintPost: ', incididunt ut labore. Et dolore magna aliqua, ut enim ad minim.' # Hint message part 2
+  enter8Chars: Lorem ipsum dolor sit amet. # Validation error
+  invalidCode: Consectetur adipiscing elit. Sed do eiusmod. # Error message
+  networkError: Ut enim ad minim veniam. # Connectivity error
+  httpError: Lorem ipsum dolor ({status}). Consectetur. # General error
+  loginSuccessful: Excepteur sint occaecat. # Toast message
+  loggedOut: Duis aute irure dolor. # Toast message
+  sessionExpired: Sed ut perspiciatis unde omnis iste natus error. # Toast message
+  accountRequired: Nemo enim ipsam voluptatem quia voluptas sit aspernatur. # Access control message
+  noPermission: At vero eos et accusamus et iusto odio. # Access control error
+  oracleQueued: LOREM ipsum queued # Success message for ML trigger
+  signupPromptPre: 'Lorem ipsum non invenit rationem pro ' # Message when user needs to sign up
+  signupPromptPost: ; crea unam ut procedas. # Instructions to sign up
+  privacyConsent: Lorem ipsum consentit {policy} et intellegit quomodo data utantur. # Checkbox label for terms
+  acceptPrivacy: Lorem ipsum accipe consilium privatum ut procedas. # Validation error
+  completeChallenge: Lorem ipsum perficite probationem ut procedas. # Validation error for captcha
+  challengeError: Lorem ipsum probatio defecit in onere; rursus conare. # Captcha loading error
+  retryChallenge: iterum # Button to reload captcha
+
+# Common/Generic labels and buttons
+common:
+  loading: lorem ipsum… # Generic loading state
+  error: dolor # Generic error label
+  success: lorem # Generic success label
+  cancel: LOREM # Generic cancel button
+  next: LOREM # Pagination button
+  prev: IPSUM # Pagination button
+  founder: CONSECTETUR # Badge/Role title
+  linkedAccount: DOLOR SIT # Badge title
