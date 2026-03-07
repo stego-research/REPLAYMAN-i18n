@@ -6,7 +6,7 @@
     "myReplays": "my replays",
     "faq": "faq",
     "admin": "admin",
-    "login": "login",
+    "login": "log in / sign up",
     "logout": "logout"
   },
   "home": {
@@ -22,7 +22,7 @@
     "bannerAlt": "{name} banner"
   },
   "footer": {
-    "privacy": "privacy",
+    "privacy": "privacy policy",
     "serverInfo": "server info",
     "sessionInfo": "session info",
     "jumpToTop": "jump to top",
@@ -39,7 +39,15 @@
     "assumeRole": "assume role",
     "accessExpires": "access expires",
     "refreshExpires": "refresh expires",
-    "close": "Close"
+    "close": "Close",
+    "discord": "community discord",
+    "joinDiscord": "Join our Community Discord",
+    "discordBotProtection": "Please click the button below to join our Discord server. In order to protect our community from bots, some users may be prompted to solve a captcha challenge.",
+    "join": "Join",
+    "joinCheckingBots": "please wait - checking for bots",
+    "joinChallengeError": "The bot-protection challenge failed to load. Please try again.",
+    "retryChallenge": "retry",
+    "joinError": "Failed to join Discord. Please try again."
   },
   "faq": {
     "title": "{name} Technical Preview FAQ",
@@ -75,7 +83,9 @@
   "replays": {
     "search": "Replay Search",
     "myReplays": "My Replays",
+    "myUploads": "My Uploads",
     "favoriteReplays": "Favorite Replays",
+    "replaysIn": "Replays I'm In",
     "replays": "Replays",
     "replayList": "Replay List",
     "date": "DATE",
@@ -90,7 +100,19 @@
     "dateTooltip": "dates are in YYYY-MM-DD format",
     "mapTooltip": "Map names may be localized in some situations.",
     "playersTooltip": "All names are directly loaded from replay data unless the Battle.net account has been linked to a player.",
-    "placeholder": "You can search by player name, map name, race, and more"
+    "placeholder": "You can search by player name, map name, race, and more",
+    "missingPlayerProfile": {
+      "title": "Missing Player Profile",
+      "body": "To unlock full account functionality, please connect a player profile. You can create a new profile here. If a profile already exists for you, navigate to that page instead and click \"Claim Account.\"",
+      "primaryRace": "Primary Race",
+      "raceNone": "None / Multiple",
+      "country": "Country",
+      "countryPlaceholder": "e.g. US, KR, DE",
+      "invalidCountry": "Country must be a 2-letter ISO code.",
+      "createButton": "Create Player Profile",
+      "creating": "Creating…",
+      "createFailed": "Failed to create player profile."
+    }
   },
   "pack": {
     "pack": "Pack ({count})",
@@ -107,7 +129,7 @@
     "privacyPolicy": "privacy policy"
   },
   "replay_page": {
-    "gameVersion": "Game Version: {version}",
+    "gameVersion": "v{version}",
     "jumpTo": "JUMP TO:",
     "graphs": "graphs",
     "minimap": "minimap",
@@ -123,17 +145,17 @@
     "analyzeReplay": "Analyze Replay",
     "analyzing": "Analyzing…",
     "copyLink": "copy link",
-    "copyReplayId": "copy replay ID",
+    "copyReplayId": "replay ID",
     "showDuration": "show duration",
     "showTags": "show tags (spoilers!)",
     "noAnalysis": "No analysis found yet.",
-    "lastAnalysis": "last analysis: {time}",
+    "lastAnalysis": "analyzed {time}",
     "timeWarp": "TIME WARP",
     "income": "Income",
     "bank": "Bank",
     "armyValue": "Army Value",
     "resourcesLost": "Resources Lost",
-    "oracle": "ORACLE",
+    "oracle": "+ ORACLE",
     "combinedMG": "Combined M/G",
     "standard": "Standard",
     "difference": "Difference",
@@ -156,13 +178,16 @@
     "copySALT": "copy SALT",
     "noBuildSteps": "No build order steps found.",
     "axisValue": "value",
-    "axisWinChances": "Chances of winning",
+    "axisWinChances": "Chance of winning",
     "workersActive": "Workers active: {count}",
+    "probabilityToWin": "CHANCE OF WINNING",
     "victory": "VICTORY",
     "defeat": "DEFEAT",
     "noSalt": "No SALT encoding available",
     "saltCopied": "SALT build order copied",
-    "saltCopyFailed": "Failed to copy SALT build order"
+    "saltCopyFailed": "Failed to copy SALT build order",
+    "favoriteRequiresAccount": "An account is required to favorite replays",
+    "addToPackRequiresAccount": "An account is required to add replays to a pack"
   },
   "player_page": {
     "statistics": "Statistics",
@@ -176,8 +201,36 @@
     "cc": "CC",
     "player": "PLAYER",
     "rating": "RATING",
+    "report": {
+      "title": "Report Profile",
+      "modalTitle": "Report Player Profile",
+      "modalBody": "Please provide a reason for reporting this profile (e.g. offensive name, misinformation).",
+      "reasonPlaceholder": "Reason for report...",
+      "reasonRequired": "Please provide a reason.",
+      "submit": "Submit Report",
+      "submitted": "Report submitted for review.",
+      "failed": "Failed to submit report."
+    },
     "placeholder": "Search anyone by anything =)",
-    "searchTooltip": "Tip: try a handle (e.g. Serral), real name (e.g. Joona), a 2–3 letter country code (US, KOR), or an exact ID number."
+    "searchTooltip": "Tip: try a handle (e.g. Serral), real name (e.g. Joona), a 2–3 letter country code (US, KOR), or an exact ID number.",
+    "claim": {
+      "title": "Profile Claim",
+      "button": "Claim this player profile",
+      "linkedToYou": "THAT'S YOU!",
+      "alreadyLinkedElsewhere": "Your account is already linked to another player profile.",
+      "alreadyLinked": "This player profile is already linked to an account.",
+      "requestSubmitted": "Claim request submitted. An administrator will review your request.",
+      "submitFailed": "Failed to submit claim request.",
+      "modalTitle": "Claim Player Profile",
+      "modalBody1": "Are you sure you want to claim this player profile as yours?",
+      "modalBody2": "Your request must be approved by an administrator.",
+      "modalBody2b": "Intentionally submitting fraudulent requests will result in your account being banned.",
+      "modalBody3": "If approved, this player profile will permanently become your user profile page. You will not be able to claim any other player pages.",
+      "modalBody4": "Changing your associated player will require contacting support.",
+      "cancel": "Nevermind - Cancel",
+      "submit": "I have read the above carefully - Submit",
+      "submitting": "Submitting…"
+    }
   },
   "signup": {
     "title": "Welcome to {name}",
@@ -188,12 +241,13 @@
     "displayName": "Display name",
     "displayNamePlaceholder": "Your display name",
     "emailAddress": "Email address",
-    "emailPlaceholder": "you@example.com",
+    "emailPlaceholder": "you{'@'}example.com",
     "createAccount": "Create account",
     "creatingAccount": "Creating account…",
     "accountCreated": "Account created!",
-    "welcomeEmailSent": "A welcome email with a login code has been sent to {email}.",
-    "enterCodeToSignIn": "Enter your code below to sign in immediately.",
+    "welcomeEmailSentPre": "A welcome email with a login code has been sent to ",
+    "welcomeEmailSentPost": ".",
+    "enterCodeToSignIn": "Your account is almost ready! Please enter the code we sent to your email address to sign in.",
     "enterCode": "Enter code",
     "nameAndEmailRequired": "Both display name and email are required.",
     "invalidEmail": "Please enter a valid email address.",
@@ -213,12 +267,13 @@
     "decline": "Decline (use required cookies only)"
   },
   "auth": {
-    "login": "login",
+    "login": "login or sign up",
     "enterEmail": "Please enter the email address or phone number for your account:",
-    "sendCode": "Send code",
+    "sendCode": "Next",
     "verify": "Verify",
     "enterCode8": "8-character code",
-    "codeHint": "If we found an account associated with {email}, a code is on the way. Please enter it below, and never share it with anyone.",
+    "codeHintPre": "If we found an account associated with ",
+    "codeHintPost": ", a code is on the way. Please enter it below, and never share it with anyone.",
     "enter8Chars": "Enter the 8-character code.",
     "invalidCode": "Invalid code. Try again or close.",
     "networkError": "Network error. Try again.",
@@ -228,12 +283,23 @@
     "sessionExpired": "Your session has expired. Please log in again.",
     "accountRequired": "An account is required to access this page.",
     "noPermission": "You don't have permission to do that.",
-    "oracleQueued": "Oracle analysis queued"
+    "oracleQueued": "Oracle analysis queued",
+    "signupPromptPre": "We didn't find an account for ",
+    "signupPromptPost": ". Create one to continue.",
+    "privacyConsent": "I agree to the terms of the Stego Research {policy} and to abide by any applicable laws.",
+    "acceptPrivacy": "Please accept the privacy policy to continue.",
+    "completeChallenge": "Please complete the bot check to continue.",
+    "challengeError": "The bot check failed to load. Please retry.",
+    "retryChallenge": "retry"
   },
   "common": {
     "loading": "Loading…",
     "error": "error",
+    "success": "success",
+    "cancel": "Cancel",
     "next": "Next",
-    "prev": "Prev"
+    "prev": "Prev",
+    "founder": "Founder",
+    "linkedAccount": "Linked Profile"
   }
 }

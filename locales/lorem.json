@@ -39,7 +39,15 @@
     "assumeRole": "voluptatem",
     "accessExpires": "accusantium",
     "refreshExpires": "doloremque",
-    "close": "X"
+    "close": "X",
+    "discord": "lorem accusantium",
+    "joinDiscord": "Ipsum Dolor Sit Amet",
+    "discordBotProtection": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "join": "Lorem",
+    "joinCheckingBots": "Lorem ipsum - checking bots",
+    "joinChallengeError": "Lorem ipsum dolor sit amet consectetur.",
+    "retryChallenge": "Lorem",
+    "joinError": "Lorem ipsum. Consectetur adipiscing."
   },
   "faq": {
     "title": "Lorem {name} Ipsum Dolor Sit",
@@ -65,7 +73,7 @@
     "a9_li1": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
     "a9_li2": "Hanc ego cum teneam, sentit alia te sapere, hinc veni.",
     "a9_li3": "Ea possimus est, qui totum hoc beatum esse deserere quare subesse eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
-    "q10": "Feedback?",
+    "q10": "Quibusdam?",
     "a10": "Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     "q11": "Linguae?",
     "a11": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
@@ -75,7 +83,9 @@
   "replays": {
     "search": "Lorem Dolor",
     "myReplays": "Ipsum Sit",
+    "myUploads": "Ipsum Laboris",
     "favoriteReplays": "Laboris nisi",
+    "replaysIn": "Consectetur replays",
     "replays": "Dolor",
     "replayList": "Ipsum Dolor",
     "date": "LOREM",
@@ -90,7 +100,19 @@
     "dateTooltip": "Lorem ipsum dolor sit amet",
     "mapTooltip": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt",
     "playersTooltip": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
-    "placeholder": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+    "placeholder": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "missingPlayerProfile": {
+      "title": "Lorem tempor",
+      "body": "Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "primaryRace": "Lorem elit",
+      "raceNone": "Lorem ipsum",
+      "country": "Lorem dolore",
+      "countryPlaceholder": "XX",
+      "invalidCountry": "Lorem Alpha-2 only.",
+      "createButton": "Lorem Create",
+      "creating": "Lorem…",
+      "createFailed": "Dolor sit amet ut."
+    }
   },
   "pack": {
     "pack": "Lorem ({count})",
@@ -127,14 +149,14 @@
     "showDuration": "consectetur",
     "showTags": "adipiscing elit!",
     "noAnalysis": "Sed do eiusmod tempor.",
-    "lastAnalysis": "lorem ipsum: {time}",
+    "lastAnalysis": "lorem ipsum {time}",
     "timeWarp": "LOREM IPSUM",
     "income": "Lorem",
     "bank": "Ipsum",
     "armyValue": "Dolor Sit",
     "resourcesLost": "Amet Consectetur",
     "oracle": "LOREM",
-    "combinedMG": "Adipiscing A/B",
+    "combinedMG": "Adipiscing et",
     "standard": "LOREM",
     "difference": "IPSUM",
     "oracleUnlocked": "LOREM ML ADIPISCING",
@@ -158,11 +180,14 @@
     "axisValue": "lorem",
     "axisWinChances": "Ipsum dolor",
     "workersActive": "Laborum active: {count}",
+    "probabilityToWin": "FACILISIS VINCERE PROBABILITAS",
     "victory": "LOREM",
     "defeat": "IPSUM",
     "noSalt": "Sed LOREM nullus",
     "saltCopied": "LOREM ipsum copied",
-    "saltCopyFailed": "LOREM ipsum failed"
+    "saltCopyFailed": "LOREM ipsum failed",
+    "favoriteRequiresAccount": "Quisque aliquet ut login requiret",
+    "addToPackRequiresAccount": "Quisque aliquet ut pack requiret"
   },
   "player_page": {
     "statistics": "Lorem",
@@ -176,8 +201,36 @@
     "cc": "ABC",
     "player": "LOREM",
     "rating": "IPSUM",
+    "report": {
+      "title": "Lorem Report",
+      "modalTitle": "Lorem Report Profile",
+      "modalBody": "Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "reasonPlaceholder": "Lorem ipsum...",
+      "reasonRequired": "Ut enim ad minim veniam.",
+      "submit": "Lorem Submit",
+      "submitted": "Duis aute irure dolor in.",
+      "failed": "Excepteur sint occaecat."
+    },
     "placeholder": "Dolor sit amet =)",
-    "searchTooltip": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "searchTooltip": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "claim": {
+      "title": "Lorem",
+      "button": "Dolor amit",
+      "linkedToYou": "Consectetur adipiscing elit, sed do eiusmod.",
+      "alreadyLinkedElsewhere": "Nemo nisi ut aliquip",
+      "alreadyLinked": "Magna aliqua nulla pariatur.",
+      "requestSubmitted": "lorem tempor incididunt ut labore.",
+      "submitFailed": "Exercitation ullamo laboris",
+      "modalTitle": "Sunt in culpa",
+      "modalBody1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+      "modalBody2": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "modalBody2b": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "modalBody3": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "modalBody4": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "cancel": "Lorem ipsum",
+      "submit": "Dolor sit amet",
+      "submitting": "Laborum…"
+    }
   },
   "signup": {
     "title": "Lorem ipsum {name}",
@@ -188,12 +241,13 @@
     "displayName": "Lorem ipsum",
     "displayNamePlaceholder": "Dolor sit amet",
     "emailAddress": "Consectetur",
-    "emailPlaceholder": "you@example.com",
+    "emailPlaceholder": "you{'@'}example.com",
     "createAccount": "Lorem ipsum",
     "creatingAccount": "Dolor sit amet…",
     "accountCreated": "Excepteur sint!",
-    "welcomeEmailSent": "Duis aute irure dolor in reprehenderit {email}.",
-    "enterCodeToSignIn": "Ut enim ad minim veniam, quis nostrud exercitation.",
+    "welcomeEmailSentPre": "Duis aute irure dolor in reprehenderit ",
+    "welcomeEmailSentPost": ".",
+    "enterCodeToSignIn": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "enterCode": "Lorem ipsum",
     "nameAndEmailRequired": "Duis aute irure dolor in reprehenderit.",
     "invalidEmail": "Ut enim ad minim veniam.",
@@ -213,12 +267,13 @@
     "decline": "Sed Ut Perspiciatis Unde"
   },
   "auth": {
-    "login": "lorem",
+    "login": "lorem ipsum",
     "enterEmail": "Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod:",
     "sendCode": "Lorem ipsum",
     "verify": "Dolor",
     "enterCode8": "Sit amet-consectetur",
-    "codeHint": "Adipiscing elit, sed do eiusmod tempor {email}, incididunt ut labore. Et dolore magna aliqua, ut enim ad minim.",
+    "codeHintPre": "Adipiscing elit, sed do eiusmod tempor ",
+    "codeHintPost": ", incididunt ut labore. Et dolore magna aliqua, ut enim ad minim.",
     "enter8Chars": "Lorem ipsum dolor sit amet.",
     "invalidCode": "Consectetur adipiscing elit. Sed do eiusmod.",
     "networkError": "Ut enim ad minim veniam.",
@@ -228,12 +283,23 @@
     "sessionExpired": "Sed ut perspiciatis unde omnis iste natus error.",
     "accountRequired": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur.",
     "noPermission": "At vero eos et accusamus et iusto odio.",
-    "oracleQueued": "LOREM ipsum queued"
+    "oracleQueued": "LOREM ipsum queued",
+    "signupPromptPre": "Lorem ipsum non invenit rationem pro ",
+    "signupPromptPost": "; crea unam ut procedas.",
+    "privacyConsent": "Lorem ipsum consentit {policy} et intellegit quomodo data utantur.",
+    "acceptPrivacy": "Lorem ipsum accipe consilium privatum ut procedas.",
+    "completeChallenge": "Lorem ipsum perficite probationem ut procedas.",
+    "challengeError": "Lorem ipsum probatio defecit in onere; rursus conare.",
+    "retryChallenge": "iterum"
   },
   "common": {
     "loading": "lorem ipsum…",
     "error": "dolor",
+    "success": "lorem",
+    "cancel": "LOREM",
     "next": "LOREM",
-    "prev": "IPSUM"
+    "prev": "IPSUM",
+    "founder": "CONSECTETUR",
+    "linkedAccount": "DOLOR SIT"
   }
 }
