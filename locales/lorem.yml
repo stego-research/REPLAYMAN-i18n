@@ -18,31 +18,7 @@ home:
     ex ea commodo consequat. # Second paragraph
   p3: '{name} duis aute irure dolor in reprehenderit in voluptate velit esse cillum
     dolore eu fugiat nulla pariatur.' # Third paragraph regarding availability
-  p4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-  showReplaysCta: LOREM IPSUM REPLAYS! # Home page CTA button label
   footer: Excepteur Sint # Signature in the footer of the home page
-  featuresTitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  oracleTitle: ORACLE LOREM
-  oracleP1: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  oracleP2: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
-  oracleCta: Oracle Lorem Ipsum
-  searchTitle: LOREM IPSUM DOLOR
-  searchP1: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.
-  searchP2: Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.
-  searchP3: Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-  searchCta: Lorem Replays
-  buildTitle: LOREM IPSUM SIT
-  buildP1: Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-  buildCta: Lorem Builds
-  packTitle: LOREM IPSUM AMET
-  packP1: Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-  packCta: Lorem Replays
-  promotionTitle: LOREM IPSUM ELIT
-  promotionP1: Hanc ego cum teneam, sentit alia te sapere, hinc veni. Ea possimus est, qui totum hoc beatum esse deserere quare subesse eius modi tempora incidunt.
-  promotionCta: Lorem Players
-  timeWarpTitle: LOREM IPSUM DOLOR
-  timeWarpP1: Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Ut enim ad minima veniam, quis nostrum exercitationem.
-  timeWarpCta: Lorem Time Warp
 
 # Site header components
 header:
@@ -52,7 +28,6 @@ header:
 # Site-wide footer and server/session information modals
 footer:
   privacy: sunt # Link to privacy policy
-  acknowledgements: agnitiones # Link to the acknowledgements page
   serverInfo: culpa # Link to open server info modal
   sessionInfo: qui # Link to open session info modal
   jumpToTop: officia # Scroll to top button
@@ -79,26 +54,6 @@ footer:
   joinChallengeError: Lorem ipsum dolor sit amet consectetur. # Error message for captcha failure
   retryChallenge: Lorem # Button to retry captcha
   joinError: Lorem ipsum. Consectetur adipiscing. # General error for Discord joining
-
-# Acknowledgements page content
-acknowledgements:
-  title: '{name} Agnitiones' # Title of the acknowledgements page
-  intro: '{name} auxilio optimi fontis aperti instrumentorum atque communitatis benignae construitur. Praesertim gratias agere volumus:' # Introductory text for the acknowledgements page
-  s2protTitle: icza / s2prot # Header for s2prot acknowledgement
-  s2protBody: s2prot ab icza fundamentum maximi momenti fuit ad celerem extractionem datorum replay in {name}, et sub licentia Apache 2.0 praebetur. # Description of s2prot acknowledgement
-  vueTitle: Vue.js et Vue-i18n # Header for frontend framework acknowledgement
-  vueBody: Vue.js et Vue-i18n frontem alunt atque efficiunt ut interfacies {name} celeris et sustentabilis maneat. # Description of Vue acknowledgement
-  dataTitle: Valkey et PostgreSQL # Header for data stack acknowledgement
-  dataBody: Manipuli Valkey et PostgreSQL fundamenta fontis aperti praebent quae tabulam celerem, stabilem, et ad frontem serviendam paratam servant. # Description of Valkey/PostgreSQL acknowledgement
-  goTitle: Go # Header for Go acknowledgement
-  goBody: Go atque eius ecosystema efficiunt ut officia postica et processus replay in {name} cum alto impetu construi possint. # Description of Go acknowledgement
-  aligulacTitle: Aligulac # Header for Aligulac acknowledgement
-  aligulacBody: Aligulac adhibetur ut live aestimationes lusorum praebeat, quod facultatem nostram valde auget ad usoribus nostris informationes utiles de lusoribus ostendendas. # Description of Aligulac acknowledgement
-  viteTitle: Vite # Header for Vite acknowledgement
-  viteBody: Vite cursum evolutionis et constructionis frontis tam celerem servat ut sine furore iterare possimus. # Description of Vite acknowledgement
-  usersTitle: Usuarii et beta probatores # Header for community acknowledgement
-  usersBody: Maxime autem gratias agimus omnibus usoribus {name} atque beta probatoribus quorum sincera responsa, relationes errorum, et patientia proiectum meliorem faciunt. # Description of user acknowledgement
-  closing: Gratias agimus omnibus curatoribus, contributoribus, et sodalibus communitatis quorum opus talia incepta fieri sinit. # Closing text for the acknowledgements page
 
 # FAQ page content
 faq:
@@ -169,16 +124,10 @@ replays:
   ver: ABC # Table column header (game version)
   noReplays: Ut enim ad minim veniam. # Empty state message
   noPlayers: Duis aute irure dolor. # Empty state message for player search
-  favorite: Lorem # Label for favorite button (not yet favorited)
-  favorited: Ipsum # Label for favorite button (already favorited)
-  addToFavorites: Lorem ipsum dolor # Tooltip for favorite button when not favorited
-  removeFromFavorites: Dolor sit amet # Tooltip for favorite button when favorited
   downloadReplay: Excepteur Sint # Tooltip for download button
   noDownloadTooltip: Duis aute irure dolor in reprehenderit in voluptate velit esse
     cillum dolore eu fugiat nulla pariatur. # Tooltip when download is disabled
   addToPack: Duis Aute # Tooltip for adding to download pack
-  addToPackRequiresAccount: Quisque aliquet ut login requiret ut replay packs creet
-    # Tooltip when logged out
   dateTooltip: Lorem ipsum dolor sit amet # Tooltip for date column
   mapTooltip: Consectetur adipiscing elit, sed do eiusmod tempor incididunt # Tooltip for map column
   playersTooltip: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -200,7 +149,7 @@ replays:
     invalidCountry: Lorem Alpha-2 only. # Validation error
     createButton: Lorem Create # Submit button
     creating: Lorem… # Loading state for submit
-    createFailed: Dolor sit amet. # Error message
+    createFailed: Dolor sit amet failed. # Error message
 
 # Replay pack (batch download) functionality
 pack:
@@ -212,20 +161,12 @@ pack:
 # Replay upload page
 upload:
   uploadFiles: Lorem Ipsum # Button to open file picker
-  instructionsGuest: Consectetur adipiscing elit, sed do eiusmod tempor incididunt
-    ut labore et dolore magna aliqua. Ut enim ad minim veniam. # Guest upload instructions
-  instructionsUser: Quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-    ea commodo consequat.{zipInfo} Duis aute irure dolor in reprehenderit. # Signed-in upload instructions
-  uploadFailed: Lorem ipsum dolor sit amet. # Generic upload failure message
-  uploadLimitReached: limitus uploadus attingit # Short per-file label for quota failures
-  rateLimitGuest: Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-    labore et dolore magna aliqua. # Guest rate limit fallback
-  rateLimitAuthenticated: Ut enim ad minim veniam, quis nostrud exercitation ullamco
-    laboris nisi ut aliquip. # Signed-in rate limit fallback
-  alreadyUploadedReason: Replay iam antea missum est # Hover text for already-present skipped files
-  duplicateSkippedReason: Duplicatum alterius replay in hoc fasciculo # Hover text for duplicate skipped files
+  instructions: Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+    {zipInfo} Ut enim ad minim veniam. # General upload instructions
   zipInfo: ' Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     consequat.' # Admin-only instruction
+  warning: 'LOREM: Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor!' # Privacy warning
   privacyHint: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
     {link} dolore eu fugiat nulla pariatur. # Link to policy
   privacyPolicy: lorem ipsum # Link text for privacy policy
@@ -244,21 +185,14 @@ replay_page:
   player2: Ipsum 2 # Label for the second player
   showResult: Dolor sit # Button to reveal winner (anti-spoiler)
   downloadReplay: Excepteur Sint # Button to download the file
-  downloadNotAvailable: Lorem non disponibilis # Button label when download is unavailable
   addToPack: + Lorem Ipsum # Button to add to download pack
   analyzeReplay: Duis Aute # Button to trigger (re-)analysis
   analyzing: Irure dolor… # Loading state for analysis trigger
-  analysisQueued: Fugiat Pariatur # Success message for analysis trigger
-  analysisReady: Lorem ipsum dolor sit # Success message when analysis completes
-  analysisFailed: Lorem ipsum dolor sit amet. Consectetur adipiscing. # Error message when analysis fails
-  analysisTimed: Ipsum dolor lorem. Consectetur adipiscing. # Error message when analysis polling times out
   copyLink: lorem ipsum # Button to copy URL to clipboard
   copyReplayId: dolor sit amet # Button to copy internal ID to clipboard
-  linkOnlyWarning: labore et dolore magna # Warning message for link-only replays
   showDuration: consectetur # Button to reveal game length (anti-spoiler)
   showTags: adipiscing elit! # Button to reveal tags
   noAnalysis: Sed do eiusmod tempor. # Message when no analysis data exists
-  noAnalysisNotice: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. # Message shown on noanalysis replays
   lastAnalysis: lorem ipsum {time} # Timestamp of most recent analysis
   timeWarp: LOREM IPSUM # Label for the game timeline slider
   income: Lorem # Label for income graph
@@ -273,37 +207,6 @@ replay_page:
   unlockOracle: DOLOR LOREM SIT # Button to unlock ML features
   generating: CONSECTETUR... # Loading state for ML generation
   workers: Laborum # Label for workers graph/stat
-  economy: Lorem # Category label for economy graph dropdown
-  military: Ipsum # Category label for military graph dropdown
-  performance: Facere # Label for performance metrics graph
-  sq: SQ # Label for spending quotient graph option
-  performanceMetrics: '{name}''s Sit Amet' # Header for performance metrics section
-  performanceMetricsTitle: Sit Amet # General header for performance metrics section
-  metrics: Lorem # Button label for metrics dropdown
-  compareNone: Ipsum (Dolor) # Option to not compare metrics
-  compareOwn: Ipsum (Sit Amet) # Option to compare metrics with own replays
-  comparePro: Ipsum (Adipiscing) # Option to compare metrics with pro replays
-  compareAll: Ipsum (Consectetur) # Option to compare metrics with all replays
-  compareColumnOwn: Sit Amet # Column header for own replay comparison
-  compareColumnPro: Adipiscing # Column header for pro replay comparison
-  compareColumnAll: Consectetur # Column header for all replay comparison
-  currentSq: Sed Do SQ # Label for Current Spending Quotient
-  averageSq: Adipiscing Elit # Label for Average Spending Quotient
-  apm: Magna # Label for Actions Per Minute
-  armyEfficiency: Consectetur Adipiscing # Ratio of army value destroyed to army value lost
-  timeToMaxSupply: Lorem Max Supply # Milestone: Reach 195/200 supply
-  timeTo44Workers: Lorem 44 Workers # Milestone: 44 active workers
-  timeTo66Workers: Lorem 66 Workers # Milestone: 66 active workers
-  timeTo600Army: Lorem 600 Army # Milestone: 600 minerals/gas army value
-  timeTo1800Army: Lorem 1800 Army # Milestone: 1800 minerals/gas army value
-  timeTo6000Army: Lorem 6000 Army # Milestone: 6000 minerals/gas army value
-  timeTo400Upgrades: Lorem 400 Upgrades # Milestone: 400 spent on upgrades
-  timeTo800Upgrades: Lorem 800 Upgrades # Milestone: 800 spent on upgrades
-  workersKilled: Laborum Magna # Stat: total workers killed
-  workersLost: Laborum Sit # Stat: total workers lost
-  workersKilled600: Laborum Magna at 6:00 # Stat: workers killed at 6 minutes
-  workersLost600: Laborum Sit at 6:00 # Stat: workers lost at 6 minutes
-  timeSupplyBlocked: Lorem Blocked # Stat: time spent supply blocked
   structures: Perspiciatis # Label for structures list
   structuresProducing: Perspiciatis (Unde) # Label for active production
   units: Omnis # Label for units list
@@ -325,33 +228,10 @@ replay_page:
   victory: LOREM # Status label
   defeat: IPSUM # Status label
   noSalt: Sed LOREM nullus # Error when copying SALT fails
-  saltCopied: LOREM ipsum  # Success message
-  saltCopyFailed: LOREM ipsum  e Error message
-  favorite: Lorem # Button label/title when replay is not yet favorited
-  favorited: Lorem # Button label/title when replay is already favorited
+  saltCopied: LOREM ipsum copied # Success message
+  saltCopyFailed: LOREM ipsum failed # Error message
   favoriteRequiresAccount: Quisque aliquet ut login requiret # Tooltip when logged out
   addToPackRequiresAccount: Quisque aliquet ut pack requiret # Tooltip when logged out
-  claim:
-    button: Lorem claimant # Button to start replay-player claim process
-    linkedToYourProfile: Ipsum  profilus # Indicator when replay player already matches current profile
-    requestSubmitted: Lorem adipiscingrequest {name}. # Success message
-    submitFailed: Dolor sed do eiusmod. # Error message
-    profilePrompt: Dolor sit amet?? # Tooltip text for hidden claim option for user without a profile
-    profileRequiredTitle: Lorem profile required # Replay claim prerequisite title
-    profileRequiredBody: Ipsum dolor sit amet, consectetur adipiscing elit ipsum eiusmod tempor ullamco laboru. # Replay claim prerequisite body
-    profileRequiredLink: Lorem ipsum dolor sit amet # Replay claim prerequisite CTA
-    modalTitle: Lorem Claim Replay # Modal title
-    modalBody1: Lorem ipsum dolor sit amet {name}? # Warning prompt
-    modalBody2: Consectetur adipiscing elit sed do eiusmod tempor. # Approval warning
-    modalBody2b: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-      nisi ut aliquip ex ea commodo consequat. # Fraud warning
-    modalBody3: Duis aute irure dolor in reprehenderit in voluptate velit esse. # Outcome explanation
-    modalBody4: Excepteur sint occaecat cupidatat non proident. # Conflict explanation
-    cancel: Lorem ipsum # Button to close modal
-    submit: Dolor sit amet # Button to submit claim
-    submitting: Laborum… # Loading state
-    tooltip: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
 
 # Player profile page
 player_page:
@@ -360,12 +240,6 @@ player_page:
   primaryRace: Sit Amet # Label for player's main race
   country: Consectetur # Label for player's country
   team: Adipiscing # Label for player's team
-  editName: Lorem Ipsum # Button to change display name
-  nameUpdated: Dolor Sit # Success toast
-  editNameModalTitle: Amet Consectetur # Modal title
-  newName: Adipiscing elit # Input label
-  newRealName: Sed do eiusmod # Input label
-  realNameHint: Tempor incididunt ut # Input hint
   replayList: Dolor Sit # Title for the replay list on the player page
   profile: LOREM # Section header
   search: Ipsum # Title for player search box
@@ -379,7 +253,7 @@ player_page:
       et dolore magna aliqua. # Instructions for reporting
     reasonPlaceholder: Lorem ipsum... # Textarea placeholder
     reasonRequired: Ut enim ad minim veniam. # Validation error
-    submit: Lorem # Submit button
+    submit: Lorem Submit # Submit button
     submitted: Duis aute irure dolor in. # Success message
     failed: Excepteur sint occaecat. # Error message
   placeholder: Dolor sit amet =) # Search input placeholder
@@ -478,9 +352,6 @@ common:
   loading: lorem ipsum… # Generic loading state
   error: dolor # Generic error label
   success: lorem # Generic success label
-  skipped: praetermissum # Generic skipped label
-  save: LOREM # Generic save button
-  saving: LOREM… # Generic saving state
   cancel: LOREM # Generic cancel button
   next: LOREM # Pagination button
   prev: IPSUM # Pagination button
