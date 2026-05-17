@@ -131,7 +131,7 @@ versus:
   shareFailed: Error al compartir
   sharedLinkNotFound: Este enlace de versus compartido ha caducado o no existe.
   narrative:
-    summary: "En un encuentro BO{bo} entre {p1Name} (rango #{p1Rank}) y {p2Name} (rango #{p2Rank}), se predice que {predictedName} ganará con una ventaja de {predictedProb} a {trailerProb}. {p1Name} y {p2Name} han jugado {totalGames} juegos en total, de los cuales {leaderStatus}."
+    summary: "En un encuentro {bo} entre {p1Name} (rango #{p1Rank}) y {p2Name} (rango #{p2Rank}), se predice que {predictedName} ganará con una ventaja de {predictedProb} a {trailerProb}. {p1Name} y {p2Name} han jugado {totalGames} juegos en total, de los cuales {leaderStatus}."
     leader: "{leaderName} lidera {leaderWins}-{trailerWins}"
     tie: "están empatados {leaderWins}-{trailerWins}"
 

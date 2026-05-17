@@ -131,7 +131,7 @@ versus:
   shareFailed: 分享失败
   sharedLinkNotFound: 此分享链接已过期或不存在。
   narrative:
-    summary: "在 {p1Name}（排名 #{p1Rank}）与 {p2Name}（排名 #{p2Rank}）的 BO{bo} 对决中，预测 {predictedName} 将以 {predictedProb} 对 {trailerProb} 的优势获胜。{p1Name} 和 {p2Name} 总共交手过 {totalGames} 场，其中 {leaderStatus}。"
+    summary: "在 {p1Name}（排名 #{p1Rank}）与 {p2Name}（排名 #{p2Rank}）的 {bo} 对决中，预测 {predictedName} 将以 {predictedProb} 对 {trailerProb} 的优势获胜。{p1Name} 和 {p2Name} 总共交手过 {totalGames} 场，其中 {leaderStatus}。"
     leader: "{leaderName} 以 {leaderWins}-{trailerWins} 领先"
     tie: "双方以 {leaderWins}-{trailerWins} 持平"
 

@@ -131,7 +131,7 @@ versus:
   shareFailed: Failed to share
   sharedLinkNotFound: This shared versus link has expired or does not exist.
   narrative:
-    summary: "In a BO{bo} matchup between {p1Name} (rank #{p1Rank}) and {p2Name} (rank #{p2Rank}), {predictedName} is predicted to win with a {predictedProb} to {trailerProb} advantage. {p1Name} and {p2Name} have played {totalGames} games in total, of which {leaderStatus}."
+    summary: "In a {bo} matchup between {p1Name} (rank #{p1Rank}) and {p2Name} (rank #{p2Rank}), {predictedName} is predicted to win with a {predictedProb} to {trailerProb} advantage. {p1Name} and {p2Name} have played {totalGames} games in total, of which {leaderStatus}."
     leader: "{leaderName} leads {leaderWins}-{trailerWins}"
     tie: "they are tied {leaderWins}-{trailerWins}"
 
