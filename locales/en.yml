@@ -550,6 +550,8 @@ metagame:
   buildPath: build path
   noData: no data
   loading: loading metagame data…
+  loadingSummaries: loading summary statistics…
+  loadingVersions: loading patch versions…
   selectRace: select race
   vs: VS
   trend: trend
@@ -558,3 +560,26 @@ metagame:
   counter: counter
   summary: summary
   replaysTitle: Matching Replays
+  patchRange: Patch Range Selection
+  patchSubtitle: Select build-specific versions for fine-grained analysis
+  resetPatches: Reset to All Patches
+  noRangeData: No patch range data available.
+  metric: Metric
+  back: Back
+  start: Start
+  any: Any
+  raceRoot: Race
+  opposingRace: Opposing Race
+  step: Step {n}
+  pop: Pop
+  win: Win
+  global: Global
+  avg: Avg
+  fast: Fast
+  tagPath: Tag this path
+  tagNamePlaceholder: Tag name (e.g. 2-Rax Proxy)
+  anyMatchup: Any Matchup
+  saveTag: Save Tag
+  applied: Applied!
+  replaysCount: "{count} Replays"
+  nodeStats: "{pop}% Pop · {win}% Win ({count})"

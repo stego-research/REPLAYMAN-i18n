@@ -550,6 +550,8 @@ metagame:
   buildPath: 빌드 경로
   noData: 데이터 없음
   loading: 메타게임 데이터 로딩 중…
+  loadingSummaries: 요약 통계 로딩 중…
+  loadingVersions: 패치 버전 로딩 중…
   selectRace: 종족 선택
   vs: VS
   trend: 추세
@@ -558,3 +560,26 @@ metagame:
   counter: 카운터 빌드
   summary: 요약
   replaysTitle: 일치하는 리플레이
+  patchRange: 패치 범위 선택
+  patchSubtitle: 세밀한 분석을 위해 특정 빌드 버전을 선택하세요
+  resetPatches: 모든 패치로 재설정
+  noRangeData: 패치 범위 데이터가 없습니다.
+  metric: 지표
+  back: 뒤로
+  start: 시작
+  any: 전체
+  raceRoot: 종족
+  opposingRace: 상대 종족
+  step: 단계 {n}
+  pop: 인기도
+  win: 승률
+  global: 글로벌
+  avg: 평균
+  fast: 최단
+  tagPath: 이 경로 태그 지정
+  tagNamePlaceholder: "태그 이름 (예: 2병영 전진)"
+  anyMatchup: 모든 매치업
+  saveTag: 태그 저장
+  applied: 적용됨!
+  replaysCount: "{count} 리플레이"
+  nodeStats: "{pop}% 인기도 · {win}% 승률 ({count})"

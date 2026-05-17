@@ -536,25 +536,50 @@ race:
 # Metagame explorer functionality
 metagame:
   title: Explorador de Metajuego
-  explore: Explorar
-  versions: Versiones del juego
-  allVersions: Todas las versiones
-  compareVersions: Comparar versiones
-  stats: Estadísticas
-  winRate: Tasa de victoria
-  matches: Encuentros
-  frequency: Frecuencia
-  opening: Apertura
-  midGame: Juego medio
-  lateGame: Juego tardío
-  buildPath: Ruta de construcción
-  noData: Sin datos
-  loading: Cargando datos de metajuego…
-  selectRace: Seleccionar raza
+  explore: explorar
+  versions: versiones del juego
+  allVersions: todas las versiones
+  compareVersions: comparar versiones
+  stats: estadísticas
+  winRate: tasa de victoria
+  matches: encuentros
+  frequency: frecuencia
+  opening: apertura
+  midGame: juego medio
+  lateGame: juego tardío
+  buildPath: ruta de construcción
+  noData: sin datos
+  loading: cargando datos de metajuego…
+  loadingSummaries: cargando estadísticas de resumen…
+  loadingVersions: cargando versiones de parches…
+  selectRace: seleccionar raza
   vs: VS
-  trend: Tendencia
-  popularity: Popularidad
-  strength: Fuerza
-  counter: Contra-estrategia
-  summary: Resumen
+  trend: tendencia
+  popularity: popularidad
+  strength: fuerza
+  counter: contra-estrategia
+  summary: resumen
   replaysTitle: Repeticiones que coinciden
+  patchRange: Selección de Rango de Parches
+  patchSubtitle: Selecciona versiones específicas de la construcción para un análisis detallado
+  resetPatches: Restablecer a Todos los Parches
+  noRangeData: No hay datos de rango de parches disponibles.
+  metric: Métrica
+  back: Volver
+  start: Inicio
+  any: Cualquiera
+  raceRoot: Raza
+  opposingRace: Raza Oponente
+  step: Paso {n}
+  pop: Pop
+  win: Win
+  global: Global
+  avg: Prom
+  fast: Rápido
+  tagPath: Etiquetar esta ruta
+  tagNamePlaceholder: "Nombre de etiqueta (ej. 2-Rax Proxy)"
+  anyMatchup: Cualquier Enfrentamiento
+  saveTag: Guardar Etiqueta
+  applied: ¡Aplicado!
+  replaysCount: "{count} Repeticiones"
+  nodeStats: "{pop}% Pop · {win}% Win ({count})"

@@ -550,6 +550,8 @@ metagame:
   buildPath: 建造路线
   noData: 无数据
   loading: 正在加载战术数据…
+  loadingSummaries: 正在加载摘要统计…
+  loadingVersions: 正在加载补丁版本…
   selectRace: 选择种族
   vs: VS
   trend: 趋势
@@ -558,3 +560,26 @@ metagame:
   counter: 应对
   summary: 摘要
   replaysTitle: 匹配的回放
+  patchRange: 补丁范围选择
+  patchSubtitle: 选择特定版本的建造以进行精细分析
+  resetPatches: 重置为所有补丁
+  noRangeData: 无补丁范围数据。
+  metric: 指标
+  back: 返回
+  start: 开始
+  any: 全部
+  raceRoot: 种族
+  opposingRace: 对手种族
+  step: 第 {n} 步
+  pop: 热度
+  win: 胜率
+  global: 全局
+  avg: 平均
+  fast: 最快
+  tagPath: 标记此路径
+  tagNamePlaceholder: "标签名称 (例如：2-Rax Proxy)"
+  anyMatchup: 任何对阵
+  saveTag: 保存标签
+  applied: 已应用！
+  replaysCount: "{count} 场回放"
+  nodeStats: "{pop}% 热度 · {win}% 胜率 ({count})"
