@@ -571,8 +571,8 @@ metagame:
   raceRoot: raza
   opposingRace: raza oponente
   step: paso {n}
-  pop: pop
-  win: win
+  pop: pop.
+  win: vict.
   global: global
   avg: prom
   fast: rápido
@@ -582,4 +582,4 @@ metagame:
   saveTag: guardar etiqueta
   applied: ¡aplicado!
   replaysCount: "{count} repeticiones"
-  nodeStats: "{pop}% pop · {win}% win ({count})"
+  nodeStats: "{pop}% pop. · {win}% vict. ({count})"
