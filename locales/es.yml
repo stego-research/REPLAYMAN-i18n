@@ -559,27 +559,27 @@ metagame:
   strength: fuerza
   counter: contra-estrategia
   summary: resumen
-  replaysTitle: Repeticiones que coinciden
-  patchRange: Selección de Rango de Parches
-  patchSubtitle: Selecciona versiones específicas de la construcción para un análisis detallado
-  resetPatches: Restablecer a Todos los Parches
-  noRangeData: No hay datos de rango de parches disponibles.
-  metric: Métrica
-  back: Volver
-  start: Inicio
-  any: Cualquiera
-  raceRoot: Raza
-  opposingRace: Raza Oponente
-  step: Paso {n}
-  pop: Pop
-  win: Win
-  global: Global
-  avg: Prom
-  fast: Rápido
-  tagPath: Etiquetar esta ruta
-  tagNamePlaceholder: "Nombre de etiqueta (ej. 2-Rax Proxy)"
-  anyMatchup: Cualquier Enfrentamiento
-  saveTag: Guardar Etiqueta
-  applied: ¡Aplicado!
-  replaysCount: "{count} Repeticiones"
-  nodeStats: "{pop}% Pop · {win}% Win ({count})"
+  replaysTitle: repeticiones que coinciden
+  patchRange: selección de rango de parches
+  patchSubtitle: selecciona versiones específicas de la construcción para un análisis detallado
+  resetPatches: restablecer a todos los parches
+  noRangeData: no hay datos de rango de parches disponibles.
+  metric: métrica
+  back: volver
+  start: inicio
+  any: cualquiera
+  raceRoot: raza
+  opposingRace: raza oponente
+  step: paso {n}
+  pop: pop
+  win: win
+  global: global
+  avg: prom
+  fast: rápido
+  tagPath: etiquetar esta ruta
+  tagNamePlaceholder: "nombre de etiqueta (ej. 2-Rax Proxy)"
+  anyMatchup: cualquier enfrentamiento
+  saveTag: guardar etiqueta
+  applied: ¡aplicado!
+  replaysCount: "{count} repeticiones"
+  nodeStats: "{pop}% pop · {win}% win ({count})"

@@ -181,7 +181,7 @@ settings:
   twitchDisconnectConfirm: 트위치 계정 연결을 해제하시겠습니까?
   twitchExplanation: 트위치 계정을 연결하면 REPLAYMAN이 채팅 창의 명령어(!stats maru serral 등)에 응답할 수 있습니다.
 
-  # Replay search and listing components
+# Replay search and listing components
 replays:
   allReplays: 모든 리플레이 # Header for all replays tab
   search: 리플레이 검색 # Title for the replay search box

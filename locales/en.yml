@@ -248,7 +248,7 @@ upload:
   duplicateSkippedReason: "Duplicate of another replay in this batch" # Hover text for duplicate skipped files
   zipInfo: '' # Admin-only instruction
   publicSearchLabel: "Allow uploaded replays to appear in public search" # Label for privacy toggle
-  privacyHint: "By uploading files, you acknowledge and agree to the terms outlined in our {link} (opens in a new tab)." # Link to policy
+  privacyHint: "By uploading files, you acknowledge and agree to the terms outlined in our {link} (opens in new tab)." # Link to policy
   privacyPolicy: privacy policy # Link text for privacy policy
 
 # Individual replay analysis page
@@ -497,7 +497,7 @@ auth:
   sessionExpired: "Your session has expired. Please log in again." # Toast message
   accountRequired: An account is required to access this page. # Access control message
   noPermission: You don't have permission to do that. # Access control error
-  oracleQueued: Oracle analysis queued # Success message for ML trigger
+  oracleQueued: ORACLE analysis queued # Success message for ML trigger
   signupPromptPre: '' # Message when user needs to sign up
   signupPromptPost: '. Create one to continue.' # Instructions to sign up
   privacyConsent: "I agree to the terms of the Stego Research {policy} and to abide by any applicable laws." # Checkbox label for terms
