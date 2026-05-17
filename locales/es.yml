@@ -1,0 +1,560 @@
+# Navigation menu items
+nav:
+  upload: subir # Link to the upload page
+  players: jugadores # Link to the player search page
+  replays: repeticiones # Link to the replay search page
+  versus: versus # Link to the versus prediction page
+  myReplays: mis repeticiones # Link to the user's personal replays (only shown when logged in)
+  metagame: metajuego # Link to the metagame explorer page
+  faq: preguntas frecuentes # Link to the FAQ page
+  settings: ajustes # Link to the settings page
+  admin: admin # Link to the admin dashboard (only shown to admins)
+  login: iniciar sesión / registrarse # Button to open login/signup panel
+  logout: cerrar sesión # Button to log out the current user
+
+# Home page content
+home:
+  welcome: Bienvenido a la beta de {name}. # Main welcome message on the home page
+  glad: Es más que un simple gestor de repeticiones. Es la plataforma más avanzada del mundo para SC2 competitivo. # Sub-heading on the home page
+  p1: '{name} es parte de una serie de tecnologías en desarrollo por Stego Research para proporcionar información inteligente de datos a jugadores, creadores, organizadores de torneos, desarrolladores de juegos y más.' # First paragraph of home page description
+  p2: "" # Removed
+  p3: '{name} se encuentra actualmente en beta abierta. Aunque la documentación y el conjunto de funciones son limitados, esperamos que disfrutes explorando la plataforma y descubriendo todas las formas poderosas en que se puede utilizar. Recomiendo encarecidamente unirse a nuestra comunidad de Discord para participar y enviarnos tus comentarios. Puedes encontrar enlaces al Discord en la parte superior izquierda de la página.' # Third paragraph regarding availability
+  p4: ¡Ahora que las presentaciones han terminado, ve a echar un vistazo a algunas repeticiones! # Call to action at the end of the home page
+  showReplaysCta: ¡MUÉSTRAME LAS REPETICIONES! # Home page CTA button label
+  footer: Stego Research # !! DON'T EDIT Signature in the footer of the home page
+  featuresTitle: Sube de rango con la tecnología de SC2 más avanzada de internet.
+  oracleTitle: Predicciones ORACLE ML
+  oracleP1: El análisis de StarCraft más avanzado del mundo. Nuestros modelos de aprendizaje automático entrenados en más de 40.000.000 de posiciones de juego revelan nuevas perspectivas sobre las sutiles ventajas de los jugadores.
+  oracleP2: Obtén predicciones de resultados instantáneas en cualquier momento, todo construido con inferencia de ML real, sin tonterías.
+  oracleCta: Ver ORACLE en acción
+  promotionTitle: Clasificaciones globales de jugadores
+  promotionP1: El sitio original de clasificaciones, mejorado. Sigue a los mejores jugadores con calificaciones confiables de nuestro sitio hermano, {aligulac}.
+  promotionCta: Explorar la tabla de clasificación
+  timeWarpTitle: Minimapa de alta fidelidad
+  timeWarpP1: Se acabó el esperar a que las repeticiones se adelanten. Ve a cualquier punto de la partida al instante y mira exactamente dónde está cada unidad con nuestro motor determinista.
+  timeWarpCta: Pruébalo tú mismo
+  replaysTitle: Actividad reciente de repeticiones
+  replaysP1: Explora las últimas partidas de toda la plataforma. Filtra por jugador, raza o enfrentamiento para encontrar exactamente lo que buscas.
+  replaysCta: Explorar la base de datos
+
+
+# Site header components
+header:
+  toggleTheme: 'Cambiar tema: {theme}' # Tooltip for the theme toggle button
+  bannerAlt: 'Banner de {name}' # Alt text for the site's banner image
+
+# Site-wide footer and server/session information modals
+footer:
+  privacy: política de privacidad # Link to privacy policy (in footer and in modal)
+  acknowledgements: agradecimientos # Link to the acknowledgements page
+  versus: versus # Link to the versus prediction page
+  serverInfo: información del servidor # Link to open server info modal (for admins)
+  sessionInfo: información de la sesión # Link to open session info modal (for admins)
+  jumpToTop: volver arriba # Scroll to top of page link in footer
+  serverInformation: Información del servidor # Title of the server info modal (pop up)
+  sessionInformation: Información de la sesión # Title of the session info modal (pop up)
+  loading: Cargando… # Loading state for modal (pop up) content
+  version: versión # Label for server version, for admins
+  timestamp: marca de tiempo # Label for server build timestamp, for admins
+  environment: entorno # Label for server environment (dev, pre, prod) (for admins)
+  apiHost: host de la API # Label for API backend host (for admins)
+  allowedOrigins: orígenes permitidos # Label for CORS allowed origins (for admins)
+  username: nombre de usuario # Label for current user's name in session info (for admins)
+  role: rol # Label for current user's role (for admins)
+  assumeRole: asumir rol # Label for the role-switching feature (for admins)
+  accessExpires: el acceso expira # Label for access token expiration (for admins)
+  refreshExpires: el refresco expira # Label for refresh token expiration (for admins)
+  close: Cerrar # Button to close modals
+  discord: discord de la comunidad # Link to Discord join modal (pop up)
+  joinDiscord: Únete a nuestro Discord de la comunidad # Title of Discord join modal (pop up)
+  discordBotProtection: "Por favor, haz clic en el botón de abajo para unirte a nuestro servidor de Discord. Para proteger nuestra comunidad de bots, es posible que se pida a algunos usuarios que resuelvan un desafío captcha." # Description for Discord bot protection
+  join: Unirse # Button to join Discord after passing check
+  joinCheckingBots: por favor espera - comprobando bots # Message while validating captcha/bot status
+  joinChallengeError: "El desafío de protección contra bots no se pudo cargar. Por favor, inténtalo de nuevo." # Error message for captcha failure
+  retryChallenge: reintentar # Button to retry captcha
+  joinError: "Error al unirse a Discord. Por favor, inténtalo de nuevo." # General error for Discord joining
+
+# Acknowledgements page content
+acknowledgements:
+  title: 'Agradecimientos de {name}' # Title of the acknowledgements page
+  intro: "{name} no podría existir sin nuestros colaboradores, increíbles proyectos de código abierto y una comunidad increíblemente solidaria. Especialmente queremos agradecer a:" # Introductory text for the acknowledgements page
+  s2protTitle: icza / s2prot # Header for s2prot acknowledgement
+  s2protBody: "s2prot de icza (Apache 2.0) fue crucial como base para el trabajo de extracción de datos de repeticiones de alto rendimiento en {name}." # Description of s2prot acknowledgement
+  vueTitle: Vue.js y Vue-i18n # Header for frontend framework acknowledgement
+  vueBody: "Nuestro frontend funciona con Vue.js y Vue-i18n (licencia MIT)." # Description of Vue acknowledgement
+  dataTitle: Valkey y PostgreSQL # Header for data stack acknowledgement
+  dataBody: "Gracias a los mantenedores de los proyectos Valkey y PostgreSQL, cuyo trabajo es la base de los modelos de datos y las tuberías de procesamiento de {name}." # Description of Valkey/PostgreSQL acknowledgement
+  goTitle: Go # Header for Go acknowledgement
+  goBody: "Go y su ecosistema hacen que sea práctico construir el procesamiento de repeticiones de alto rendimiento y los servicios de API detrás de {name}." # Description of Go acknowledgement
+  viteTitle: Vite # Header for Vite acknowledgement
+  viteBody: "Vite mantiene el flujo de trabajo de construcción y desarrollo del frontend lo suficientemente rápido como para que podamos iterar rápidamente sin perder la cabeza." # Description of Vite acknowledgement
+  aligulacTitle: Aligulac # Header for Aligulac acknowledgement
+  aligulacBody: "Aligulac se utiliza para servir las calificaciones de los jugadores en vivo, mejorando enormemente nuestra capacidad para mostrar información útil sobre los jugadores a nuestros usuarios." # Description of Aligulac acknowledgement
+  usersTitle: Usuarios y probadores beta # Header for community acknowledgement
+  usersBody: "Sobre todo, gracias a todos los que usan {name} y a todos los probadores beta cuyos comentarios honestos, informes de errores y paciencia siguen mejorando el proyecto." # Description of user acknowledgement
+  closing: "Agradecemos a cada mantenedor, colaborador y miembro de la comunidad cuyo trabajo hace posible proyectos como este." # Closing text for the acknowledgements page
+
+# Versus page content
+versus:
+  title: Predicción Versus
+  selectorTitle: Jugador Contra Jugador
+  playerLabel: Jugador
+  selectPlayer: Seleccionar Jugador
+  clearSelection: Borrar selección de jugador
+  predict: ¡VAMOS!
+  swap: Intercambiar
+  format: Formato
+  recentlySearched: Buscado recientemente
+  prediction: Probabilidad de Victoria
+  matchOutcomes: Resultados del Encuentro
+  historySummary: Resumen del Historial
+  matchHistory: Historial de Encuentros
+  matchSummary: Resumen del Encuentro
+  likelihoodBySeriesScore: Probabilidad por Puntuación de la Serie
+  playerStatistics: Estadísticas del Jugador
+  recentReplays: Repeticiones Recientes
+  seriesScore: Puntuación de la Serie
+  gameScore: Puntuación del Juego
+  date: Fecha
+  event: Evento
+  result: Resultado
+  shareLink: Compartir Enlace
+  sharing: Compartiendo...
+  snapshotBadge: CUOTAS DE LA SERIE BO{bo}
+  missingPlayers: Por favor, selecciona dos jugadores para comparar.
+  replayAlreadyInPack: La repetición ya está en el pack
+  replayPackLimitReached: Se ha alcanzado el límite del pack de repeticiones ({limit})
+  downloadUnavailable: La descarga de la repetición no está disponible para esta repetición.
+  fetchError: Error al obtener datos del versus
+  shareGenerateFailed: Error al generar el enlace para compartir
+  shareCopied: ¡Enlace para compartir copiado al portapapeles!
+  shareFailed: Error al compartir
+  sharedLinkNotFound: Este enlace de versus compartido ha caducado o no existe.
+  narrative:
+    summary: "En un encuentro BO{bo} entre {p1Name} (rango #{p1Rank}) y {p2Name} (rango #{p2Rank}), se predice que {predictedName} ganará con una ventaja de {predictedProb} a {trailerProb}. {p1Name} y {p2Name} han jugado {totalGames} juegos en total, de los cuales {leaderStatus}."
+    leader: "{leaderName} lidera {leaderWins}-{trailerWins}"
+    tie: "están empatados {leaderWins}-{trailerWins}"
+
+
+# FAQ page content
+faq:
+  title: 'Preguntas Frecuentes de {name}' # Main title of the FAQ page
+  q1: ¿Qué es {name}?
+  a1: "{name} es una plataforma diseñada para gestionar y analizar repeticiones de juegos. Te permite subir tus repeticiones, ver estadísticas e información detallada, y buscar en una colección de partidas."
+  q2: "¿Qué tipo de repeticiones soporta {name}?"
+  a2: "Actualmente, {name} solo soporta repeticiones 1v1 de StarCraft II de Legacy of the Void (ver. 5.0.0 y más recientes)."
+  q3: "¿Es {name} gratuito?"
+  a3_1: "No te voy a ocultar la realidad: habrá opciones de pago en el futuro. Sin embargo, esperamos mantener gratuitas todas las funciones principales que ves hoy en la fase de vista previa, aunque algunas funciones como el análisis de Oracle y las subidas pueden estar sujetas a límites más estrictos. Algunas funciones que aún no se han anunciado probablemente estarán disponibles solo para suscriptores de pago en el futuro. La realidad es que la plataforma cuesta bastante de operar y tomó muchos meses construirla, y preferiríamos no depender solo de donaciones."
+  a3_2: "Esperamos que disfrutes de las funciones gratuitas y que encuentres que las funciones de pago valen la pena cuando lleguen."
+  q4: "¿Cómo uso {name}? ¿Necesito una cuenta?"
+  a4: "No se requiere una cuenta para navegar por {name}. Sin embargo, algunas funciones están estrictamente limitadas para usuarios anónimos, como las subidas y descargas de repeticiones."
+  q5: "¿Cómo me registro para obtener una cuenta?"
+  a5: "Simplemente pulsa el botón 'iniciar sesión / registrarse' - si aún no tienes una cuenta, podrás crear una inmediatamente e iniciar sesión solo con un código, ¡nada de contraseñas por aquí!"
+  q6: "¿Puedo mantener mis repeticiones en privado?"
+  a6: "Si tienes una cuenta, puedes controlar si tus subidas aparecen en los resultados de búsqueda pública usando la opción 'Permitir que las repeticiones subidas aparezcan en búsquedas públicas' en la página de subida. Las subidas de usuarios anónimos siempre se pueden buscar públicamente."
+  q7: "¿Qué tipo de análisis proporciona {name}?"
+  a7: "La respuesta corta es, mucho, y vendrá mucho más después de esta ventana de vista previa. {name} puede extraer y analizar repeticiones de forma casi instantánea para proporcionar información sobre órdenes de construcción, gasto, datos de referencia y rendimiento de los jugadores. La función ORACLE utiliza el análisis de aprendizaje automático para predecir los ganadores más probables durante toda la partida para que puedas ver dónde cambió la tendencia."
+  q8: "¿Puedo descargar repeticiones? ¿Qué hay de los packs de repeticiones?"
+  a8: "Puedes descargar cualquier archivo de repetición disponible públicamente, o cualquier archivo al que se te haya enlazado. Los usuarios con cuenta pueden crear actualmente packs de archivos zip de hasta 20 repeticiones."
+  q9: "¿Qué debo esperar de esta versión de vista previa de {name}?"
+  a9_p1: "Esta es una versión muy temprana de {name}, y está absolutamente rota en varios sentidos. Por favor, ten esto en cuenta:"
+  a9_li1: "Puedes encontrar errores, comportamientos inesperados o bloqueos."
+  a9_li2: "Los datos (incluyendo tus repeticiones subidas o resultados de análisis) pueden perderse o cambiar inesperadamente."
+  a9_li3: "No se espera que la plataforma sea 100% confiable o precisa. ¡Agradecemos tu comprensión y paciencia mientras trabajamos para mejorar la plataforma! Tu feedback durante esta fase es inestimable."
+  q10: "¿Dónde comparto mis comentarios o preguntas?"
+  a10: "No dudes en consultar nuestra página de problemas en GitHub o unirte a nuestra comunidad de Discord. Puedes encontrar enlaces a estos en la parte superior izquierda de la página."
+  q11: "¿Qué pasa con otros idiomas?"
+  a11: "Queremos lanzar en múltiples idiomas, así que mantente atento. Si hablas español, chino o coreano, podríamos usar tu ayuda con las traducciones, así que por favor mantente en contacto."
+  q12: "¿Modo claro?????"
+  a12: Vendrá cuando pueda hacer que se vea menos mal.
+
+# Settings page content
+settings:
+  title: Ajustes
+  language: Idioma
+  integrations: Integraciones
+  twitch: Twitch
+  twitchConnected: Conectado a Twitch
+  twitchNotConnected: No conectado a Twitch
+  connectTwitch: Conectar Twitch
+  disconnectTwitch: Desconectar Twitch
+  twitchDisconnectConfirm: ¿Estás seguro de que quieres desconectar tu cuenta de Twitch?
+  twitchExplanation: Vincular tu cuenta de Twitch permite que REPLAYMAN pueda responder a comandos en tu chat (como !stats maru serral) y más.
+
+# Replay search and listing components
+replays:
+  allReplays: Todas las repeticiones # Header for all replays tab
+  search: Buscar repeticiones # Title for the replay search box
+  myReplays: Mis repeticiones # Header for user's personal replays
+  favoritePlayersReplays: Repeticiones de jugadores favoritos # Header for replays from favorited players
+  myUploads: Mis subidas # Header for user's uploaded replays
+  favoriteReplays: Repeticiones favoritas # Header for user's favorited replays
+  replaysIn: Partidas en las que participo # Header for replays where the user is a player
+  replays: Repeticiones # Generic replays header
+  replayList: Lista de repeticiones # Title for the replay list tile
+  date: FECHA # Table column header
+  map: MAPA # Table column header
+  players: JUGADORES # Table column header
+  ver: VER # Table column header (game version)
+  noReplays: No se encontraron repeticiones. # Empty state message
+  noPlayers: No se encontraron jugadores. # Empty state message for player search
+  favorite: Favorito # Label for favorite button (not yet favorited)
+  favorited: En favoritos # Label for favorite button (already favorited)
+  addToFavorites: Añadir a favoritos # Tooltip for favorite button when not favorited
+  removeFromFavorites: Quitar de favoritos # Tooltip for favorite button when favorited
+  favoritedPlayer: Jugador añadido a favoritos # Success message
+  removedFavoritePlayer: Jugador quitado de favoritos # Success message
+  failedToUpdateFavorite: Error al actualizar el estado de favorito # Error message
+  favoritePlayers: Jugadores favoritos # Header for favorite players list
+  favoriteRequiresAccount: Se requiere una cuenta para marcar jugadores como favoritos # Tooltip when logged out
+  noFavoritePlayers: Aún no tienes jugadores favoritos. # Message when favorite players list is empty
+  downloadReplay: Descargar repetición # Tooltip for download button
+  noDownloadTooltip: Esta repetición no se puede descargar por petición del propietario o administrador # Tooltip when download is disabled
+  addToPack: Añadir al pack # Tooltip for adding to download pack
+  addToPackRequiresAccount: Debes iniciar sesión para crear packs de repeticiones # Tooltip when logged out
+  dateTooltip: las fechas están en formato AAAA-MM-DD # Tooltip for date column
+  mapTooltip: Los nombres de los mapas pueden estar localizados en algunas situaciones. # Tooltip for map column
+  playersTooltip: Todos los nombres se cargan directamente de los datos de la repetición a menos que la cuenta de Battle.net se haya vinculado a un jugador. # Tooltip for players column
+  placeholder: Puedes buscar por nombre de jugador, mapa, raza y más # Search input placeholder
+  missingPlayerProfile:
+    title: Perfil de jugador faltante # Tile title when no player profile is linked
+    body: Para desbloquear todas las funciones de la cuenta, conecta un perfil de jugador. Puedes crear un perfil nuevo aquí. Si ya tienes uno, navega a esa página y haz clic en "Reclamar cuenta". # Instructions for linking profile
+    primaryRace: Raza principal # Form label
+    raceNone: Ninguna / Varias # Race option
+    country: País # Form label
+    countryPlaceholder: "ej. AR, MX, ES" # Input placeholder
+    invalidCountry: El país debe ser un código ISO de 2 letras. # Validation error
+    createButton: Crear perfil de jugador # Submit button
+    creating: Creando… # Loading state for submit
+    createFailed: Error al crear el perfil de jugador. # Error message
+
+# Replay pack (batch download) functionality
+pack:
+  pack: "Pack ({count})" # Button label showing current number of replays in pack
+  clear: limpiar # Button to empty the pack
+  download: descargar # Button to download the zipped pack
+  downloading: descargando… # Loading state for pack download
+
+# Replay upload page
+upload:
+  uploadFiles: Subir Archivos # Button to open file picker
+  instructionsGuest: "Puedes elegir un máximo de 10 archivos SC2Replay por día por dirección IP para subir sin una cuenta. Los usuarios con una cuenta pueden subir hasta 200 repeticiones a la vez, y pueden aplicarse límites adicionales por cuenta por hora y por día. También puedes subir archivos arrastrándolos directamente a esta página." # Guest upload instructions
+  instructionsUser: "Puedes seleccionar hasta 200 archivos SC2Replay para subir con el botón de arriba.{zipInfo} Los límites de subida se aplican por cuenta, y pueden aplicarse límites adicionales por hora y por día. También puedes subir archivos arrastrándolos directamente a esta página." # Signed-in upload instructions
+  uploadFailed: "La subida falló. Por favor, inténtalo de nuevo." # Generic upload failure message
+  uploadLimitReached: "límite de subida alcanzado" # Short per-file label for quota failures
+  rateLimitGuest: "Has subido demasiadas repeticiones hoy. Por favor, crea una cuenta para continuar subiendo, o espera hasta mañana para intentarlo de nuevo." # Guest rate limit fallback
+  rateLimitAuthenticated: "Has subido demasiadas repeticiones. Por favor, espera antes de intentarlo de nuevo." # Signed-in rate limit fallback
+  alreadyUploadedReason: "La repetición ya fue subida" # Hover text for already-present skipped files
+  duplicateSkippedReason: "Duplicado de otra repetición en este lote" # Hover text for duplicate skipped files
+  zipInfo: '' # Admin-only instruction
+  publicSearchLabel: "Permitir que las repeticiones subidas aparezcan en búsquedas públicas" # Label for privacy toggle
+  privacyHint: "Al subir archivos, reconoces y aceptas los términos descritos en nuestra {link} (se abre en una nueva pestaña)." # Link to policy
+  privacyPolicy: política de privacidad # Link text for privacy policy
+
+# Individual replay analysis page
+replay_page:
+  gameVersion: v{version} # !! DON'T EDIT Label for game version
+  jumpTo: 'IR A:' # Quick navigation label
+  graphs: gráficos # Link to graphs section
+  minimap: minimapa # Link to minimap section
+  chat: chat # Link to chat section
+  engineView: vista del motor # Link to engine view section
+  unitsStructures: unidades/estructuras # Link to units/structures section
+  buildOrders: órdenes de construcción # Link to build orders section
+  summaryTags: 'ETIQUETAS DE RESUMEN:' # Label for automatic analysis tags
+  player1: Jugador 1 # Label for the first player
+  player2: Jugador 2 # Label for the second player
+  showResult: Mostrar resultado # Button to reveal winner (anti-spoiler)
+  downloadReplay: Descargar repetición # Button to download the file
+  downloadNotAvailable: Descarga no disponible # Button label when download is unavailable
+  addToPack: + Añadir al pack # Button to add to download pack
+  analyzeReplay: Analizar repetición # Button to trigger (re-)analysis
+  reAnalyze: Re-analizar # Button label when re-triggering analysis
+  analyzing: Analizando… # Loading state for analysis trigger
+  analysisQueued: Análisis en cola # Success message for analysis trigger
+  analysisReady: Análisis de repetición listo # Success message when analysis completes
+  analysisFailed: Error al analizar la repetición. Por favor, inténtalo de nuevo. # Error message when analysis fails
+  analysisTimed: El análisis de la repetición ha caducado. Inténtalo más tarde. # Error message when analysis polling times out
+  copyLink: copiar enlace # Button to copy URL to clipboard
+  copyReplayId: ID de repetición # Button to copy internal ID to clipboard
+  linkOnlyWarning: repetición solo con enlace # Warning message for link-only replays
+  linkOnlyTooltip: Esta repetición no aparece en los resultados de búsqueda pública, pero cualquier persona con el enlace directo puede verla. # Tooltip for link-only replays
+  showDuration: mostrar duración # Button to reveal game length (anti-spoiler)
+  showTags: mostrar etiquetas (¡spoilers!) # Button to reveal tags
+  noAnalysis: Aún no se ha encontrado ningún análisis. # Message when no analysis data exists
+  noAnalysisNotice: Lamentablemente, a petición del propietario, no podemos mostrar más información sobre esta repetición por ahora. Vuelve a consultar pronto para más opciones. # Message shown on noanalysis replays
+  lastAnalysis: "analizado {time}" # Timestamp of most recent analysis
+  timeWarp: TIME WARP # Label for the game timeline slider
+  income: Ingresos # Label for income graph
+  bank: Banco # Label for bank graph
+  armyValue: Valor del ejército # Label for army value graph
+  resourcesLost: Recursos perdidos # Label for resources lost graph
+  oracle: + ORACLE # !! DON'T EDIT Label for ORACLE ML insights tab
+  combinedMG: Combinar M+G # Label for Minerals/Gas graph
+  standard: Estándar # Standard analysis label
+  difference: Diferencia # Analysis difference label
+  oracleUnlocked: Perspectivas de ORACLE ML desbloqueadas # Success message when ML features are available
+  unlockOracle: Desbloquear perspectivas de ORACLE # Button to unlock ML features
+  reGenerate: Re-generar # Button to force a new ORACLE inference
+  generating: GENERANDO... # Loading state for ML generation
+  workers: Trabajadores # Label for workers graph/stat
+  minerals: MIN # Short label for minerals in graph legend
+  gas: GAS # Short label for vespene gas in graph legend
+  winProb: PROB. DE VICTORIA # Short label for win probability in live stats bar
+  economy: Economía # Category label for economy graph dropdown
+  military: Militar # Category label for military graph dropdown
+  performance: Rendimiento # Label for performance metrics graph
+  sq: SQ # Label for spending quotient graph option
+  performanceMetrics: 'Métricas de rendimiento de {name}' # Header for performance metrics section
+  performanceMetricsTitle: Métricas adicionales # General header for performance metrics section
+  showMetrics: Mostrar # Button to expand performance metrics section
+  hideMetrics: Ocultar # Button to collapse performance metrics section
+  metrics: Seleccionar métricas # Button label for metrics dropdown
+  compareNone: Seleccionar comparación # Option to not compare metrics
+  compareOwn: "vs. Mis repeticiones" # Option to compare metrics with own replays
+  comparePro: "vs. Repeticiones Pro" # Option to compare metrics with pro replays
+  compareAll: "vs. Todas las repeticiones" # Option to compare metrics with all replays
+  compareColumnOwn: Mis repeticiones # Column header for own replay comparison
+  compareColumnPro: Repeticiones Pro # Column header for pro replay comparison
+  compareColumnAll: Todas las repeticiones # Column header for all replay comparison
+  compareOwnRequiresLink: Debes estar vinculado a un perfil de jugador para comparar con tus propias repeticiones. # Error when comparing own replays without linked profile
+  loadComparisonFailed: Error al cargar los datos de comparación. # Error message when fetching comparison metrics fails
+  currentSq: SQ actual # Label for Current Spending Quotient
+  averageSq: SQ promedio # Label for Average Spending Quotient
+  apm: APM # Label for Actions Per Minute
+  armyEfficiency: Eficiencia del ejército # Ratio of army value destroyed to army value lost
+  timeToMaxSupply: Tiempo para suministro máximo # Milestone: Reach 195/200 supply
+  timeTo44Workers: Tiempo para 44 trabajadores # Milestone: 44 active workers
+  timeTo66Workers: Tiempo para 66 trabajadores # Milestone: 66 active workers
+  timeTo600Army: Tiempo para 600 de valor de ejército # Milestone: 600 minerals/gas army value
+  timeTo1800Army: Tiempo para 1800 de valor de ejército # Milestone: 1800 minerals/gas army value
+  timeTo6000Army: Tiempo para 6000 de valor de ejército # Milestone: 6000 minerals/gas army value
+  timeTo400Upgrades: Tiempo para 400 de gasto en mejoras # Milestone: 400 spent on upgrades
+  timeTo800Upgrades: Tiempo para 800 de gasto en mejoras # Milestone: 800 spent on upgrades
+  workersKilled: Trabajadores eliminados # Stat: total workers killed
+  workersLost: Trabajadores perdidos # Stat: total workers lost
+  workersKilled600: Trabajadores eliminados al 6:00 # Stat: workers killed at 6 minutes
+  workersLost600: Trabajadores perdidos al 6:00 # Stat: workers lost at 6 minutes
+  timeSupplyBlocked: Tiempo con suministro bloqueado # Stat: time spent supply blocked
+  structures: Estructuras # Label for structures list
+  structuresProducing: Estructuras (Produciendo) # Label for active production
+  units: Unidades # Label for units list
+  upgrades: Mejoras # Label for upgrades list
+  chatLog: REGISTRO DE CHAT # Section header for in-game chat
+  syncWithTimeWarp: Sincronizar con el deslizador TIME WARP # Checkbox label
+  noMessages: No hay mensajes en esta ventana. # Empty state for chat
+  left: salió # Indicator that a player left the game
+  showBuildDetails: Mostrar detalles de construcción # Button to expand build order
+  hideBuildDetails: Ocultar detalles de construcción # Button to collapse build order
+  showMore: mostrar más… # Button to show more build steps
+  showLess: mostrar menos… # Button to hide build steps
+  buildTitle: 'Construcción de {name}' # Header for build order section
+  copySALT: copiar SALT # Button to copy SALT encoded build
+  noBuildSteps: No se encontraron pasos en la orden de construcción. # Empty state for build order
+  axisValue: valor # Label for Y-axis on most graphs
+  axisWinChances: Probabilidad de victoria # Label for Y-axis on win probability graph
+  workersActive: 'Trabajadores activos: {count}' # Label showing worker count at current time
+  probabilityToWin: PROBABILIDAD DE VICTORIA # Label for win probability metric
+  victory: VICTORIA # Status label
+  defeat: DERROTA # Status label
+  noSalt: No hay codificación SALT disponible # Error when copying SALT fails
+  saltCopied: Orden de construcción SALT copiada # Success message
+  saltCopyFailed: Error al copiar la orden de construcción SALT # Error message
+  favorite: Favorito # Button label/title when replay is not yet favorited
+  favorited: En favoritos # Button label/title when replay is already favorited
+  favoriteRequiresAccount: Se requiere una cuenta para marcar repeticiones como favoritas # Tooltip when logged out
+  addToPackRequiresAccount: Se requiere una cuenta para añadir repeticiones al pack # Tooltip when logged out
+  claim:
+    button: No reclamado # Button to start replay-player claim process
+    linkedToYourProfile: Vinculado a tu perfil # Indicator when replay player already matches current profile
+    requestSubmitted: "Solicitud de reclamación enviada para {name}. Un administrador revisará tu solicitud." # Success message
+    submitFailed: Error al enviar la solicitud de reclamación del jugador de la repetición. # Error message
+    profilePrompt: ¿eres tú? # Tooltip text for hidden claim option for user without a profile
+    profileRequiredTitle: Perfil de jugador requerido # Replay claim prerequisite title
+    profileRequiredBody: Necesitas vincular o crear un perfil de jugador antes de poder reclamar un jugador de una repetición. # Replay claim prerequisite body
+    profileRequiredLink: Ve a Mis Repeticiones para crear o vincular tu perfil de jugador, luego regresa a esta página para reclamar esta cuenta. # Replay claim prerequisite CTA
+    modalTitle: Reclamar jugador de la repetición # Modal title
+    modalBody1: "¿Estás seguro de que quieres reclamar a {name} de esta repetición como tu perfil de jugador vinculado?" # Warning prompt
+    modalBody2: Tu solicitud debe ser aprobada por un administrador. # Approval warning
+    modalBody2b: El envío intencionado de solicitudes fraudulentas resultará en la expulsión de tu cuenta. # Fraud warning
+    modalBody3: Si se aprueba, tu perfil de jugador vinculado se asociará con la cuenta de Battle.net de este jugador de la repetición. # Outcome explanation
+    modalBody4: Si el jugador de la repetición ya está vinculado en otro lugar, un administrador revisará el conflicto antes de aprobarlo. # Conflict explanation
+    cancel: No importa - Cancelar # Button to close modal
+    submit: He leído lo anterior cuidadosamente - Enviar # Button to submit claim
+    submitting: Enviando… # Loading state
+    tooltip: "Este jugador en el juego no está vinculado actualmente a un perfil de REPLAYMAN. Si eres tú, puedes hacer clic en este botón para solicitar la vinculación." # Tooltip for unclaimed player button
+
+# Player profile page
+player_page:
+  rank: Rango
+  replays: Repeticiones
+  cc: CC
+  rating: Calificación
+  player: Jugador
+  statistics: Estadísticas Competitivas # Section header
+  aligulacRating: Calificación Aligulac # External rating label
+  aligulacRatingVP: vs. Protoss # External matchup rating label
+  aligulacRatingVT: vs. Terran # External matchup rating label
+  aligulacRatingVZ: vs. Zerg # External matchup rating label
+  aligulacRatingInactive: Inactivo # Label for inactive rating
+  aligulacRatingInactiveTooltip: Este jugador está marcado actualmente como inactivo en Aligulac. Las calificaciones mostradas son de su último periodo activo.
+  aligulacRatingStaleTooltip: La calificación de Aligulac puede estar desactualizada # Tooltip when rating is stale
+  aligulacRatingLoadingTooltip: Se está cargando la calificación de Aligulac # Tooltip when rating is loading
+  primaryRace: RAZA PRINCIPAL # Label for player's main race
+  country: PAÍS # Label for player's country
+  team: EQUIPO ACTUAL # Label for player's team
+  earnings: GANANCIAS # Label for player's total prize money
+  editName: Editar Nombre # Button to change display name
+  nameUpdated: Nombre de pantalla actualizado con éxito # Success toast
+  editNameModalTitle: Cambiar Nombre de Pantalla # Modal title
+  newName: Nuevo Nombre de Pantalla # Input label
+  newRealName: Nuevo Nombre Real # Input label
+  realNameHint: Deja en blanco para mantener el nombre real actual # Input hint
+  replayList: Lista de Repeticiones # Title for the replay list on the player page
+  profile: Información General # Section header
+  search: Búsqueda de Jugadores # Title for player search box
+  report:
+    title: Reportar Perfil # Tooltip for report button
+    modalTitle: Reportar Perfil de Jugador # Title for report modal
+    modalBody: "Por favor, proporciona una razón para reportar este perfil (ej. nombre ofensivo, desinformación)." # Instructions for reporting
+    reasonPlaceholder: Razón del reporte... # Textarea placeholder
+    reasonRequired: Por favor, proporciona una razón. # Validation error
+    submit: Enviar Reporte # Submit button
+    submitted: Reporte enviado para revisión. # Success message
+    failed: Error al enviar el reporte. # Error message
+  placeholder: Busca a cualquiera por cualquier cosa =) # Search input placeholder
+  searchTooltip: 'Consejo: prueba con un alias (ej. Serral), nombre real (ej. Joona), un código de país de 2-3 letras (US, KOR), o un número de ID exacto.' # Search help tooltip
+  claim:
+    title: Reclamación de Perfil # Section header
+    button: Reclamar este perfil de jugador # Button to start claim process
+    linkedToYou: ¡ESE ERES TÚ! # Indicator when already linked
+    alreadyLinkedElsewhere: Tu cuenta ya está vinculada a otro perfil de jugador. # Error message
+    alreadyLinked: Este perfil de jugador ya está vinculado a una cuenta. # Error message
+    requestSubmitted: Solicitud de reclamación enviada. Un administrador revisará tu solicitud. # Success message
+    submitFailed: Error al enviar la solicitud de reclamación. # Error message
+    modalTitle: Reclamar Perfil de Jugador # Modal title
+    modalBody1: ¿Estás seguro de que quieres reclamar este perfil de jugador como tuyo?
+    modalBody2: Tu solicitud debe ser aprobada por un administrador.
+    modalBody2b: El envío intencionado de solicitudes fraudulentas resultará en la expulsión de tu cuenta.
+    modalBody3: Si se aprueba, este perfil de jugador se convertirá permanentemente en tu página de perfil de usuario. No podrás reclamar ninguna otra página de jugador.
+    modalBody4: Cambiar tu jugador asociado requerirá contactar con el soporte.
+    cancel: No importa - Cancelar # Button to close modal
+    submit: He leído lo anterior cuidadosamente - Enviar # Button to submit claim
+    submitting: Enviando… # Loading state
+
+# Signup and account creation components
+signup:
+  title: Bienvenido a la beta de {name}. # Title for the signup page
+  invited: ¡Has sido invitado a unirte a la beta cerrada! # Success message
+  reopen: Reabrir formulario de registro # Link to show form again
+  signUp: registrarse # Button label
+  fillDetails: "¡Has sido invitado a unirte a {name}! Por favor, rellena tus datos a continuación." # Instructions
+  displayName: Nombre de pantalla # Form label
+  displayNamePlaceholder: Tu nombre de pantalla # Input placeholder
+  emailAddress: Dirección de correo electrónico # Form label
+  emailPlaceholder: tu{'@'}ejemplo.com # Input placeholder
+  createAccount: Crear cuenta # Submit button
+  creatingAccount: Creando cuenta… # Loading state
+  accountCreated: ¡Cuenta creada! # Success message
+  welcomeEmailSentPre: 'Se ha enviado un correo electrónico de bienvenida con un código de inicio de sesión a ' # Success message part 1
+  welcomeEmailSentPost: . # Success message part 2
+  enterCodeToSignIn: "¡Tu cuenta está casi lista! Por favor, introduce el código que enviamos a tu dirección de correo electrónico para iniciar sesión." # Instructions for second step
+  enterCode: Introducir código # Button to move to login step
+  nameAndEmailRequired: Tanto el nombre de pantalla como el correo electrónico son obligatorios. # Validation error
+  invalidEmail: Por favor, introduce una dirección de correo electrónico válida. # Validation error
+  signupFailed: "El registro falló ({status}). Por favor, inténtalo de nuevo." # General error
+  networkError: "Error de red. Por favor, inténtalo de nuevo." # Connectivity error
+
+# 404 error page
+not_found:
+  title: Página no encontrada.
+  message: Nada que ver aquí, lo siento.
+  goBack: Volver al inicio # Link to return to home page
+
+# Diagnostic and privacy consent banner
+consent:
+  title: Consentimiento de diagnóstico # Accessible label for the banner
+  text: "Por favor, considera ayudar a Stego Research LLC (los desarrolladores de {name}) a mejorar el producto proporcionando informes de errores e información de depuración usando Sentry.io. Mira nuestra política en {link} (se abre en una nueva ventana)." # Description of data collection
+  privacyLink: stego.ai/privacy # Link text for privacy policy
+  allow: Permitir el envío de informes de errores # Button to opt-in
+  decline: Rechazar (usar solo cookies obligatorias) # Button to opt-out
+
+# Authentication and login components
+auth:
+  login: iniciar sesión o registrarse # Header for login panel
+  enterEmail: 'Por favor, introduce la dirección de correo electrónico o el número de teléfono de tu cuenta:' # Label for email input
+  sendCode: Siguiente # Button to request login code
+  verify: Verificar # Button to submit login code
+  enterCode8: código de 8 caracteres # Input placeholder for code
+  codeHintPre: 'Si encontramos una cuenta asociada con ' # Hint message part 1
+  codeHintPost: ', un código está en camino. Por favor, introdúcelo a continuación y nunca lo compartas con nadie.' # Hint message part 2
+  enter8Chars: Introduce el código de 8 caracteres. # Validation error
+  invalidCode: "Código inválido. Inténtalo de nuevo o cierra." # Error message
+  networkError: "Error de red. Inténtalo de nuevo." # Connectivity error
+  httpError: "La solicitud falló ({status}). Inténtalo de nuevo." # General error
+  loginSuccessful: Inicio de sesión exitoso. # Toast message
+  loggedOut: Sesión cerrada exitosamente. # Toast message
+  sessionExpired: "Tu sesión ha expirado. Por favor, inicia sesión de nuevo." # Toast message
+  accountRequired: Se requiere una cuenta para acceder a esta página. # Access control message
+  noPermission: No tienes permiso para hacer eso. # Access control error
+  oracleQueued: Análisis de Oracle en cola # Success message for ML trigger
+  signupPromptPre: 'No encontramos una cuenta para ' # Message when user needs to sign up
+  signupPromptPost: '. Crea una para continuar.' # Instructions to sign up
+  privacyConsent: "Acepto los términos de la {policy} de Stego Research y cumplir con cualquier ley aplicable." # Checkbox label for terms
+  acceptPrivacy: Por favor, acepta la política de privacidad para continuar. # Validation error
+  completeChallenge: Por favor, completa la verificación de bot para continuar. # Validation error for captcha
+  challengeError: La verificación de bot falló al cargar. Por favor, reintenta. # Captcha loading error
+  retryChallenge: reintentar # Button to reload captcha
+
+# Common/Generic labels and buttons
+common:
+  loading: Cargando… # Generic loading state
+  error: error # Generic error label
+  success: éxito # Generic success label
+  skipped: omitido # Generic skipped label
+  save: Guardar # Generic save button
+  saving: Guardando… # Generic saving state
+  cancel: Cancelar # Generic cancel button
+  next: Siguiente # Pagination button
+  prev: Anterior # Pagination button
+  founder: Fundador # Badge/Role title
+  linkedAccount: Perfil Vinculado # Badge title
+
+# Localization feedback banner
+i18n_banner:
+  text: "Esta traducción es un trabajo en progreso y puede contener errores. Puedes reportar problemas o enviar correcciones directamente en {link}."
+  linkText: "GitHub i18n"
+  dismiss: "cerrar"
+
+# Races
+race:
+  terran: Terran
+  protoss: Protoss
+  zerg: Zerg
+  random: Aleatorio
+
+# Metagame explorer functionality
+metagame:
+  title: Explorador de Metajuego
+  explore: Explorar
+  versions: Versiones del juego
+  allVersions: Todas las versiones
+  compareVersions: Comparar versiones
+  stats: Estadísticas
+  winRate: Tasa de victoria
+  matches: Encuentros
+  frequency: Frecuencia
+  opening: Apertura
+  midGame: Juego medio
+  lateGame: Juego tardío
+  buildPath: Ruta de construcción
+  noData: Sin datos
+  loading: Cargando datos de metajuego…
+  selectRace: Seleccionar raza
+  vs: VS
+  trend: Tendencia
+  popularity: Popularidad
+  strength: Fuerza
+  counter: Contra-estrategia
+  summary: Resumen
+  replaysTitle: Repeticiones que coinciden

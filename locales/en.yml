@@ -3,8 +3,11 @@ nav:
   upload: upload # Link to the upload page
   players: players # Link to the player search page
   replays: replays # Link to the replay search page
+  versus: versus # Link to the versus prediction page
   myReplays: my replays # Link to the user's personal replays (only shown when logged in)
+  metagame: metagame # Link to the metagame explorer page
   faq: faq # Link to the FAQ page
+  settings: settings # Link to the settings page
   admin: admin # Link to the admin dashboard (only shown to admins)
   login: log in / sign up # Button to open login/signup panel
   logout: logout # Button to log out the current user
@@ -12,40 +15,27 @@ nav:
 # Home page content
 home:
   welcome: Welcome to the {name} beta. # Main welcome message on the home page
-  glad: REPLAYMAN is much, much more than just a replay manager. # Sub-heading on the home page
-  p1: '{name} is part of a suite of technologies under development by Stego Research
-    to provide intelligent data insights to gamers, creators, tournament organizers,
-    game developers, and more.' # First paragraph of home page description
-  p2: We're building the world's most powerful tools for strategy game lovers. # Second paragraph
-  p3: '{name} is currently in open beta. While the documentation and feature set are limited, we hope
-    you enjoy exploring the platform and discovering all the powerful ways it can be used. I highly recommend joining
-    our Discord community to get involved and provide feedback. You can find links to the Discord in the top left of
-    the page.' # Third paragraph regarding availability
+  glad: It's more than just a replay manager. It's the world's most advanced platform for competitive SC2. # Sub-heading on the home page
+  p1: '{name} is part of a suite of technologies under development by Stego Research to provide intelligent data insights to gamers, creators, tournament organizers, game developers, and more.' # First paragraph of home page description
+  p2: "" # Removed
+  p3: '{name} is currently in open beta. While the documentation and feature set are limited, we hope you enjoy exploring the platform and discovering all the powerful ways it can be used. I highly recommend joining our Discord community to get involved and provide feedback. You can find links to the Discord in the top left of the page.' # Third paragraph regarding availability
   p4: Now that our introduction is out of the way, go check out some replays! # Call to action at the end of the home page
   showReplaysCta: SHOW ME THE REPLAYS! # Home page CTA button label
   footer: Stego Research # !! DON'T EDIT Signature in the footer of the home page
   featuresTitle: Rank up with the most advanced SC2 technology on the internet.
-  oracleTitle: ORACLE AI Insights
-  oracleP1: Experience the next generation of StarCraft analysis with ORACLE. Our machine-learning models provide deep, context-aware insights, uncovering the subtle strategic shifts that define high-level play.
-  oracleP2: Get instant, data-driven predictions on win probabilities and economic outcomes based on real-time game state analysis.
-  oracleCta: See Oracle in Action
-  searchTitle: Next-Level Search
-  searchP1: Dive deep into our massive replay database. Analyze high-level games and discover the favorite build orders of every top player you can imagine.
-  searchP2: Try searching by just about anything. Your favorite player, nation, matchup, race, map, even build order.
-  searchP3: Manage your favorites or download replays right from the results list.
-  searchCta: Browse Replays
-  buildTitle: Build Order Mastery
-  buildP1: Explore a vast, searchable library of build orders from every matchup. Export directly to SALT format and perfect your early game with the exact sequences used by the pros.
-  buildCta: Explore Builds
-  packTitle: Custom Replay Packs
-  packP1: Curation made easy. Build your own custom replay packs, organize your training sessions, and share curated sets of games with your team or students with just a few clicks.
-  packCta: Manage your replays
-  promotionTitle: Snag That Promotion
-  promotionP1: Study better with advanced, ultra-fast replay analysis and statistics. Compare yourself to all players, or learn just how far you are from the pros. Set goals, and execute.
-  promotionCta: Check out a replay
-  timeWarpTitle: Travel through Time
-  timeWarpP1: No more coffee breaks waiting for your replay to fast-forward. We process your replay in a fraction of a second, and with TIME WARP you can travel to any point in time in the game instantly, across all of our tools.
+  oracleTitle: ORACLE ML Predictions
+  oracleP1: The world's most advanced StarCraft analysis. Our machine-learning models trained on over 40,000,000 game positions reveal new insights into subtle player advantages.
+  oracleP2: Get instant outcome predictions at any point in time - all built with real ML inference, no BS.
+  oracleCta: See ORACLE in Action
+  promotionTitle: Global Player Rankings
+  promotionP1: The original rankings site, upgraded. Track top players with trusted ratings from our sister site, {aligulac}.
+  promotionCta: Browse the Leaderboard
+  timeWarpTitle: High-Fidelity Minimap
+  timeWarpP1: No more waiting for replays to fast-forward. Jump to any point in the game instantly and see exactly where every unit is with our deterministic engine.
   timeWarpCta: Try it yourself
+  replaysTitle: Recent Replay Activity
+  replaysP1: Explore the latest games from across the platform. Filter by player, race, or matchup to find exactly what you're looking for.
+  replaysCta: Explore the Database
 
 
 # Site header components
@@ -57,11 +47,12 @@ header:
 footer:
   privacy: privacy policy # Link to privacy policy (in footer and in modal)
   acknowledgements: acknowledgements # Link to the acknowledgements page
+  versus: versus # Link to the versus prediction page
   serverInfo: server info # Link to open server info modal (for admins)
   sessionInfo: session info # Link to open session info modal (for admins)
   jumpToTop: jump to top # Scroll to top of page link in footer
-  serverInformation: Server information # Title of the server info modal (pop up)
-  sessionInformation: Session information # Title of the session info modal (pop up)
+  serverInformation: Server Information # Title of the server info modal (pop up)
+  sessionInformation: Session Information # Title of the session info modal (pop up)
   loading: Loading… # Loading state for modal (pop up) content
   version: version # Label for server version, for admins
   timestamp: timestamp # Label for server build timestamp, for admins
@@ -76,127 +67,158 @@ footer:
   close: Close # Button to close modals
   discord: community discord # Link to Discord join modal (pop up)
   joinDiscord: Join our Community Discord # Title of Discord join modal (pop up)
-  discordBotProtection: Please click the button below to join our Discord server.
-    In order to protect our community from bots, some users may be prompted to solve
-    a captcha challenge. # Description for Discord bot protection
+  discordBotProtection: "Please click the button below to join our Discord server. To protect our community from bots, some users may be prompted to solve a captcha challenge." # Description for Discord bot protection
   join: Join # Button to join Discord after passing check
-  joinCheckingBots: please wait - checking for bots # Message while validating captcha/bot status
-  joinChallengeError: The bot-protection challenge failed to load. Please try again. # Error message for captcha failure
+  joinCheckingBots: please wait - checking bots # Message while validating captcha/bot status
+  joinChallengeError: "The bot protection challenge failed to load. Please try again." # Error message for captcha failure
   retryChallenge: retry # Button to retry captcha
-  joinError: Failed to join Discord. Please try again. # General error for Discord joining
+  joinError: "Failed to join Discord. Please try again." # General error for Discord joining
 
 # Acknowledgements page content
 acknowledgements:
   title: '{name} Acknowledgements' # Title of the acknowledgements page
-  intro: "{name} couldn't exist without our contributors, amazing open source projects, and an incredibly supportive community. We especially want to thank:" # Introductory text for the acknowledgements page
+  intro: "{name} could not exist without our contributors, amazing open source projects, and an incredibly supportive community. We especially want to thank:" # Introductory text for the acknowledgements page
   s2protTitle: icza / s2prot # Header for s2prot acknowledgement
-  s2protBody: "s2prot by icza (Apache 2.0) was crucial as a foundation for the high-performance replay data extraction work in {name}." # Description of s2prot acknowledgement
+  s2protBody: "icza's s2prot (Apache 2.0) was crucial as the foundation for the high-performance replay data extraction work in {name}." # Description of s2prot acknowledgement
   vueTitle: Vue.js and Vue-i18n # Header for frontend framework acknowledgement
-  vueBody: Our frontend is powered by Vue.js and Vue-i18n (MIT License). # Description of Vue acknowledgement
+  vueBody: "Our frontend is powered by Vue.js and Vue-i18n (MIT license)." # Description of Vue acknowledgement
   dataTitle: Valkey and PostgreSQL # Header for data stack acknowledgement
-  dataBody: Thanks to the maintainers of the Valkey and PostgreSQL projects, whose work is the foundation of the data models and processing pipelines of {name}. # Description of Valkey/PostgreSQL acknowledgement
+  dataBody: "Thanks to the maintainers of the Valkey and PostgreSQL projects, whose work is the foundation of {name}'s data models and processing pipelines." # Description of Valkey/PostgreSQL acknowledgement
   goTitle: Go # Header for Go acknowledgement
-  goBody: Go and its ecosystem make it practical to build the high-throughput replay processing and API services behind {name}. # Description of Go acknowledgement
+  goBody: "Go and its ecosystem make it practical to build the high-throughput replay processing and API services behind {name}." # Description of Go acknowledgement
   viteTitle: Vite # Header for Vite acknowledgement
-  viteBody: Vite keeps the frontend build and development workflow fast enough that we can iterate quickly without losing our minds. # Description of Vite acknowledgement
+  viteBody: "Vite keeps the frontend build and development workflow fast enough for us to iterate quickly without losing our minds." # Description of Vite acknowledgement
   aligulacTitle: Aligulac # Header for Aligulac acknowledgement
-  aligulacBody: Aligulac is used to serve live player ratings, greatly enhancing our ability to display useful information about players to our users. # Description of Aligulac acknowledgement
-  usersTitle: Users and beta testers # Header for community acknowledgement
-  usersBody: Most of all, thank you to everyone using {name} and to all of the beta testers whose honest feedback, bug reports, and patience keep making the project better. # Description of user acknowledgement
-  closing: We appreciate every maintainer, contributor, and community member whose work makes projects like this possible. # Closing text for the acknowledgements page
+  aligulacBody: "Aligulac is used to serve live player ratings, greatly enhancing our ability to display useful information about players to our users." # Description of Aligulac acknowledgement
+  usersTitle: Users and Beta Testers # Header for community acknowledgement
+  usersBody: "Above all, thank you to everyone who uses {name} and to all the beta testers whose honest feedback, bug reports, and patience continue to improve the project." # Description of user acknowledgement
+  closing: "We appreciate every maintainer, contributor, and community member whose work makes projects like this possible." # Closing text for the acknowledgements page
+
+# Versus page content
+versus:
+  title: Versus Prediction
+  selectorTitle: Player Versus Player
+  playerLabel: Player
+  selectPlayer: Select Player
+  clearSelection: Clear player selection
+  predict: GO!
+  swap: Swap
+  format: Format
+  recentlySearched: Recently searched
+  prediction: Probability to Win
+  matchOutcomes: Match Outcome Predictions
+  historySummary: History Summary
+  matchHistory: Match History
+  matchSummary: Match Summary
+  likelihoodBySeriesScore: Likelihood by Series Score
+  playerStatistics: Player Statistics
+  recentReplays: Recent Replays
+  seriesScore: Series Score
+  gameScore: Game Score
+  date: Date
+  event: Event
+  result: Result
+  shareLink: Share Link
+  sharing: Sharing...
+  snapshotBadge: BO{bo} SERIES ODDS
+  missingPlayers: Please select two players to compare.
+  replayAlreadyInPack: Replay is already in pack
+  replayPackLimitReached: Replay pack limit reached ({limit})
+  downloadUnavailable: Replay download is not available for this replay.
+  fetchError: Failed to fetch versus data
+  shareGenerateFailed: Failed to generate share link
+  shareCopied: Share link copied to clipboard!
+  shareFailed: Failed to share
+  sharedLinkNotFound: This shared versus link has expired or does not exist.
+  narrative:
+    summary: "In a BO{bo} matchup between {p1Name} (rank #{p1Rank}) and {p2Name} (rank #{p2Rank}), {predictedName} is predicted to win with a {predictedProb} to {trailerProb} advantage. {p1Name} and {p2Name} have played {totalGames} games in total, of which {leaderStatus}."
+    leader: "{leaderName} leads {leaderWins}-{trailerWins}"
+    tie: "they are tied {leaderWins}-{trailerWins}"
+
 
 # FAQ page content
 faq:
   title: '{name} FAQ' # Main title of the FAQ page
   q1: What is {name}?
-  a1: '{name} is a platform designed for managing and analyzing game replays. It allows
-    you to upload your replays, view detailed statistics and insights, and search
-    through a collection of games.'
-  q2: What kind of replays does {name} support?
-  a2: Currently, {name} only supports 1v1 StarCraft II replays from Legacy of the
-    Void (ver. 5.0.0 and newer)
-  q3: Is {name} free to use?
-  a3_1: 'I won''t bury the lede: There will be paid options in the future. However,
-    we hope to keep all of the core functionality that you see today in the preview
-    phase free to use, though some features such as Oracle analysis and uploads may be
-    subject to stricter limits. Some features that have not yet been announced will likely be
-    available only to paid subscribers in the future. The reality is that the platform costs
-    quite a bit to operate and took many moons to build, and we would rather not just rely on donations.'
-  a3_2: We hope you enjoy the free features, and that you find the paid features well
-    worth their cost when they arrive.
-  q4: How do I use {name}? Do I need an account?
-  a4: An account is not required to browse {name}. However, some features are strictly limited for anonymous users,
-    such as replay uploads and downloads.
-  q5: How do I sign up for an account?
-  a5: Just hit the "log in / sign up" button - if you don't already have an account, you'll immediately be able to create
-    one and sign in with just a code, no passwords here!
-  q6: Can I keep my replays private?
-  a6: If you have an account, you can control whether your uploads appear in public search results using the "Allow
-    uploaded replays to appear in public searches" option on the upload page. Anonymous user uploads are always publicly searchable.
-    "Hide from public search" checkbox. Anonymous users' uploads are always publicly searchable.
-  q7: What kind of analysis does {name} provide?
-  a7: The short answer is, a lot - and way more is coming after this preview window.
-    {name} can nearly instantly extract and analyze replays to provide insights on
-    build orders, spending, benchmark data, and player performance. The ORACLE feature uses machine learning analysis
-    to predict the most likely winners all the way throughout the game so you can see where the tide turned. I hope you
-    find the current tools useful and will check back soon for way more features (especially if you're interested in improving
-    your game - there are some really exciting things in the pipeline!)
-  q8: Can I download replays? What about replay packs?
-  a8: You can download any publicly available replay file, or any file you are linked
-    to. Users with an account can currently create zip file packs of up to 20 replays.
-  q9: What should I expect from this preview version of {name}?
-  a9_p1: 'This is a very early version of {name}, and it is absolutely broken in a
-    number of ways. Please keep this in mind:'
-  a9_li1: You may encounter bugs, unexpected behavior, or crashes.
-  a9_li2: Data (including your uploaded replays or analysis results) may go missing
-    or change unexpectedly.
-  a9_li3: The platform is not expected to be 100% reliable or accurate. We appreciate
-    your understanding and patience as we work to improve the platform! Your feedback
-    during this phase is invaluable.
-  q10: Where do I share feedback or questions?
-  a10: Feel free to check out our GitHub issues page or join our Discord community. You can find links to these in the top left of the page.
-  q11: What about other languages?
-  a11: We want to launch in multiple languages, so stay tuned. If you speak Spanish,
-    Chinese, or Korean we could use your help with translations, so please keep in
-    touch.
-  q12: Light mode?????
+  a1: '{name} is a platform designed for managing and analyzing game replays. It allows you to upload your replays, see detailed statistics and insights, and search across a collection of games.'
+  q2: "What kind of replays does {name} support?"
+  a2: "Currently, {name} only supports 1v1 StarCraft II replays from Legacy of the Void (ver. 5.0.0 and newer)."
+  q3: "Is {name} free to use?"
+  a3_1: "I won't sugar-coat the reality: there will be paid options in the future. However, we hope to keep all the core features you see today in the preview phase free to use, although some features like Oracle analysis and uploads may be subject to tighter limits. Some features that have not yet been announced will likely only be available to paid subscribers in the future. The reality is that the platform costs quite a bit to operate and took many months to build, and we'd rather not rely on donations alone."
+  a3_2: "We hope you enjoy the free features and that you find the paid features to be worth the value when they arrive."
+  q4: "How do I use {name}? Do I need an account?"
+  a4: "No account is required to browse {name}. However, some features are strictly limited for anonymous users, such as replay uploads and downloads."
+  q5: "How do I sign up for an account?"
+  a5: "Simply hit the 'log in / sign up' button - if you don't already have an account, you'll be able to create one immediately and log in with just a code, no passwords around here!"
+  q6: "Can I keep my replays private?"
+  a6: "If you have an account, you can control whether your uploads appear in public search results using the 'Allow uploaded replays to appear in public search' option on the upload page. Uploads from anonymous users are always publicly searchable."
+  q7: "What kind of analysis does {name} provide?"
+  a7: "The short answer is, a lot, and a lot more is coming after this preview window. {name} can extract and analyze replays almost instantly to provide insights into build orders, spending, benchmark data, and player performance. The ORACLE feature uses machine-learning analysis to predict the most likely winners throughout the game so you can see where the tide turned."
+  q8: "Can I download replays? What about replay packs?"
+  a8: "You can download any publicly available replay file, or any file you have been linked to. Users with an account can currently create packs of zip files containing up to 20 replays."
+  q9: "What should I expect from this preview version of {name}?"
+  a9_p1: "This is a very early version of {name}, and it is absolutely broken in a number of ways. Please keep this in mind:"
+  a9_li1: "You may encounter bugs, unexpected behavior, or crashes."
+  a9_li2: "Data (including your uploaded replays or analysis results) may be lost or changed unexpectedly."
+  a9_li3: "The platform is not expected to be 100% reliable or accurate. We appreciate your understanding and patience as we work to improve the platform! Your feedback during this phase is invaluable."
+  q10: "Where do I share feedback or questions?"
+  a10: "Feel free to check out our GitHub issues page or join our Discord community. You can find links to these in the top left of the page."
+  q11: "What about other languages?"
+  a11: "We want to launch in multiple languages, so stay tuned. If you speak Spanish, Chinese, or Korean, we could use your help with translations, so please stay in touch."
+  q12: "Light mode?????"
   a12: Coming whenever I can make it look less bad.
+
+# Settings page content
+settings:
+  title: Settings
+  language: Language
+  integrations: Integrations
+  twitch: Twitch
+  twitchConnected: Connected to Twitch
+  twitchNotConnected: Not connected to Twitch
+  connectTwitch: Connect Twitch
+  disconnectTwitch: Disconnect Twitch
+  twitchDisconnectConfirm: Are you sure you want to disconnect your Twitch account?
+  twitchExplanation: Linking your Twitch account allows REPLAYMAN to respond to commands in your chat (like !stats maru serral) and more.
 
 # Replay search and listing components
 replays:
-  search: Replay Search # Title for the replay search box
-  myReplays: My Replays # Header for user's personal replays
-  myUploads: My Uploads # Header for user's uploaded replays
-  favoriteReplays: Favorite Replays # Header for user's favorited replays
-  replaysIn: Replays I'm In # Header for replays where the user is a player
-  replays: Replays # Generic replays header
+  allReplays: all replays # Header for all replays tab
+  search: replay search # Title for the replay search box
+  myReplays: my replays # Header for user's personal replays
+  favoritePlayersReplays: favorited players' replays # Header for replays from favorited players
+  myUploads: my uploads # Header for user's uploaded replays
+  favoriteReplays: favorite replays # Header for user's favorited replays
+  replaysIn: games I'm in # Header for replays where the user is a player
+  replays: replays # Generic replays header
   replayList: Replay List # Title for the replay list tile
   date: DATE # Table column header
   map: MAP # Table column header
   players: PLAYERS # Table column header
   ver: VER # Table column header (game version)
-  noReplays: No replays found. # Empty state message
-  noPlayers: No players found. # Empty state message for player search
+  noReplays: No replays were found. # Empty state message
+  noPlayers: No players were found. # Empty state message for player search
   favorite: Favorite # Label for favorite button (not yet favorited)
-  favorited: Favorited # Label for favorite button (already favorited)
+  favorited: In favorites # Label for favorite button (already favorited)
   addToFavorites: Add to favorites # Tooltip for favorite button when not favorited
   removeFromFavorites: Remove from favorites # Tooltip for favorite button when favorited
-  downloadReplay: Download Replay # Tooltip for download button
-  noDownloadTooltip: This replay cannot be downloaded due to owner or administrator
-    request # Tooltip when download is disabled
-  addToPack: Add to Pack # Tooltip for adding to download pack
-  addToPackRequiresAccount: You must be logged into an account in order to create
-    replay packs # Tooltip when logged out
+  favoritedPlayer: Added player to favorites # Success message
+  removedFavoritePlayer: Removed player from favorites # Success message
+  failedToUpdateFavorite: Failed to update favorite status # Error message
+  favoritePlayers: Favorite players # Header for favorite players list
+  favoriteRequiresAccount: An account is required to favorite players # Tooltip when logged out
+  noFavoritePlayers: You don't have any favorite players yet. # Message when favorite players list is empty
+  downloadReplay: Download replay # Tooltip for download button
+  noDownloadTooltip: This replay cannot be downloaded by request of the owner or admin # Tooltip when download is disabled
+  addToPack: Add to pack # Tooltip for adding to download pack
+  addToPackRequiresAccount: You must be logged in to create replay packs # Tooltip when logged out
   dateTooltip: dates are in YYYY-MM-DD format # Tooltip for date column
   mapTooltip: Map names may be localized in some situations. # Tooltip for map column
-  playersTooltip: All names are directly loaded from replay data unless the Battle.net
-    account has been linked to a player. # Tooltip for players column
-  placeholder: You can search by player name, map name, race, and more # Search input placeholder
+  playersTooltip: All names are loaded directly from the replay data unless the Battle.net account has been linked to a player. # Tooltip for players column
+  placeholder: You can search by player name, map name, race and more # Search input placeholder
   missingPlayerProfile:
     title: Missing Player Profile # Tile title when no player profile is linked
-    body: To unlock full account functionality, please connect a player profile. You
-      can create a new profile here. If a profile already exists for you, navigate
-      to that page instead and click "Claim Account." # Instructions for linking profile
+    body: To unlock full account features, connect a player profile. You can create a new profile here. If you already have one, navigate to that page and click "Claim Account". # Instructions for linking profile
     primaryRace: Primary Race # Form label
     raceNone: None / Multiple # Race option
     country: Country # Form label
@@ -208,7 +230,7 @@ replays:
 
 # Replay pack (batch download) functionality
 pack:
-  pack: Pack ({count}) # Button label showing current number of replays in pack
+  pack: "Pack ({count})" # Button label showing current number of replays in pack
   clear: clear # Button to empty the pack
   download: download # Button to download the zipped pack
   downloading: downloading… # Loading state for pack download
@@ -216,27 +238,17 @@ pack:
 # Replay upload page
 upload:
   uploadFiles: Upload Files # Button to open file picker
-  instructionsGuest: You can choose a maximum of 10 SC2Replay files per day per
-    IP address to upload without an account. Users with an account can upload
-    up to 200 replays at a time, and additional per-account hourly and daily
-    limits may apply. You can also upload files by dragging them directly onto
-    this page. # Guest upload instructions
-  instructionsUser: You can select up to 200 SC2Replay files to upload with the
-    button above.{zipInfo} Upload limits are enforced per account, and additional
-    hourly and daily limits may apply. You can also upload files by dragging them
-    directly onto this page. # Signed-in upload instructions
-  uploadFailed: Upload failed. Please try again. # Generic upload failure message
-  uploadLimitReached: upload limit reached # Short per-file label for quota failures
-  rateLimitGuest: You have uploaded too many replays today. Please make an account
-    to continue uploading, or wait until tomorrow to try again. # Guest rate limit fallback
-  rateLimitAuthenticated: You have uploaded too many replays. Please wait before
-    trying again. # Signed-in rate limit fallback
-  alreadyUploadedReason: Replay was already uploaded # Hover text for already-present skipped files
-  duplicateSkippedReason: Duplicate of another replay in this batch # Hover text for duplicate skipped files
+  instructionsGuest: "You can choose a maximum of 10 SC2Replay files per day per IP address to upload without an account. Users with an account can upload up to 200 replays at a time, and additional per-account hourly and daily limits may apply. You can also upload files by dragging them directly onto this page." # Guest upload instructions
+  instructionsUser: "You can select up to 200 SC2Replay files to upload with the button above.{zipInfo} Upload limits are enforced per-account, and additional hourly and daily limits may apply. You can also upload files by dragging them directly onto this page." # Signed-in upload instructions
+  uploadFailed: "Upload failed. Please try again." # Generic upload failure message
+  uploadLimitReached: "upload limit reached" # Short per-file label for quota failures
+  rateLimitGuest: "You have uploaded too many replays today. Please create an account to continue uploading, or wait until tomorrow to try again." # Guest rate limit fallback
+  rateLimitAuthenticated: "You have uploaded too many replays. Please wait before trying again." # Signed-in rate limit fallback
+  alreadyUploadedReason: "Replay was already uploaded" # Hover text for already-present skipped files
+  duplicateSkippedReason: "Duplicate of another replay in this batch" # Hover text for duplicate skipped files
   zipInfo: '' # Admin-only instruction
-  publicSearchLabel: Allow uploaded replays to appear in public searches # Label for privacy toggle
-  privacyHint: By uploading files you acknowledge and agree to the terms outlined
-    in our {link} (opens in new tab). # Link to policy
+  publicSearchLabel: "Allow uploaded replays to appear in public search" # Label for privacy toggle
+  privacyHint: "By uploading files, you acknowledge and agree to the terms outlined in our {link} (opens in a new tab)." # Link to policy
   privacyPolicy: privacy policy # Link text for privacy policy
 
 # Individual replay analysis page
@@ -246,30 +258,32 @@ replay_page:
   graphs: graphs # Link to graphs section
   minimap: minimap # Link to minimap section
   chat: chat # Link to chat section
+  engineView: engine view # Link to engine view section
   unitsStructures: units/structures # Link to units/structures section
   buildOrders: build orders # Link to build orders section
   summaryTags: 'SUMMARY TAGS:' # Label for automatic analysis tags
   player1: Player 1 # Label for the first player
   player2: Player 2 # Label for the second player
-  showResult: Show result # Button to reveal winner (anti-spoiler)
+  showResult: Show Result # Button to reveal winner (anti-spoiler)
   downloadReplay: Download Replay # Button to download the file
-  downloadNotAvailable: Download not available # Button label when download is unavailable
-  addToPack: + Add to Pack # Button to add to download pack
+  downloadNotAvailable: Download Not Available # Button label when download is unavailable
+  addToPack: + Add to pack # Button to add to download pack
   analyzeReplay: Analyze Replay # Button to trigger (re-)analysis
+  reAnalyze: Re-analyze # Button label when re-triggering analysis
   analyzing: Analyzing… # Loading state for analysis trigger
-  analysisQueued: Analysis queued # Success message for analysis trigger
-  analysisReady: Replay analysis ready # Success message when analysis completes
-  analysisFailed: Replay analysis failed. Please try again. # Error message when analysis fails
+  analysisQueued: Analysis Queued # Success message for analysis trigger
+  analysisReady: Replay Analysis Ready # Success message when analysis completes
+  analysisFailed: Failed to analyze replay. Please try again. # Error message when analysis fails
   analysisTimed: Replay analysis timed out. Try again later. # Error message when analysis polling times out
   copyLink: copy link # Button to copy URL to clipboard
-  copyReplayId: replay ID # Button to copy internal ID to clipboard
+  copyReplayId: replay id # Button to copy internal ID to clipboard
   linkOnlyWarning: link-only replay # Warning message for link-only replays
   linkOnlyTooltip: This replay is not listed in public search results, but anyone with the direct link can still view it. # Tooltip for link-only replays
   showDuration: show duration # Button to reveal game length (anti-spoiler)
   showTags: show tags (spoilers!) # Button to reveal tags
-  noAnalysis: No analysis found yet. # Message when no analysis data exists
-  noAnalysisNotice: Unfortunately, at the owner's request, we cannot display more information about this replay just yet. Check back soon for more options. # Message shown on noanalysis replays
-  lastAnalysis: analyzed {time} # Timestamp of most recent analysis
+  noAnalysis: No analysis was found yet. # Message when no analysis data exists
+  noAnalysisNotice: Unfortunately, by request of the owner, we cannot show more information about this replay for now. Check back soon for more options. # Message shown on noanalysis replays
+  lastAnalysis: "analyzed {time}" # Timestamp of most recent analysis
   timeWarp: TIME WARP # Label for the game timeline slider
   income: Income # Label for income graph
   bank: Bank # Label for bank graph
@@ -280,23 +294,29 @@ replay_page:
   standard: Standard # Standard analysis label
   difference: Difference # Analysis difference label
   oracleUnlocked: ORACLE ML Insights Unlocked # Success message when ML features are available
-  unlockOracle: Unlock ORACLE insights # Button to unlock ML features
+  unlockOracle: Unlock ORACLE Insights # Button to unlock ML features
+  reGenerate: Re-generate # Button to force a new ORACLE inference
   generating: GENERATING... # Loading state for ML generation
   workers: Workers # Label for workers graph/stat
+  minerals: MIN # Short label for minerals in graph legend
+  gas: GAS # Short label for vespene gas in graph legend
+  winProb: WIN PROB. # Short label for win probability in live stats bar
   economy: Economy # Category label for economy graph dropdown
   military: Military # Category label for military graph dropdown
   performance: Performance # Label for performance metrics graph
   sq: SQ # Label for spending quotient graph option
-  performanceMetrics: '{name}''s Performance Metrics' # Header for performance metrics section
-  performanceMetricsTitle: Performance Metrics # General header for performance metrics section
-  metrics: Select Metrics # Button label for metrics dropdown
-  compareNone: Select Comparison # Option to not compare metrics
-  compareOwn: "vs. My Replays" # Option to compare metrics with own replays
-  comparePro: "vs. Pro Replays" # Option to compare metrics with pro replays
-  compareAll: "vs. All Replays" # Option to compare metrics with all replays
-  compareColumnOwn: My Replays # Column header for own replay comparison
-  compareColumnPro: Pro Replays # Column header for pro replay comparison
-  compareColumnAll: All Replays # Column header for all replay comparison
+  performanceMetrics: '{name}''s performance metrics' # Header for performance metrics section
+  performanceMetricsTitle: Additional Metrics # General header for performance metrics section
+  showMetrics: Show # Button to expand performance metrics section
+  hideMetrics: Hide # Button to collapse performance metrics section
+  metrics: Select metrics # Button label for metrics dropdown
+  compareNone: Select comparison # Option to not compare metrics
+  compareOwn: "vs. My replays" # Option to compare metrics with own replays
+  comparePro: "vs. Pro replays" # Option to compare metrics with pro replays
+  compareAll: "vs. All replays" # Option to compare metrics with all replays
+  compareColumnOwn: My replays # Column header for own replay comparison
+  compareColumnPro: Pro replays # Column header for pro replay comparison
+  compareColumnAll: All replays # Column header for all replay comparison
   compareOwnRequiresLink: You must be linked to a player profile to compare against your own replays. # Error when comparing own replays without linked profile
   loadComparisonFailed: Failed to load comparison data. # Error message when fetching comparison metrics fails
   currentSq: Current SQ # Label for Current Spending Quotient
@@ -309,8 +329,8 @@ replay_page:
   timeTo600Army: Time to 600 Army Value # Milestone: 600 minerals/gas army value
   timeTo1800Army: Time to 1800 Army Value # Milestone: 1800 minerals/gas army value
   timeTo6000Army: Time to 6000 Army Value # Milestone: 6000 minerals/gas army value
-  timeTo400Upgrades: Time to 400 Upgrade Spending # Milestone: 400 spent on upgrades
-  timeTo800Upgrades: Time to 800 Upgrade Spending # Milestone: 800 spent on upgrades
+  timeTo400Upgrades: Time to 400 Upgrade Spend # Milestone: 400 spent on upgrades
+  timeTo800Upgrades: Time to 800 Upgrade Spend # Milestone: 800 spent on upgrades
   workersKilled: Workers Killed # Stat: total workers killed
   workersLost: Workers Lost # Stat: total workers lost
   workersKilled600: Workers Killed at 6:00 # Stat: workers killed at 6 minutes
@@ -321,57 +341,69 @@ replay_page:
   units: Units # Label for units list
   upgrades: Upgrades # Label for upgrades list
   chatLog: CHAT LOG # Section header for in-game chat
-  syncWithTimeWarp: Sync with time warp slider # Checkbox label
-  noMessages: No messages in this window. # Empty state for chat
+  syncWithTimeWarp: Sync with TIME WARP slider # Checkbox label
+  noMessages: There are no messages in this window. # Empty state for chat
   left: left # Indicator that a player left the game
   showBuildDetails: Show Build Details # Button to expand build order
   hideBuildDetails: Hide Build Details # Button to collapse build order
   showMore: show more… # Button to show more build steps
+  showLess: show less… # Button to hide build steps
   buildTitle: '{name}''s Build' # Header for build order section
   copySALT: copy SALT # Button to copy SALT encoded build
   noBuildSteps: No build order steps found. # Empty state for build order
   axisValue: value # Label for Y-axis on most graphs
-  axisWinChances: Chance of winning # Label for Y-axis on win probability graph
+  axisWinChances: win chances # Label for Y-axis on win probability graph
   workersActive: 'Workers active: {count}' # Label showing worker count at current time
-  probabilityToWin: CHANCE OF WINNING # Label for win probability metric
+  probabilityToWin: PROBABILITY TO WIN # Label for win probability metric
   victory: VICTORY # Status label
   defeat: DEFEAT # Status label
   noSalt: No SALT encoding available # Error when copying SALT fails
   saltCopied: SALT build order copied # Success message
   saltCopyFailed: Failed to copy SALT build order # Error message
   favorite: Favorite # Button label/title when replay is not yet favorited
-  favorited: Favorited # Button label/title when replay is already favorited
+  favorited: In favorites # Button label/title when replay is already favorited
   favoriteRequiresAccount: An account is required to favorite replays # Tooltip when logged out
-  addToPackRequiresAccount: An account is required to add replays to a pack # Tooltip when logged out
+  addToPackRequiresAccount: An account is required to add replays to pack # Tooltip when logged out
   claim:
     button: Unclaimed # Button to start replay-player claim process
     linkedToYourProfile: Linked to your profile # Indicator when replay player already matches current profile
-    requestSubmitted: Claim request submitted for {name}. An administrator will review your request. # Success message
+    requestSubmitted: "Claim request submitted for {name}. An admin will review your request." # Success message
     submitFailed: Failed to submit replay player claim request. # Error message
-    profilePrompt: is this you? # Tooltip text for hidden claim option for user without a profile
-    profileRequiredTitle: Player profile required # Replay claim prerequisite title
-    profileRequiredBody: You need to link or create a player profile before you can claim a replay player. # Replay claim prerequisite body
+    profilePrompt: are you? # Tooltip text for hidden claim option for user without a profile
+    profileRequiredTitle: Player Profile Required # Replay claim prerequisite title
+    profileRequiredBody: You need to link or create a player profile before you can claim a player from a replay. # Replay claim prerequisite body
     profileRequiredLink: Go to My Replays to create or link your player profile, then return to this page to claim this account. # Replay claim prerequisite CTA
     modalTitle: Claim Replay Player # Modal title
-    modalBody1: Are you sure you want to claim {name} from this replay as your linked player profile? # Warning prompt
-    modalBody2: Your request must be approved by an administrator. # Approval warning
-    modalBody2b: Intentionally submitting fraudulent requests will result in your
-      account being banned. # Fraud warning
-    modalBody3: If approved, your linked player profile will be associated with this replay player's Battle.net account. # Outcome explanation
-    modalBody4: If the replay player is already linked elsewhere, an administrator will review the conflict before approving. # Conflict explanation
+    modalBody1: "Are you sure you want to claim {name} from this replay as your linked player profile?" # Warning prompt
+    modalBody2: Your request must be approved by an admin. # Approval warning
+    modalBody2b: Intentionally submitting fraudulent requests will result in your account being banned. # Fraud warning
+    modalBody3: If approved, your linked player profile will be associated with the Battle.net account of this replay player. # Outcome explanation
+    modalBody4: If the replay player is already linked elsewhere, an admin will review the conflict before approving. # Conflict explanation
     cancel: Nevermind - Cancel # Button to close modal
     submit: I have read the above carefully - Submit # Button to submit claim
     submitting: Submitting… # Loading state
-    tooltip: This in-game player is not currently linked to a REPLAYMAN profile. If
-      this is you, you can click this button to request linking. # Tooltip for unclaimed player button
+    tooltip: "This in-game player is not currently linked to a REPLAYMAN profile. If this is you, you can click this button to request a link." # Tooltip for unclaimed player button
 
 # Player profile page
 player_page:
-  statistics: Statistics # Section header
+  rank: Rank
+  replays: Replays
+  cc: CC
+  rating: Rating
+  player: Player
+  statistics: Competitive Statistics # Section header
   aligulacRating: Aligulac Rating # External rating label
-  primaryRace: Primary Race # Label for player's main race
-  country: Country # Label for player's country
-  team: Team # Label for player's team
+  aligulacRatingVP: vs. Protoss # External matchup rating label
+  aligulacRatingVT: vs. Terran # External matchup rating label
+  aligulacRatingVZ: vs. Zerg # External matchup rating label
+  aligulacRatingInactive: Inactive # Label for inactive rating
+  aligulacRatingInactiveTooltip: This player is currently marked as inactive on Aligulac. Ratings shown are from their last active period.
+  aligulacRatingStaleTooltip: Aligulac rating may be out of date # Tooltip when rating is stale
+  aligulacRatingLoadingTooltip: Aligulac rating is loading # Tooltip when rating is loading
+  primaryRace: PRIMARY RACE # Label for player's main race
+  country: COUNTRY # Label for player's country
+  team: CURRENT TEAM # Label for player's team
+  earnings: EARNINGS # Label for player's total prize money
   editName: Edit Name # Button to change display name
   nameUpdated: Display name updated successfully # Success toast
   editNameModalTitle: Change Display Name # Modal title
@@ -379,39 +411,32 @@ player_page:
   newRealName: New Real Name # Input label
   realNameHint: Leave blank to keep current real name # Input hint
   replayList: Replay List # Title for the replay list on the player page
-  profile: Profile # Section header
+  profile: General Information # Section header
   search: Player Search # Title for player search box
-  cc: CC # Country Code column header
-  player: PLAYER # Player name column header
-  rating: RATING # Rating column header
   report:
     title: Report Profile # Tooltip for report button
     modalTitle: Report Player Profile # Title for report modal
-    modalBody: Please provide a reason for reporting this profile (e.g. offensive
-      name, misinformation). # Instructions for reporting
+    modalBody: "Please provide a reason for reporting this profile (e.g. offensive name, misinformation)." # Instructions for reporting
     reasonPlaceholder: Reason for report... # Textarea placeholder
     reasonRequired: Please provide a reason. # Validation error
     submit: Submit Report # Submit button
     submitted: Report submitted for review. # Success message
     failed: Failed to submit report. # Error message
-  placeholder: Search anyone by anything =) # Search input placeholder
-  searchTooltip: 'Tip: try a handle (e.g. Serral), real name (e.g. Joona), a 2–3 letter
-    country code (US, KOR), or an exact ID number.' # Search help tooltip
+  placeholder: Search anyone for anything =) # Search input placeholder
+  searchTooltip: 'Tip: try a handle (e.g. Serral), real name (e.g. Joona), a 2–3 letter country code (US, KOR), or an exact ID number.' # Search help tooltip
   claim:
     title: Profile Claim # Section header
     button: Claim this player profile # Button to start claim process
     linkedToYou: THAT'S YOU! # Indicator when already linked
     alreadyLinkedElsewhere: Your account is already linked to another player profile. # Error message
     alreadyLinked: This player profile is already linked to an account. # Error message
-    requestSubmitted: Claim request submitted. An administrator will review your request. # Success message
+    requestSubmitted: Claim request submitted. An admin will review your request. # Success message
     submitFailed: Failed to submit claim request. # Error message
     modalTitle: Claim Player Profile # Modal title
     modalBody1: Are you sure you want to claim this player profile as yours?
     modalBody2: Your request must be approved by an administrator.
-    modalBody2b: Intentionally submitting fraudulent requests will result in your
-      account being banned.
-    modalBody3: If approved, this player profile will permanently become your user
-      profile page. You will not be able to claim any other player pages.
+    modalBody2b: Intentionally submitting fraudulent requests will result in your account being banned.
+    modalBody3: If approved, this player profile will permanently become your user profile page. You will not be able to claim any other player pages.
     modalBody4: Changing your associated player will require contacting support.
     cancel: Nevermind - Cancel # Button to close modal
     submit: I have read the above carefully - Submit # Button to submit claim
@@ -419,11 +444,11 @@ player_page:
 
 # Signup and account creation components
 signup:
-  title: Welcome to the {name} beta. # Title for the signup page
-  invited: You've been invited to join the closed beta! # Success message
-  reopen: Re-open signup form # Link to show form again
+  title: "Welcome to the {name} beta." # Title for the signup page
+  invited: "You've been invited to join the closed beta!" # Success message
+  reopen: "Re-open signup form" # Link to show form again
   signUp: sign up # Button label
-  fillDetails: You've been invited to join {name}! Please fill in your details below. # Instructions
+  fillDetails: "You've been invited to join {name}! Please fill in your details below." # Instructions
   displayName: Display name # Form label
   displayNamePlaceholder: Your display name # Input placeholder
   emailAddress: Email address # Form label
@@ -433,13 +458,12 @@ signup:
   accountCreated: Account created! # Success message
   welcomeEmailSentPre: 'A welcome email with a login code has been sent to ' # Success message part 1
   welcomeEmailSentPost: . # Success message part 2
-  enterCodeToSignIn: Your account is almost ready! Please enter the code we sent to
-    your email address to sign in. # Instructions for second step
+  enterCodeToSignIn: "Your account is almost ready! Please enter the code we sent to your email address to sign in." # Instructions for second step
   enterCode: Enter code # Button to move to login step
   nameAndEmailRequired: Both display name and email are required. # Validation error
   invalidEmail: Please enter a valid email address. # Validation error
-  signupFailed: Signup failed ({status}). Please try again. # General error
-  networkError: Network error. Please try again. # Connectivity error
+  signupFailed: "Signup failed ({status}). Please try again." # General error
+  networkError: "Network error. Please try again." # Connectivity error
 
 # 404 error page
 not_found:
@@ -450,9 +474,7 @@ not_found:
 # Diagnostic and privacy consent banner
 consent:
   title: Diagnostics consent # Accessible label for the banner
-  text: Please consider helping Stego Research LLC (the developers of {name}) to improve
-    the product by providing error reports and debug information using Sentry.io.
-    See {link} (opens in new window) to review our policy. # Description of data collection
+  text: "Please consider helping Stego Research LLC (the developers of {name}) to improve the product by providing error reports and debug information using Sentry.io. See {link} (opens in new window) to review our policy." # Description of data collection
   privacyLink: stego.ai/privacy # Link text for privacy policy
   allow: Allow Sending Error Reports # Button to opt-in
   decline: Decline (use required cookies only) # Button to opt-out
@@ -464,23 +486,21 @@ auth:
   sendCode: Next # Button to request login code
   verify: Verify # Button to submit login code
   enterCode8: 8-character code # Input placeholder for code
-  codeHintPre: 'If we found an account associated with ' # Hint message part 1
-  codeHintPost: ', a code is on the way. Please enter it below, and never share it
-    with anyone.' # Hint message part 2
+  codeHintPre: '' # Hint message part 1
+  codeHintPost: ', a code is on the way. Please enter it below, and never share it with anyone.' # Hint message part 2
   enter8Chars: Enter the 8-character code. # Validation error
-  invalidCode: Invalid code. Try again or close. # Error message
-  networkError: Network error. Try again. # Connectivity error
-  httpError: Request failed ({status}). Try again. # General error
+  invalidCode: "Invalid code. Try again or close." # Error message
+  networkError: "Network error. Try again." # Connectivity error
+  httpError: "Request failed ({status}). Try again." # General error
   loginSuccessful: Login successful. # Toast message
   loggedOut: Logged out successfully. # Toast message
-  sessionExpired: Your session has expired. Please log in again. # Toast message
+  sessionExpired: "Your session has expired. Please log in again." # Toast message
   accountRequired: An account is required to access this page. # Access control message
   noPermission: You don't have permission to do that. # Access control error
   oracleQueued: Oracle analysis queued # Success message for ML trigger
-  signupPromptPre: 'We didn''t find an account for ' # Message when user needs to sign up
+  signupPromptPre: '' # Message when user needs to sign up
   signupPromptPost: '. Create one to continue.' # Instructions to sign up
-  privacyConsent: I agree to the terms of the Stego Research {policy} and to abide
-    by any applicable laws. # Checkbox label for terms
+  privacyConsent: "I agree to the terms of the Stego Research {policy} and to abide by any applicable laws." # Checkbox label for terms
   acceptPrivacy: Please accept the privacy policy to continue. # Validation error
   completeChallenge: Please complete the bot check to continue. # Validation error for captcha
   challengeError: The bot check failed to load. Please retry. # Captcha loading error
@@ -499,3 +519,42 @@ common:
   prev: Prev # Pagination button
   founder: Founder # Badge/Role title
   linkedAccount: Linked Profile # Badge title
+
+# Localization feedback banner
+i18n_banner:
+  text: "This translation is a work-in-progress and may contain errors. You can report issues or directly submit corrections at {link}."
+  linkText: "GitHub i18n"
+  dismiss: "dismiss"
+
+# Races
+race:
+  terran: Terran
+  protoss: Protoss
+  zerg: Zerg
+  random: Random
+
+# Metagame explorer functionality
+metagame:
+  title: Metagame Explorer
+  explore: explore
+  versions: game versions
+  allVersions: all versions
+  compareVersions: compare versions
+  stats: statistics
+  winRate: win rate
+  matches: matches
+  frequency: frequency
+  opening: opening
+  midGame: mid-game
+  lateGame: late-game
+  buildPath: build path
+  noData: no data
+  loading: loading metagame data…
+  selectRace: select race
+  vs: VS
+  trend: trend
+  popularity: popularity
+  strength: strength
+  counter: counter
+  summary: summary
+  replaysTitle: Matching Replays

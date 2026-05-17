@@ -92,10 +92,10 @@ acknowledgements:
   dataBody: Manipuli Valkey et PostgreSQL fundamenta fontis aperti praebent quae tabulam celerem, stabilem, et ad frontem serviendam paratam servant. # Description of Valkey/PostgreSQL acknowledgement
   goTitle: Go # Header for Go acknowledgement
   goBody: Go atque eius ecosystema efficiunt ut officia postica et processus replay in {name} cum alto impetu construi possint. # Description of Go acknowledgement
-  aligulacTitle: Aligulac # Header for Aligulac acknowledgement
-  aligulacBody: Aligulac adhibetur ut live aestimationes lusorum praebeat, quod facultatem nostram valde auget ad usoribus nostris informationes utiles de lusoribus ostendendas. # Description of Aligulac acknowledgement
   viteTitle: Vite # Header for Vite acknowledgement
   viteBody: Vite cursum evolutionis et constructionis frontis tam celerem servat ut sine furore iterare possimus. # Description of Vite acknowledgement
+  aligulacTitle: Aligulac # Header for Aligulac acknowledgement
+  aligulacBody: Aligulac adhibetur ut live aestimationes lusorum praebeat, quod facultatem nostram valde auget ad usoribus nostris informationes utiles de lusoribus ostendendas. # Description of Aligulac acknowledgement
   usersTitle: Usuarii et beta probatores # Header for community acknowledgement
   usersBody: Maxime autem gratias agimus omnibus usoribus {name} atque beta probatoribus quorum sincera responsa, relationes errorum, et patientia proiectum meliorem faciunt. # Description of user acknowledgement
   closing: Gratias agimus omnibus curatoribus, contributoribus, et sodalibus communitatis quorum opus talia incepta fieri sinit. # Closing text for the acknowledgements page
@@ -153,6 +153,39 @@ faq:
   a12: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
     voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
     occaecati cupiditate non provident.
+
+# Versus page content
+versus:
+  title: Versus Predictio
+  prediction: Probabilitas Victoriam
+  matchOutcomes: Exitus Certaminis
+  historySummary: Historia Summarium
+  matchHistory: Historia Certaminum
+  matchSummary: Summarium Certaminis
+  likelihoodBySeriesScore: Probabilitas per Seriem
+  playerStatistics: Statistica Ludentium
+  recentReplays: Recens Replays
+  seriesScore: Score Series
+  gameScore: Score Ludorum
+  date: Dies
+  event: Eventus
+  result: Exitus
+  shareLink: Partire Vinculum
+  sharing: Partiens...
+  snapshotBadge: BO{bo} RATIO SERIEI
+  missingPlayers: Duo ludentes in URL requiruntur.
+  replayAlreadyInPack: Replay iam in pack est
+  replayPackLimitReached: Replay pack limit attingit ({limit})
+  downloadUnavailable: Replay download non praesto pro hoc replay.
+  fetchError: Versus data capere non potuit
+  shareGenerateFailed: Generatio vinculi fefellit
+  shareCopied: Vinculum ad clipboard exscriptum est!
+  shareFailed: Partitio fefellit
+  sharedLinkNotFound: Hoc vinculum expiravit aut non existit.
+  narrative:
+    summary: "In {bo} certamine inter {p1Name} (ordo #{p1Rank}) et {p2Name} (ordo #{p2Rank}), {predictedName} vincere praedicatur cum commoditate {predictedProb} ad {trailerProb}. {p1Name} et {p2Name} {totalGames} ludos totaliter egerunt, quorum {leaderStatus}."
+    leader: "{leaderName} ducit {leaderWins}-{trailerWins}"
+    tie: "aequati sunt {leaderWins}-{trailerWins}"
 
 # Replay search and listing components
 replays:
@@ -237,6 +270,7 @@ replay_page:
   graphs: lorem # Link to graphs section
   minimap: ipsum # Link to minimap section
   chat: dolor # Link to chat section
+  engineView: sit amet # Link to engine view section
   unitsStructures: sit/amet # Link to units/structures section
   buildOrders: consectetur # Link to build orders section
   summaryTags: 'ADIPISCING ELIT:' # Label for automatic analysis tags
@@ -247,6 +281,7 @@ replay_page:
   downloadNotAvailable: Lorem non disponibilis # Button label when download is unavailable
   addToPack: + Lorem Ipsum # Button to add to download pack
   analyzeReplay: Duis Aute # Button to trigger (re-)analysis
+  reAnalyze: Duis Aute Iterum # Button label when re-triggering analysis
   analyzing: Irure dolor… # Loading state for analysis trigger
   analysisQueued: Fugiat Pariatur # Success message for analysis trigger
   analysisReady: Lorem ipsum dolor sit # Success message when analysis completes
@@ -271,14 +306,20 @@ replay_page:
   difference: IPSUM # Analysis difference label
   oracleUnlocked: LOREM ML ADIPISCING # Success message when ML features are available
   unlockOracle: DOLOR LOREM SIT # Button to unlock ML features
+  reGenerate: IPSUM LOREM # Button to force a new ORACLE inference
   generating: CONSECTETUR... # Loading state for ML generation
   workers: Laborum # Label for workers graph/stat
+  minerals: MIN # Short label for minerals in graph legend
+  gas: GAS # Short label for vespene gas in graph legend
+  winProb: WIN PROBABILITY LOREM # Short label for win probability in live stats bar
   economy: Lorem # Category label for economy graph dropdown
   military: Ipsum # Category label for military graph dropdown
   performance: Facere # Label for performance metrics graph
   sq: SQ # Label for spending quotient graph option
   performanceMetrics: '{name}''s Sit Amet' # Header for performance metrics section
-  performanceMetricsTitle: Sit Amet # General header for performance metrics section
+  performanceMetricsTitle: Additional Metrics (Lorem) # General header for performance metrics section
+  showMetrics: Ostendo # Button to expand performance metrics section
+  hideMetrics: Occulto # Button to collapse performance metrics section
   metrics: Lorem # Button label for metrics dropdown
   compareNone: Ipsum (Dolor) # Option to not compare metrics
   compareOwn: Ipsum (Sit Amet) # Option to compare metrics with own replays
@@ -315,6 +356,7 @@ replay_page:
   showBuildDetails: Nemo enim ipsam # Button to expand build order
   hideBuildDetails: Voluptatem quia voluptas # Button to collapse build order
   showMore: sit aspernatur… # Button to show more build steps
+  showLess: sit aspernatur less… # Button to hide build steps
   buildTitle: '{name}''s Lorem' # Header for build order section
   copySALT: LOREM # Button to copy SALT encoded build
   noBuildSteps: Neque porro quisquam est. # Empty state for build order
@@ -357,6 +399,10 @@ replay_page:
 player_page:
   statistics: Lorem # Section header
   aligulacRating: Ipsum Dolor # External rating label
+  aligulacRatingInactive: Lorem Ipsum # Label for inactive rating
+  aligulacRatingInactiveTooltip: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  aligulacRatingStaleTooltip: Lorem ipsum dolor sit amet # Tooltip when rating is stale
+  aligulacRatingLoadingTooltip: Consectetur adipiscing elit # Tooltip when rating is loading
   primaryRace: Sit Amet # Label for player's main race
   country: Consectetur # Label for player's country
   team: Adipiscing # Label for player's team

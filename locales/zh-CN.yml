@@ -1,0 +1,560 @@
+# Navigation menu items
+nav:
+  upload: 上传 # Link to the upload page
+  players: 选手 # Link to the player search page
+  replays: 回放 # Link to the replay search page
+  versus: 对阵 # Link to the versus prediction page
+  myReplays: 我的回放 # Link to the user's personal replays (only shown when logged in)
+  metagame: 游戏环境 # Link to the metagame explorer page
+  faq: 常见问题 # Link to the FAQ page
+  settings: 设置 # Link to the settings page
+  admin: 管理 # Link to the admin dashboard (only shown to admins)
+  login: 登录 / 注册 # Button to open login/signup panel
+  logout: 登出 # Button to log out the current user
+
+# Home page content
+home:
+  welcome: 欢迎来到 {name} 测试版。 # Main welcome message on the home page
+  glad: 这不仅仅是一个回放管理器。它是世界上最先进的 SC2 竞技平台。 # Sub-heading on the home page
+  p1: '{name} 是 Stego Research 正在开发的一系列技术的一部分，旨在为玩家、创作者、赛事组织者、游戏开发商等提供智能数据见解。' # First paragraph of home page description
+  p2: "" # Removed
+  p3: '{name} 目前处于公开测试阶段。虽然文档和功能集有限，但我们希望您喜欢探索这个平台并发现它所有强大的用途。我强烈建议加入我们的 Discord 社区参与讨论并提供反馈。您可以在页面左上角找到 Discord 链接。' # Third paragraph regarding availability
+  p4: 介绍就到这里，现在去看看回放吧！ # Call to action at the end of the home page
+  showReplaysCta: 带我看回放！ # Home page CTA button label
+  footer: Stego Research # !! DON'T EDIT Signature in the footer of the home page
+  featuresTitle: 使用互联网上最先进的 SC2 技术提升排名。
+  oracleTitle: ORACLE ML 预测
+  oracleP1: 世界上最先进的星际争霸分析。我们的机器学习模型经过超过 40,000,000 个游戏位置的训练，揭示了玩家微妙优势的新见解。
+  oracleP2: 在任何时间点获得即时结果预测 - 全部采用真实的机器学习推理构建，绝非虚假。
+  oracleCta: 查看 ORACLE 的运行
+  promotionTitle: 全球选手排名
+  promotionP1: 原始排名网站已升级。通过我们姐妹网站 {aligulac} 提供的可信评分跟踪顶尖选手。
+  promotionCta: 浏览排行榜
+  timeWarpTitle: 高保真小地图
+  timeWarpP1: 不再需要等待回放快进。使用我们的确定性引擎，瞬间跳转到游戏的任何时间点，精确查看每个单位的位置。
+  timeWarpCta: 亲自尝试
+  replaysTitle: 最近回放活动
+  replaysP1: 探索平台上的最新游戏。按选手、种族或对阵过滤，找到您想要的。
+  replaysCta: 探索数据库
+
+
+# Site header components
+header:
+  toggleTheme: '切换主题: {theme}' # Tooltip for the theme toggle button
+  bannerAlt: '{name} 横幅' # Alt text for the site's banner image
+
+# Site-wide footer and server/session information modals
+footer:
+  privacy: 隐私政策 # Link to privacy policy (in footer and in modal)
+  acknowledgements: 致谢 # Link to the acknowledgements page
+  versus: 对阵 # Link to the versus prediction page
+  serverInfo: 服务器信息 # Link to open server info modal (for admins)
+  sessionInfo: 会话信息 # Link to open session info modal (for admins)
+  jumpToTop: 回到顶部 # Scroll to top of page link in footer
+  serverInformation: 服务器信息 # Title of the server info modal (pop up)
+  sessionInformation: 会话信息 # Title of the session info modal (pop up)
+  loading: 加载中… # Loading state for modal (pop up) content
+  version: 版本 # Label for server version, for admins
+  timestamp: 时间戳 # Label for server build timestamp, for admins
+  environment: 环境 # Label for server environment (dev, pre, prod) (for admins)
+  apiHost: API 主机 # Label for API backend host (for admins)
+  allowedOrigins: 允许的来源 # Label for CORS allowed origins (for admins)
+  username: 用户名 # Label for current user's name in session info (for admins)
+  role: 角色 # Label for current user's role (for admins)
+  assumeRole: 模拟角色 # Label for the role-switching feature (for admins)
+  accessExpires: 访问令牌过期 # Label for access token expiration (for admins)
+  refreshExpires: 刷新令牌过期 # Label for refresh token expiration (for admins)
+  close: 关闭 # Button to close modals
+  discord: 社区 Discord # Link to Discord join modal (pop up)
+  joinDiscord: 加入我们的社区 Discord # Title of Discord join modal (pop up)
+  discordBotProtection: "请点击下方按钮加入我们的 Discord 服务器。为了保护社区免受机器人侵害，某些用户可能会被要求完成验证码挑战。" # Description for Discord bot protection
+  join: 加入 # Button to join Discord after passing check
+  joinCheckingBots: 请稍候 - 正在检查机器人 # Message while validating captcha/bot status
+  joinChallengeError: "机器人保护挑战加载失败。请重试。" # Error message for captcha failure
+  retryChallenge: 重试 # Button to retry captcha
+  joinError: "加入 Discord 失败。请重试。" # General error for Discord joining
+
+# Acknowledgements page content
+acknowledgements:
+  title: '{name} 致谢' # Title of the acknowledgements page
+  intro: "{name} 的存在离不开我们的贡献者、优秀的开源项目以及非常支持我们的社区。我们特别要感谢：" # Introductory text for the acknowledgements page
+  s2protTitle: icza / s2prot # Header for s2prot acknowledgement
+  s2protBody: "icza 的 s2prot (Apache 2.0) 是 {name} 高性能回放数据提取工作的核心基础。" # Description of s2prot acknowledgement
+  vueTitle: Vue.js 和 Vue-i18n # Header for frontend framework acknowledgement
+  vueBody: "我们的前端由 Vue.js 和 Vue-i18n (MIT 许可) 提供支持。" # Description of Vue acknowledgement
+  dataTitle: Valkey 和 PostgreSQL # Header for data stack acknowledgement
+  dataBody: "感谢 Valkey 和 PostgreSQL 项目的维护者，他们的工作是 {name} 数据模型和处理流程的基石。" # Description of Valkey/PostgreSQL acknowledgement
+  goTitle: Go # Header for Go acknowledgement
+  goBody: "Go 及其生态系统使得构建 {name} 背后的高吞吐量回放处理和 API 服务变得切实可行。" # Description of Go acknowledgement
+  viteTitle: Vite # Header for Vite acknowledgement
+  viteBody: "Vite 保持了前端构建和开发工作流程的快速，使我们能够快速迭代而不至于抓狂。" # Description of Vite acknowledgement
+  aligulacTitle: Aligulac # Header for Aligulac acknowledgement
+  aligulacBody: "Aligulac 用于提供实时的选手评分，极大地增强了我们向用户显示有用的选手信息的能力。" # Description of Aligulac acknowledgement
+  usersTitle: 用户和测试人员 # Header for community acknowledgement
+  usersBody: "最重要的是，感谢所有使用 {name} 的用户，以及所有测试人员，你们诚实的反馈、错误报告和耐心不断地改进着这个项目。" # Description of user acknowledgement
+  closing: "我们感谢每一位维护者、贡献者和社区成员，是你们的工作让这样的项目成为可能。" # Closing text for the acknowledgements page
+
+# Versus page content
+versus:
+  title: 对阵预测
+  selectorTitle: 选手对阵
+  playerLabel: 选手
+  selectPlayer: 选择选手
+  clearSelection: 清除选手选择
+  predict: 开始！
+  swap: 交换
+  format: 赛制
+  recentlySearched: 最近搜索
+  prediction: 胜率
+  matchOutcomes: 比赛结果预测
+  historySummary: 历史摘要
+  matchHistory: 历史战绩
+  matchSummary: 比赛摘要
+  likelihoodBySeriesScore: 各比分概率
+  playerStatistics: 选手统计
+  recentReplays: 最近回放
+  seriesScore: 系列赛比分
+  gameScore: 单场比分
+  date: 日期
+  event: 赛事
+  result: 结果
+  shareLink: 分享链接
+  sharing: 分享中...
+  snapshotBadge: BO{bo} 系列赛胜率
+  missingPlayers: 请选择两名选手进行比较。
+  replayAlreadyInPack: 回放已在包中
+  replayPackLimitReached: 已达到回放包上限 ({limit})
+  downloadUnavailable: 该回放无法下载。
+  fetchError: 获取对阵数据失败
+  shareGenerateFailed: 生成分享链接失败
+  shareCopied: 分享链接已复制到剪贴板！
+  shareFailed: 分享失败
+  sharedLinkNotFound: 此分享链接已过期或不存在。
+  narrative:
+    summary: "在 {p1Name}（排名 #{p1Rank}）与 {p2Name}（排名 #{p2Rank}）的 BO{bo} 对决中，预测 {predictedName} 将以 {predictedProb} 对 {trailerProb} 的优势获胜。{p1Name} 和 {p2Name} 总共交手过 {totalGames} 场，其中 {leaderStatus}。"
+    leader: "{leaderName} 以 {leaderWins}-{trailerWins} 领先"
+    tie: "双方以 {leaderWins}-{trailerWins} 持平"
+
+
+# FAQ page content
+faq:
+  title: '{name} 常见问题' # Main title of the FAQ page
+  q1: "{name} 是什么？"
+  a1: "{name} 是一个为管理和分析游戏回放而设计的平台。它允许您上传回放，查看详细的统计数据和见解，并在游戏库中搜索。"
+  q2: "{name} 支持哪些回放？"
+  a2: "目前，{name} 仅支持《星际争霸II：虚空之遗》（5.0.0 及更高版本）的 1v1 回放。"
+  q3: "{name} 是免费使用的吗？"
+  a3_1: "我不打算掩饰现实：未来会有付费选项。但是，我们希望在预览阶段保留您今天看到的所有核心功能免费使用，尽管 Oracle 分析和上传等某些功能可能会受到更严格的限制。一些尚未宣布的功能未来可能仅对付费订阅者开放。现实情况是，该平台的运行成本很高，且花费了数月时间构建，我们不想仅依靠捐赠。"
+  a3_2: "我们希望您喜欢这些免费功能，并在付费功能推出时发现它们物有所值。"
+  q4: "我如何使用 {name}？我需要账号吗？"
+  a4: "浏览 {name} 不需要账号。但是，某些功能对匿名用户有严格限制，例如回放上传和下载。"
+  q5: "我如何注册账号？"
+  a5: "只需点击“登录 / 注册”按钮 - 如果您还没有账号，您可以立即创建一个并仅凭验证码登录，这里不需要密码！"
+  q6: "我可以将回放设为私有吗？"
+  a6: "如果您有账号，您可以在上传页面使用“允许上传的回放在公开搜索中显示”选项来控制您的上传是否公开显示。匿名用户的上传始终可以被公开搜索。"
+  q7: "{name} 提供什么样的分析？"
+  a7: "简短的回答是，很多，而且在预览窗口之后还会推出更多。{name} 可以几乎瞬间提取并分析回放，提供关于建筑顺序、资源消耗、基准数据和选手表现的见解。ORACLE 功能使用机器学习分析来预测整个游戏过程中最可能的获胜者，这样您就可以看到局势是在哪里发生转变的。"
+  q8: "我可以下载回放吗？回放包呢？"
+  a8: "您可以下载任何公开可用的回放文件，或您获得链接的任何文件。有账号的用户目前可以创建包含最多 20 个回放的 zip 文件包。"
+  q9: "我对这个 {name} 预览版应该有什么预期？"
+  a9_p1: "这是 {name} 的一个非常早期的版本，在很多方面都还不够完善。请记住："
+  a9_li1: "您可能会遇到错误、异常行为或崩溃。"
+  a9_li2: "数据（包括您上传的回放或分析结果）可能会丢失或发生意外更改。"
+  a9_li3: "该平台不被预期为 100% 可靠或准确。感谢您在我们改进平台过程中的理解和耐心！您在此阶段的反馈是无价的。"
+  q10: "我在哪里分享反馈或提问？"
+  a10: "欢迎查看我们的 GitHub issues 页面或加入我们的 Discord 社区。您可以在页面左上角找到这些链接。"
+  q11: "其他语言支持吗？"
+  a11: "我们计划推出多种语言版本，请保持关注。如果您会说西班牙语、中文或韩语，我们需要您在翻译方面的帮助，请保持联系。"
+  q12: "浅色模式呢？？？？？"
+  a12: "等我能让它看起来不那么糟糕的时候就会推出。"
+
+# Settings page content
+settings:
+  title: 设置
+  language: 语言
+  integrations: 集成
+  twitch: Twitch
+  twitchConnected: 已连接 Twitch
+  twitchNotConnected: 未连接 Twitch
+  connectTwitch: 连接 Twitch
+  disconnectTwitch: 断开 Twitch
+  twitchDisconnectConfirm: 您确定要断开 Twitch 账号连接吗？
+  twitchExplanation: 绑定 Twitch 账号允许 REPLAYMAN 在您的聊天室中响应指令（如 !stats maru serral）等。
+
+# Replay search and listing components
+replays:
+  allReplays: 所有回放 # Header for all replays tab
+  search: 回放搜索 # Title for the replay search box
+  myReplays: 我的回放 # Header for user's personal replays
+  favoritePlayersReplays: 收藏选手的回放 # Header for replays from favorited players
+  myUploads: 我的上传 # Header for user's uploaded replays
+  favoriteReplays: 收藏的回放 # Header for user's favorited replays
+  replaysIn: 我参与的游戏 # Header for replays where the user is a player
+  replays: 回放 # Generic replays header
+  replayList: 回放列表 # Title for the replay list tile
+  date: 日期 # Table column header
+  map: 地图 # Table column header
+  players: 选手 # Table column header
+  ver: 版本 # Table column header (game version)
+  noReplays: 未找到回放。 # Empty state message
+  noPlayers: 未找到选手。 # Empty state message for player search
+  favorite: 收藏 # Label for favorite button (not yet favorited)
+  favorited: 已收藏 # Label for favorite button (already favorited)
+  addToFavorites: 添加到收藏 # Tooltip for favorite button when not favorited
+  removeFromFavorites: 从收藏中移除 # Tooltip for favorite button when favorited
+  favoritedPlayer: 已将选手添加到收藏 # Success message
+  removedFavoritePlayer: 已将选手从收藏中移除 # Success message
+  failedToUpdateFavorite: 更新收藏状态失败 # Error message
+  favoritePlayers: 收藏的选手 # Header for favorite players list
+  favoriteRequiresAccount: 需要账号才能收藏选手 # Tooltip when logged out
+  noFavoritePlayers: 您还没有收藏任何选手。 # Message when favorite players list is empty
+  downloadReplay: 下载回放 # Tooltip for download button
+  noDownloadTooltip: 应所有者或管理员要求，此回放无法下载 # Tooltip when download is disabled
+  addToPack: 添加到包 # Tooltip for adding to download pack
+  addToPackRequiresAccount: 您必须登录才能创建回放包 # Tooltip when logged out
+  dateTooltip: 日期格式为 YYYY-MM-DD # Tooltip for date column
+  mapTooltip: 地图名称在某些情况下可能已本地化。 # Tooltip for map column
+  playersTooltip: 除非 Battle.net 账号已链接到选手，否则所有名称直接从回放数据中加载。 # Tooltip for players column
+  placeholder: 您可以通过选手名称、地图、种族等进行搜索 # Search input placeholder
+  missingPlayerProfile:
+    title: 缺失选手资料 # Tile title when no player profile is linked
+    body: 要解锁全部账号功能，请链接选手资料。您可以在此处创建新资料。如果您已有一个，请导航至该页面并点击“认领账号”。 # Instructions for linking profile
+    primaryRace: 主要种族 # Form label
+    raceNone: 无 / 多个 # Race option
+    country: 国家 # Form label
+    countryPlaceholder: "例如：CN, KR, US" # Input placeholder
+    invalidCountry: 国家必须是 2 位 ISO 代码。 # Validation error
+    createButton: 创建选手资料 # Submit button
+    creating: 创建中… # Loading state for submit
+    createFailed: 创建选手资料失败。 # Error message
+
+# Replay pack (batch download) functionality
+pack:
+  pack: "包 ({count})" # Button label showing current number of replays in pack
+  clear: 清除 # Button to empty the pack
+  download: 下载 # Button to download the zipped pack
+  downloading: 下载中… # Loading state for pack download
+
+# Replay upload page
+upload:
+  uploadFiles: 上传文件 # Button to open file picker
+  instructionsGuest: "在没有账号的情况下，每个 IP 地址每天最多可选择 10 个 SC2Replay 文件进行上传。有账号的用户一次最多可上传 200 个回放，且可能适用额外的每账号小时和每日限制。您也可以直接将文件拖入此页面进行上传。" # Guest upload instructions
+  instructionsUser: "您可以使用上方按钮选择最多 200 个 SC2Replay 文件进行上传。{zipInfo} 上传限制按账号强制执行，且可能适用额外的每小时和每日限制。您也可以直接将文件拖入此页面进行上传。" # Signed-in upload instructions
+  uploadFailed: "上传失败。请重试。" # Generic upload failure message
+  uploadLimitReached: "已达到上传限制" # Short per-file label for quota failures
+  rateLimitGuest: "您今天上传的回放过多。请创建账号以继续上传，或等到明天重试。" # Guest rate limit fallback
+  rateLimitAuthenticated: "您上传的回放过多。请稍后再试。" # Signed-in rate limit fallback
+  alreadyUploadedReason: "回放已上传" # Hover text for already-present skipped files
+  duplicateSkippedReason: "此批次中存在重复回放" # Hover text for duplicate skipped files
+  zipInfo: '' # Admin-only instruction
+  publicSearchLabel: "允许上传的回放在公开搜索中显示" # Label for privacy toggle
+  privacyHint: "通过上传文件，您承认并同意我们的 {link}（在新标签页中打开）中概述的条款。" # Link to policy
+  privacyPolicy: 隐私政策 # Link text for privacy policy
+
+# Individual replay analysis page
+replay_page:
+  gameVersion: v{version} # !! DON'T EDIT Label for game version
+  jumpTo: '跳转到：' # Quick navigation label
+  graphs: 图表 # Link to graphs section
+  minimap: 小地图 # Link to minimap section
+  chat: 聊天 # Link to chat section
+  engineView: 引擎视图 # Link to engine view section
+  unitsStructures: 单位/建筑 # Link to units/structures section
+  buildOrders: 建造顺序 # Link to build orders section
+  summaryTags: '摘要标签：' # Label for automatic analysis tags
+  player1: 选手 1 # Label for the first player
+  player2: 选手 2 # Label for the second player
+  showResult: 显示结果 # Button to reveal winner (anti-spoiler)
+  downloadReplay: 下载回放 # Button to download the file
+  downloadNotAvailable: 无法下载 # Button label when download is unavailable
+  addToPack: + 添加到包 # Button to add to download pack
+  analyzeReplay: 分析回放 # Button to trigger (re-)analysis
+  reAnalyze: 重新分析 # Button label when re-triggering analysis
+  analyzing: 分析中… # Loading state for analysis trigger
+  analysisQueued: 分析已排队 # Success message for analysis trigger
+  analysisReady: 回放分析就绪 # Success message when analysis completes
+  analysisFailed: 分析回放失败。请重试。 # Error message when analysis fails
+  analysisTimed: 回放分析超时。请稍后再试。 # Error message when analysis polling times out
+  copyLink: 复制链接 # Button to copy URL to clipboard
+  copyReplayId: 回放 ID # Button to copy internal ID to clipboard
+  linkOnlyWarning: 仅限链接的回放 # Warning message for link-only replays
+  linkOnlyTooltip: 此回放未列在公开搜索结果中，但任何拥有直接链接的人仍可查看。 # Tooltip for link-only replays
+  showDuration: 显示时长 # Button to reveal game length (anti-spoiler)
+  showTags: 显示标签（剧透！） # Button to reveal tags
+  noAnalysis: 尚未找到分析。 # Message when no analysis data exists
+  noAnalysisNotice: 遗憾的是，应所有者要求，我们目前无法显示有关此回放的更多信息。请稍后查看更多选项。 # Message shown on noanalysis replays
+  lastAnalysis: "分析时间 {time}" # Timestamp of most recent analysis
+  timeWarp: TIME WARP # Label for the game timeline slider
+  income: 收入 # Label for income graph
+  bank: 资源储备 # Label for bank graph
+  armyValue: 部队价值 # Label for army value graph
+  resourcesLost: 损失资源 # Label for resources lost graph
+  oracle: + ORACLE # !! DON'T EDIT Label for ORACLE ML insights tab
+  combinedMG: 合并晶矿+气矿 # Label for Minerals/Gas graph
+  standard: 标准 # Standard analysis label
+  difference: 差异 # Analysis difference label
+  oracleUnlocked: ORACLE ML 见解已解锁 # Success message when ML features are available
+  unlockOracle: 解锁 ORACLE 见解 # Button to unlock ML features
+  reGenerate: 重新生成 # Button to force a new ORACLE inference
+  generating: 生成中... # Loading state for ML generation
+  workers: 农民 # Label for workers graph/stat
+  minerals: 晶矿 # Short label for minerals in graph legend
+  gas: 气矿 # Short label for vespene gas in graph legend
+  winProb: 胜率 # Short label for win probability in live stats bar
+  economy: 经济 # Category label for economy graph dropdown
+  military: 军事 # Category label for military graph dropdown
+  performance: 表现 # Label for performance metrics graph
+  sq: SQ # Label for spending quotient graph option
+  performanceMetrics: '{name} 的表现指标' # Header for performance metrics section
+  performanceMetricsTitle: 额外指标 # General header for performance metrics section
+  showMetrics: 显示 # Button to expand performance metrics section
+  hideMetrics: 隐藏 # Button to collapse performance metrics section
+  metrics: 选择指标 # Button label for metrics dropdown
+  compareNone: 选择比较 # Option to not compare metrics
+  compareOwn: "对比 我的回放" # Option to compare metrics with own replays
+  comparePro: "对比 职业回放" # Option to compare metrics with pro replays
+  compareAll: "对比 所有回放" # Option to compare metrics with all replays
+  compareColumnOwn: 我的回放 # Column header for own replay comparison
+  compareColumnPro: 职业回放 # Column header for pro replay comparison
+  compareColumnAll: 所有回放 # Column header for all replay comparison
+  compareOwnRequiresLink: 您必须链接到选手资料才能对比您自己的回放。 # Error when comparing own replays without linked profile
+  loadComparisonFailed: 加载对比数据失败。 # Error message when fetching comparison metrics fails
+  currentSq: 当前 SQ # Label for Current Spending Quotient
+  averageSq: 平均 SQ # Label for Average Spending Quotient
+  apm: APM # Label for Actions Per Minute
+  armyEfficiency: 部队效率 # Ratio of army value destroyed to army value lost
+  timeToMaxSupply: 满人口时间 # Milestone: Reach 195/200 supply
+  timeTo44Workers: 44 农民时间 # Milestone: 44 active workers
+  timeTo66Workers: 66 农民时间 # Milestone: 66 active workers
+  timeTo600Army: 600 部队价值时间 # Milestone: 600 minerals/gas army value
+  timeTo1800Army: 1800 部队价值时间 # Milestone: 1800 minerals/gas army value
+  timeTo6000Army: 6000 部队价值时间 # Milestone: 6000 minerals/gas army value
+  timeTo400Upgrades: 400 升级花费时间 # Milestone: 400 spent on upgrades
+  timeTo800Upgrades: 800 升级花费时间 # Milestone: 800 spent on upgrades
+  workersKilled: 击杀农民 # Stat: total workers killed
+  workersLost: 损失农民 # Stat: total workers lost
+  workersKilled600: 6:00 击杀农民 # Stat: workers killed at 6 minutes
+  workersLost600: 6:00 损失农民 # Stat: workers lost at 6 minutes
+  timeSupplyBlocked: 卡人口时间 # Stat: time spent supply blocked
+  structures: 建筑 # Label for structures list
+  structuresProducing: 建筑（生产中） # Label for active production
+  units: 单位 # Label for units list
+  upgrades: 升级 # Label for upgrades list
+  chatLog: 聊天日志 # Section header for in-game chat
+  syncWithTimeWarp: 与 TIME WARP 滑块同步 # Checkbox label
+  noMessages: 此窗口中没有消息。 # Empty state for chat
+  left: 离开了游戏 # Indicator that a player left the game
+  showBuildDetails: 显示建造细节 # Button to expand build order
+  hideBuildDetails: 隐藏建造细节 # Button to collapse build order
+  showMore: 显示更多… # Button to show more build steps
+  showLess: 显示较少… # Button to hide build steps
+  buildTitle: '{name} 的建造' # Header for build order section
+  copySALT: 复制 SALT # Button to copy SALT encoded build
+  noBuildSteps: 未找到建造顺序步骤。 # Empty state for build order
+  axisValue: 数值 # Label for Y-axis on most graphs
+  axisWinChances: 获胜机会 # Label for Y-axis on win probability graph
+  workersActive: '活跃农民：{count}' # Label showing worker count at current time
+  probabilityToWin: 获胜概率 # Label for win probability metric
+  victory: 胜利 # Status label
+  defeat: 战败 # Status label
+  noSalt: 无可用的 SALT 编码 # Error when copying SALT fails
+  saltCopied: SALT 建造顺序已复制 # Success message
+  saltCopyFailed: 复制 SALT 建造顺序失败 # Error message
+  favorite: 收藏 # Button label/title when replay is not yet favorited
+  favorited: 已收藏 # Button label/title when replay is already favorited
+  favoriteRequiresAccount: 需要账号才能收藏回放 # Tooltip when logged out
+  addToPackRequiresAccount: 需要账号才能将回放添加到包 # Tooltip when logged out
+  claim:
+    button: 未认领 # Button to start replay-player claim process
+    linkedToYourProfile: 已链接到您的资料 # Indicator when replay player already matches current profile
+    requestSubmitted: "已提交 {name} 的认领请求。管理员将审核您的请求。" # Success message
+    submitFailed: 提交回放选手认领请求失败。 # Error message
+    profilePrompt: 是您吗？ # Tooltip text for hidden claim option for user without a profile
+    profileRequiredTitle: 需要选手资料 # Replay claim prerequisite title
+    profileRequiredBody: 在认领回放中的选手之前，您需要链接或创建一个选手资料。 # Replay claim prerequisite body
+    profileRequiredLink: 前往“我的回放”创建或链接您的选手资料，然后返回此页面认领此账号。 # Replay claim prerequisite CTA
+    modalTitle: 认领回放选手 # Modal title
+    modalBody1: "您确定要将此回放中的 {name} 认领为您链接的选手资料吗？" # Warning prompt
+    modalBody2: 您的请求必须由管理员审核。 # Approval warning
+    modalBody2b: 故意提交虚假请求将导致您的账号被封禁。 # Fraud warning
+    modalBody3: 如果获得批准，您链接的选手资料将与此回放选手的 Battle.net 账号关联。 # Outcome explanation
+    modalBody4: 如果回放选手已在其他地方链接，管理员将在批准前审查冲突。 # Conflict explanation
+    cancel: 算了 - 取消 # Button to close modal
+    submit: 我已仔细阅读以上内容 - 提交 # Button to submit claim
+    submitting: 提交中… # Loading state
+    tooltip: "此游戏内选手当前未链接到 REPLAYMAN 资料。如果是您，您可以点击此按钮请求链接。" # Tooltip for unclaimed player button
+
+# Player profile page
+player_page:
+  rank: 排名
+  replays: 回放
+  cc: 国家
+  rating: 评分
+  player: 选手
+  statistics: 竞技统计 # Section header
+  aligulacRating: Aligulac 评分 # External rating label
+  aligulacRatingVP: vs. 神族 # External matchup rating label
+  aligulacRatingVT: vs. 人族 # External matchup rating label
+  aligulacRatingVZ: vs. 虫族 # External matchup rating label
+  aligulacRatingInactive: 不活跃 # Label for inactive rating
+  aligulacRatingInactiveTooltip: 该选手目前在 Aligulac 上被标记为不活跃。显示的评分来自其最后活跃期。
+  aligulacRatingStaleTooltip: Aligulac 评分可能已过时 # Tooltip when rating is stale
+  aligulacRatingLoadingTooltip: Aligulac 评分加载中 # Tooltip when rating is loading
+  primaryRace: 主要种族 # Label for player's main race
+  country: 国家 # Label for player's country
+  team: 当前战队 # Label for player's team
+  earnings: 总奖金 # Label for player's total prize money
+  editName: 编辑名称 # Button to change display name
+  nameUpdated: 显示名称更新成功 # Success toast
+  editNameModalTitle: 更改显示名称 # Modal title
+  newName: 新显示名称 # Input label
+  newRealName: 新真实姓名 # Input label
+  realNameHint: 留空以保持当前真实姓名 # Input hint
+  replayList: 回放列表 # Title for the replay list on the player page
+  profile: 基本信息 # Section header
+  search: 选手搜索 # Title for player search box
+  report:
+    title: 举报资料 # Tooltip for report button
+    modalTitle: 举报选手资料 # Title for report modal
+    modalBody: "请提供举报此资料的原因（如名称冒犯、虚假信息）。" # Instructions for reporting
+    reasonPlaceholder: 举报原因... # Textarea placeholder
+    reasonRequired: 请提供原因。 # Validation error
+    submit: 提交举报 # Submit button
+    submitted: 举报已提交审核。 # Success message
+    failed: 提交举报失败。 # Error message
+  placeholder: 搜索任何人或任何事 =) # Search input placeholder
+  searchTooltip: '提示：尝试使用 ID（如 Serral）、真实姓名（如 Joona）、2-3 位国家代码（CN, KR）或精确的数字 ID。' # Search help tooltip
+  claim:
+    title: 资料认领 # Section header
+    button: 认领此选手资料 # Button to start claim process
+    linkedToYou: 那就是你！ # Indicator when already linked
+    alreadyLinkedElsewhere: 您的账号已链接到另一个选手资料。 # Error message
+    alreadyLinked: 此选手资料已链接到一个账号。 # Error message
+    requestSubmitted: 认领请求已提交。管理员将审核您的请求。 # Success message
+    submitFailed: 提交认领请求失败。 # Error message
+    modalTitle: 认领选手资料 # Modal title
+    modalBody1: 您确定要将此选手资料认领为您自己的吗？
+    modalBody2: 您的请求必须由管理员审核。
+    modalBody2b: 故意提交虚假请求将导致您的账号被封禁。
+    modalBody3: 如果获得批准，此选手资料将永久成为您的用户资料页。您将无法认领任何其他选手页面。
+    modalBody4: 更改关联选手将需要联系支持。
+    cancel: 算了 - 取消 # Button to close modal
+    submit: 我已仔细阅读以上内容 - 提交 # Button to submit claim
+    submitting: 提交中… # Loading state
+
+# Signup and account creation components
+signup:
+  title: "欢迎来到 {name} 测试版。" # Title for the signup page
+  invited: "您已被邀请加入封闭测试！" # Success message
+  reopen: "重新打开注册表单" # Link to show form again
+  signUp: 注册 # Button label
+  fillDetails: "您已被邀请加入 {name}！请在下方填写您的详细信息。" # Instructions
+  displayName: 显示名称 # Form label
+  displayNamePlaceholder: 您的显示名称 # Input placeholder
+  emailAddress: 电子邮箱 # Form label
+  emailPlaceholder: you{'@'}example.com # Input placeholder
+  createAccount: 创建账号 # Submit button
+  creatingAccount: 正在创建账号… # Loading state
+  accountCreated: 账号已创建！ # Success message
+  welcomeEmailSentPre: '包含登录验证码的欢迎邮件已发送至 ' # Success message part 1
+  welcomeEmailSentPost: 。 # Success message part 2
+  enterCodeToSignIn: "您的账号即将就绪！请输入我们发送到您邮箱的验证码以登录。" # Instructions for second step
+  enterCode: 输入验证码 # Button to move to login step
+  nameAndEmailRequired: 显示名称和电子邮箱均为必填项。 # Validation error
+  invalidEmail: 请输入有效的电子邮箱地址。 # Validation error
+  signupFailed: "注册失败 ({status})。请重试。" # General error
+  networkError: "网络错误。请重试。" # Connectivity error
+
+# 404 error page
+not_found:
+  title: 页面未找到。
+  message: 这里什么也没有，抱歉。
+  goBack: 返回首页 # Link to return to home page
+
+# Diagnostic and privacy consent banner
+consent:
+  title: 诊断同意 # Accessible label for the banner
+  text: "请考虑通过使用 Sentry.io 提供错误报告和调试信息来帮助 Stego Research LLC（{name} 的开发商）改进产品。请参阅 {link}（在新窗口中打开）以查看我们的政策。" # Description of data collection
+  privacyLink: stego.ai/privacy # Link text for privacy policy
+  allow: 允许发送错误报告 # Button to opt-in
+  decline: 拒绝（仅使用必要的 Cookie） # Button to opt-out
+
+# Authentication and login components
+auth:
+  login: 登录或注册 # Header for login panel
+  enterEmail: '请输入您账号的电子邮箱或电话号码：' # Label for email input
+  sendCode: 下一步 # Button to request login code
+  verify: 验证 # Button to submit login code
+  enterCode8: 8 位验证码 # Input placeholder for code
+  codeHintPre: '如果我们找到了与 ' # Hint message part 1
+  codeHintPost: ' 关联的账号，验证码正在发送中。请在下方输入，切勿与任何人分享。' # Hint message part 2
+  enter8Chars: 请输入 8 位验证码。 # Validation error
+  invalidCode: "验证码无效。请重试或关闭。" # Error message
+  networkError: "网络错误。请重试。" # Connectivity error
+  httpError: "请求失败 ({status})。请重试。" # General error
+  loginSuccessful: 登录成功。 # Toast message
+  loggedOut: 已成功登出。 # Toast message
+  sessionExpired: "您的会话已过期。请重新登录。" # Toast message
+  accountRequired: 需要账号才能访问此页面。 # Access control message
+  noPermission: 您没有权限执行此操作。 # Access control error
+  oracleQueued: Oracle 分析已排队 # Success message for ML trigger
+  signupPromptPre: '我们没有找到 ' # Message when user needs to sign up
+  signupPromptPost: ' 的账号。创建一个账号以继续。' # Instructions to sign up
+  privacyConsent: "我同意 Stego Research 的 {policy} 条款并遵守任何适用法律。" # Checkbox label for terms
+  acceptPrivacy: 请接受隐私政策以继续。 # Validation error
+  completeChallenge: 请完成机器人检查以继续。 # Validation error for captcha
+  challengeError: 机器人检查加载失败。请重试。 # Captcha loading error
+  retryChallenge: 重试 # Button to reload captcha
+
+# Common/Generic labels and buttons
+common:
+  loading: 加载中… # Generic loading state
+  error: 错误 # Generic error label
+  success: 成功 # Generic success label
+  skipped: 已跳过 # Generic skipped label
+  save: 保存 # Generic save button
+  saving: 保存中… # Generic saving state
+  cancel: 取消 # Generic cancel button
+  next: 下一页 # Pagination button
+  prev: 上一页 # Pagination button
+  founder: 创始人 # Badge/Role title
+  linkedAccount: 已链接资料 # Badge title
+
+# Localization feedback banner
+i18n_banner:
+  text: "此翻译正在完善中，可能包含错误。您可以在 {link} 报告问题或直接提交更正。"
+  linkText: "GitHub i18n"
+  dismiss: "关闭"
+
+# Races
+race:
+  terran: 人族
+  protoss: 神族
+  zerg: 虫族
+  random: 随机
+
+# Metagame explorer functionality
+metagame:
+  title: 游戏环境
+  explore: 探索
+  versions: 游戏版本
+  allVersions: 所有版本
+  compareVersions: 比较版本
+  stats: 统计
+  winRate: 胜率
+  matches: 比赛数
+  frequency: 频率
+  opening: 开局
+  midGame: 中期
+  lateGame: 后期
+  buildPath: 建造路线
+  noData: 无数据
+  loading: 正在加载战术数据…
+  selectRace: 选择种族
+  vs: VS
+  trend: 趋势
+  popularity: 热度
+  strength: 强度
+  counter: 应对
+  summary: 摘要
+  replaysTitle: 匹配的回放

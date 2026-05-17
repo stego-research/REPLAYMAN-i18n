@@ -1,0 +1,560 @@
+# Navigation menu items
+nav:
+  upload: 업로드 # Link to the upload page
+  players: 선수 # Link to the player search page
+  replays: 리플레이 # Link to the replay search page
+  versus: 대결 # Link to the versus prediction page
+  myReplays: 내 리플레이 # Link to the user's personal replays (only shown when logged in)
+  metagame: 메타게임 # Link to the metagame explorer page
+  faq: FAQ # Link to the FAQ page
+  settings: 설정 # Link to the settings page
+  admin: 관리자 # Link to the admin dashboard (only shown to admins)
+  login: 로그인 / 회원가입 # Button to open login/signup panel
+  logout: 로그아웃 # Button to log out the current user
+
+# Home page content
+home:
+  welcome: "{name} 베타에 오신 것을 환영합니다." # Main welcome message on the home page
+  glad: 단순한 리플레이 관리자를 넘어선, 세계에서 가장 진보된 경쟁전 SC2 플랫폼입니다. # Sub-heading on the home page
+  p1: '{name}는 게이머, 크리에이터, 토너먼트 운영자, 게임 개발자 등에게 지능적인 데이터 통찰력을 제공하기 위해 Stego Research에서 개발 중인 일련의 기술 중 일부입니다.' # First paragraph of home page description
+  p2: "" # Removed
+  p3: '{name}는 현재 오픈 베타 버전입니다. 문서와 기능 세트는 제한적이지만, 플랫폼을 탐색하고 활용할 수 있는 모든 강력한 방법을 발견하시길 바랍니다. Discord 커뮤니티에 참여하여 피드백을 주시는 것을 강력히 추천합니다. 페이지 좌측 상단에서 Discord 링크를 찾으실 수 있습니다.' # Third paragraph regarding availability
+  p4: 자, 이제 리플레이를 확인하러 가보시죠! # Call to action at the end of the home page
+  showReplaysCta: 리플레이 보기! # Home page CTA button label
+  footer: Stego Research # !! DON'T EDIT Signature in the footer of the home page
+  featuresTitle: 가장 진보된 SC2 기술로 실력을 향상시키세요.
+  oracleTitle: ORACLE ML 예측
+  oracleP1: 세계에서 가장 진보된 StarCraft 분석. 4,000만 개 이상의 게임 포지션으로 훈련된 머신러닝 모델이 선수들의 미묘한 이점을 밝혀냅니다.
+  oracleP2: 어느 시점에서나 즉각적인 결과 예측을 확인하세요 - 실제 ML 추론으로 구축되었습니다.
+  oracleCta: ORACLE 작동 보기
+  promotionTitle: 글로벌 선수 랭킹
+  promotionP1: 원조 랭킹 사이트가 업그레이드되었습니다. 자매 사이트인 {aligulac}의 신뢰할 수 있는 레이팅으로 상위 선수들을 추적하세요.
+  promotionCta: 리더보드 찾아보기
+  timeWarpTitle: 고해상도 미니맵
+  timeWarpP1: 리플레이가 빨리 감기기를 기다릴 필요가 없습니다. 즉시 게임의 어느 지점으로든 이동하여 결정론적 엔진을 통해 모든 유닛의 위치를 정확히 확인하세요.
+  timeWarpCta: 직접 시도해보기
+  replaysTitle: 최근 리플레이 활동
+  replaysP1: 플랫폼 전체의 최신 게임을 탐색하세요. 선수, 종족 또는 매치업별로 필터링하여 원하는 것을 정확히 찾으세요.
+  replaysCta: 데이터베이스 탐색
+
+
+# Site header components
+header:
+  toggleTheme: '테마 전환: {theme}' # Tooltip for the theme toggle button
+  bannerAlt: '{name} 배너' # Alt text for the site's banner image
+
+# Site-wide footer and server/session information modals
+footer:
+  privacy: 개인정보 처리방침 # Link to privacy policy (in footer and in modal)
+  acknowledgements: 감사의 글 # Link to the acknowledgements page
+  versus: 대결 # Link to the versus prediction page
+  serverInfo: 서버 정보 # Link to open server info modal (for admins)
+  sessionInfo: 세션 정보 # Link to open session info modal (for admins)
+  jumpToTop: 맨 위로 이동 # Scroll to top of page link in footer
+  serverInformation: 서버 정보 # Title of the server info modal (pop up)
+  sessionInformation: 세션 정보 # Title of the session info modal (pop up)
+  loading: 로딩 중… # Loading state for modal (pop up) content
+  version: 버전 # Label for server version, for admins
+  timestamp: 타임스탬프 # Label for server build timestamp, for admins
+  environment: 환경 # Label for server environment (dev, pre, prod) (for admins)
+  apiHost: API 호스트 # Label for API backend host (for admins)
+  allowedOrigins: 허용된 오리진 # Label for CORS allowed origins (for admins)
+  username: 사용자 이름 # Label for current user's name in session info (for admins)
+  role: 역할 # Label for current user's role (for admins)
+  assumeRole: 역할 가정 # Label for the role-switching feature (for admins)
+  accessExpires: 액세스 만료 # Label for access token expiration (for admins)
+  refreshExpires: 리프레시 만료 # Label for refresh token expiration (for admins)
+  close: 닫기 # Button to close modals
+  discord: 커뮤니티 디스코드 # Link to Discord join modal (pop up)
+  joinDiscord: 커뮤니티 디스코드 참여 # Title of Discord join modal (pop up)
+  discordBotProtection: "디스코드 서버에 참여하려면 아래 버튼을 클릭하세요. 봇으로부터 커뮤니티를 보호하기 위해 일부 사용자에게 캡차 해결이 요청될 수 있습니다." # Description for Discord bot protection
+  join: 참여하기 # Button to join Discord after passing check
+  joinCheckingBots: "잠시만 기다려주세요 - 봇 확인 중" # Message while validating captcha/bot status
+  joinChallengeError: "봇 보호 챌린지를 로드하지 못했습니다. 다시 시도해 주세요." # Error message for captcha failure
+  retryChallenge: 재시도 # Button to retry captcha
+  joinError: "디스코드 참여에 실패했습니다. 다시 시도해 주세요." # General error for Discord joining
+
+# Acknowledgements page content
+acknowledgements:
+  title: "{name} 감사의 글" # Title of the acknowledgements page
+  intro: "{name}는 기여자들, 멋진 오픈 소스 프로젝트들, 그리고 믿을 수 없을 정도로 지지해 주는 커뮤니티 없이는 존재할 수 없었습니다. 특히 다음 분들께 감사드립니다:" # Introductory text for the acknowledgements page
+  s2protTitle: icza / s2prot # Header for s2prot acknowledgement
+  s2protBody: "icza의 s2prot (Apache 2.0)은 {name}의 고성능 리플레이 데이터 추출 작업의 중요한 토대로 사용되었습니다." # Description of s2prot acknowledgement
+  vueTitle: Vue.js 및 Vue-i18n # Header for frontend framework acknowledgement
+  vueBody: "저희 프론트엔드는 Vue.js와 Vue-i18n (MIT 라이선스)으로 구동됩니다." # Description of Vue acknowledgement
+  dataTitle: Valkey 및 PostgreSQL # Header for data stack acknowledgement
+  dataBody: "Valkey와 PostgreSQL 프로젝트의 유지관리자들께 감사드립니다. 그들의 작업은 {name}의 데이터 모델과 처리 파이프라인의 기반입니다." # Description of Valkey/PostgreSQL acknowledgement
+  goTitle: Go # Header for Go acknowledgement
+  goBody: "Go와 그 생태계는 {name} 뒤에 있는 고처리량 리플레이 처리 및 API 서비스를 실용적으로 구축할 수 있게 해줍니다." # Description of Go acknowledgement
+  viteTitle: Vite # Header for Vite acknowledgement
+  viteBody: "Vite는 프론트엔드 빌드 및 개발 워크플로우를 충분히 빠르게 유지하여 정신을 잃지 않고 신속하게 반복할 수 있게 해줍니다." # Description of Vite acknowledgement
+  aligulacTitle: Aligulac # Header for Aligulac acknowledgement
+  aligulacBody: "Aligulac은 라이브 선수 레이팅을 제공하는 데 사용되며, 사용자에게 선수에 대한 유용한 정보를 표시하는 능력을 크게 향상시켜 줍니다." # Description of Aligulac acknowledgement
+  usersTitle: 사용자 및 베타 테스터 # Header for community acknowledgement
+  usersBody: "무엇보다도 {name}를 사용하는 모든 분들과 솔직한 피드백, 버그 보고, 인내심으로 프로젝트를 더 좋게 만들어 주시는 모든 베타 테스터분들께 감사드립니다." # Description of user acknowledgement
+  closing: "저희는 이와 같은 프로젝트를 가능하게 하는 모든 유지관리자, 기여자, 커뮤니티 구성원의 노고에 감사드립니다." # Closing text for the acknowledgements page
+
+# Versus page content
+versus:
+  title: 대결 예측
+  selectorTitle: 선수 대결
+  playerLabel: 선수
+  selectPlayer: 선수 선택
+  clearSelection: 선수 선택 취소
+  predict: 예측하기
+  swap: 교체
+  format: 형식
+  recentlySearched: 최근 검색
+  prediction: 승리 확률
+  matchOutcomes: 경기 결과
+  historySummary: 전적 요약
+  matchHistory: 경기 기록
+  matchSummary: 경기 요약
+  likelihoodBySeriesScore: 세트 스코어별 확률
+  playerStatistics: 선수 통계
+  recentReplays: 최근 리플레이
+  seriesScore: 세트 스코어
+  gameScore: 경기 스코어
+  date: 날짜
+  event: 대회
+  result: 결과
+  shareLink: 링크 공유
+  sharing: 공유 중...
+  snapshotBadge: "BO{bo} 시리즈 배당"
+  missingPlayers: 비교할 두 선수를 선택하세요.
+  replayAlreadyInPack: 리플레이가 이미 팩에 있습니다
+  replayPackLimitReached: 리플레이 팩 한도에 도달했습니다 ({limit})
+  downloadUnavailable: 이 리플레이는 다운로드할 수 없습니다.
+  fetchError: 대결 데이터를 가져오지 못했습니다
+  shareGenerateFailed: 공유 링크 생성 실패
+  shareCopied: 공유 링크가 클립보드에 복사되었습니다!
+  shareFailed: 공유 실패
+  sharedLinkNotFound: 이 공유 링크는 만료되었거나 존재하지 않습니다.
+  narrative:
+    summary: "{p1Name} (랭킹 #{p1Rank})와 {p2Name} (랭킹 #{p2Rank})의 {bo} 경기에서, {predictedName} 선수가 {predictedProb} 대 {trailerProb}의 우위로 승리할 것으로 예측됩니다. {p1Name}와 {p2Name}는 총 {totalGames} 경기를 치렀으며, 그중 {leaderStatus}."
+    leader: "{leaderName} 선수가 {leaderWins}-{trailerWins}로 앞서고 있습니다"
+    tie: "{leaderWins}-{trailerWins}로 동률입니다"
+
+
+# FAQ page content
+faq:
+  title: "{name} FAQ" # Main title of the FAQ page
+  q1: "{name}가 무엇인가요?"
+  a1: "{name}는 게임 리플레이를 관리하고 분석하기 위해 설계된 플랫폼입니다. 리플레이를 업로드하고, 상세한 통계와 통찰력을 확인하며, 게임 컬렉션을 검색할 수 있습니다."
+  q2: "{name}는 어떤 리플레이를 지원하나요?"
+  a2: "현재 {name}는 스타크래프트 II: 공허의 유산 (v5.0.0 이상) 1v1 리플레이만 지원합니다."
+  q3: "{name}는 무료인가요?"
+  a3_1: "솔직히 말씀드리면, 향후 유료 옵션이 생길 예정입니다. 하지만 현재 프리뷰 단계에서 보시는 모든 핵심 기능은 무료로 유지되기를 바라며, Oracle 분석이나 업로드와 같은 일부 기능에는 더 엄격한 제한이 적용될 수 있습니다. 아직 발표되지 않은 일부 기능은 향후 유료 구독자만 사용할 수 있을 것입니다. 플랫폼 운영에 상당한 비용이 들고 구축하는 데 오랜 시간이 걸렸기 때문에 기부금에만 의존할 수는 없습니다."
+  a3_2: "무료 기능을 즐기시길 바라며, 유료 기능이 출시되었을 때 그 가치가 충분하기를 바랍니다."
+  q4: "{name}를 어떻게 사용하나요? 계정이 필요한가요?"
+  a4: "{name}를 둘러보는 데 계정은 필요하지 않습니다. 하지만 리플레이 업로드 및 다운로드와 같은 일부 기능은 익명 사용자에게 엄격히 제한됩니다."
+  q5: "계정은 어떻게 만드나요?"
+  a5: "'로그인 / 회원가입' 버튼을 누르기만 하면 됩니다. 계정이 없더라도 비밀번호 없이 코드를 통해 즉시 계정을 만들고 로그인할 수 있습니다!"
+  q6: "리플레이를 비공개로 유지할 수 있나요?"
+  a6: "계정이 있는 경우, 업로드 페이지의 '업로드된 리플레이를 공개 검색 결과에 표시' 옵션을 사용하여 공개 여부를 제어할 수 있습니다. 익명 사용자의 업로드는 항상 공개 검색이 가능합니다."
+  q7: "{name}는 어떤 종류의 분석을 제공하나요?"
+  a7: "짧게 말씀드리면 아주 많습니다. 프리뷰 기간 이후 더 많은 기능이 추가될 예정입니다. {name}는 거의 즉시 리플레이를 추출하고 분석하여 빌드 오더, 자원 소비, 벤치마크 데이터 및 선수 성적에 대한 통찰력을 제공합니다. ORACLE 기능은 머신러닝 분석을 사용하여 게임 전체의 승리 가능성을 예측하므로 어디서 형세가 바뀌었는지 확인할 수 있습니다."
+  q8: "리플레이를 다운로드할 수 있나요? 리플레이 팩은요?"
+  a8: "공개된 리플레이 파일이나 링크가 있는 파일을 다운로드할 수 있습니다. 계정이 있는 사용자는 현재 최대 20개의 리플레이를 포함하는 zip 파일 팩을 만들 수 있습니다."
+  q9: "{name} 프리뷰 버전에서 무엇을 기대할 수 있나요?"
+  a9_p1: "이것은 {name}의 초기 버전이며 여러 면에서 미흡할 수 있습니다. 다음 사항을 유의해 주세요:"
+  a9_li1: "버그, 예기치 않은 동작 또는 충돌이 발생할 수 있습니다."
+  a9_li2: "데이터(업로드된 리플레이 또는 분석 결과 포함)가 예기치 않게 사라지거나 변경될 수 있습니다."
+  a9_li3: "플랫폼이 100% 신뢰할 수 있거나 정확하지 않을 수 있습니다. 플랫폼 개선을 위한 여러분의 이해와 인내에 감사드립니다! 이 단계에서의 피드백은 매우 소중합니다."
+  q10: "피드백이나 질문은 어디에 공유하나요?"
+  a10: "GitHub 이슈 페이지를 확인하거나 Discord 커뮤니티에 참여해 주세요. 페이지 좌측 상단에서 링크를 찾으실 수 있습니다."
+  q11: "다른 언어는 지원되나요?"
+  a11: "여러 언어로 출시하고자 준비 중입니다. 스페인어, 중국어, 한국어를 사용하신다면 번역에 도움을 주실 수 있으니 계속 연락해 주세요."
+  q12: "라이트 모드는요?"
+  a12: "디자인이 괜찮아 보이는 대로 출시할 예정입니다."
+
+# Settings page content
+settings:
+  title: 설정
+  language: 언어
+  integrations: 연동
+  twitch: 트위치
+  twitchConnected: 트위치 연결됨
+  twitchNotConnected: 트위치 연결 안 됨
+  connectTwitch: 트위치 연결
+  disconnectTwitch: 트위치 연결 해제
+  twitchDisconnectConfirm: 트위치 계정 연결을 해제하시겠습니까?
+  twitchExplanation: 트위치 계정을 연결하면 REPLAYMAN이 채팅 창의 명령어(!stats maru serral 등)에 응답할 수 있습니다.
+
+  # Replay search and listing components
+replays:
+  allReplays: 모든 리플레이 # Header for all replays tab
+  search: 리플레이 검색 # Title for the replay search box
+  myReplays: 내 리플레이 # Header for user's personal replays
+  favoritePlayersReplays: 즐겨찾는 선수의 리플레이 # Header for replays from favorited players
+  myUploads: 내 업로드 # Header for user's uploaded replays
+  favoriteReplays: 즐겨찾는 리플레이 # Header for user's favorited replays
+  replaysIn: 내가 참여한 리플레이 # Header for replays where the user is a player
+  replays: 리플레이 # Generic replays header
+  replayList: 리플레이 목록 # Title for the replay list tile
+  date: 날짜 # Table column header
+  map: 맵 # Table column header
+  players: 선수 # Table column header
+  ver: 버전 # Table column header (game version)
+  noReplays: 리플레이를 찾을 수 없습니다. # Empty state message
+  noPlayers: 선수를 찾을 수 없습니다. # Empty state message for player search
+  favorite: 즐겨찾기 # Label for favorite button (not yet favorited)
+  favorited: 즐겨찾기 완료 # Label for favorite button (already favorited)
+  addToFavorites: 즐겨찾기에 추가 # Tooltip for favorite button when not favorited
+  removeFromFavorites: 즐겨찾기에서 삭제 # Tooltip for favorite button when favorited
+  favoritedPlayer: 선수를 즐겨찾기에 추가했습니다 # Success message
+  removedFavoritePlayer: 선수를 즐겨찾기에서 삭제했습니다 # Success message
+  failedToUpdateFavorite: 즐겨찾기 상태 업데이트 실패 # Error message
+  favoritePlayers: 즐겨찾는 선수 # Header for favorite players list
+  favoriteRequiresAccount: 선수를 즐겨찾기하려면 계정이 필요합니다 # Tooltip when logged out
+  noFavoritePlayers: 아직 즐겨찾는 선수가 없습니다. # Message when favorite players list is empty
+  downloadReplay: 리플레이 다운로드 # Tooltip for download button
+  noDownloadTooltip: 소유자 또는 관리자의 요청으로 이 리플레이를 다운로드할 수 없습니다 # Tooltip when download is disabled
+  addToPack: 팩에 추가 # Tooltip for adding to download pack
+  addToPackRequiresAccount: 리플레이 팩을 생성하려면 로그인해야 합니다 # Tooltip when logged out
+  dateTooltip: 날짜는 YYYY-MM-DD 형식입니다 # Tooltip for date column
+  mapTooltip: 맵 이름은 상황에 따라 현지화될 수 있습니다. # Tooltip for map column
+  playersTooltip: Battle.net 계정이 선수와 연결되지 않은 경우 모든 이름은 리플레이 데이터에서 직접 로드됩니다. # Tooltip for players column
+  placeholder: 선수 이름, 맵 이름, 종족 등으로 검색할 수 있습니다 # Search input placeholder
+  missingPlayerProfile:
+    title: 선수 프로필 누락 # Tile title when no player profile is linked
+    body: 전체 계정 기능을 잠금 해제하려면 선수 프로필을 연결하세요. 여기서 새 프로필을 만들 수 있습니다. 이미 프로필이 있는 경우 해당 페이지로 이동하여 "계정 소유권 주장"을 클릭하세요. # Instructions for linking profile
+    primaryRace: 주 종족 # Form label
+    raceNone: 없음 / 다수 # Race option
+    country: 국가 # Form label
+    countryPlaceholder: "예: US, KR, DE" # Input placeholder
+    invalidCountry: 국가는 2자리 ISO 코드여야 합니다. # Validation error
+    createButton: 선수 프로필 생성 # Submit button
+    creating: 생성 중… # Loading state for submit
+    createFailed: 선수 프로필 생성에 실패했습니다. # Error message
+
+# Replay pack (batch download) functionality
+pack:
+  pack: "팩 ({count})" # Button label showing current number of replays in pack
+  clear: 비우기 # Button to empty the pack
+  download: 다운로드 # Button to download the zipped pack
+  downloading: 다운로드 중… # Loading state for pack download
+
+# Replay upload page
+upload:
+  uploadFiles: 파일 업로드 # Button to open file picker
+  instructionsGuest: "계정 없이 업로드할 수 있는 SC2Replay 파일은 IP 주소당 하루 최대 10개입니다. 계정이 있는 사용자는 한 번에 최대 200개의 리플레이를 업로드할 수 있으며, 계정당 시간별 및 일일 추가 제한이 적용될 수 있습니다. 파일을 이 페이지로 직접 드래그하여 업로드할 수도 있습니다." # Guest upload instructions
+  instructionsUser: "위 버튼을 통해 최대 200개의 SC2Replay 파일을 선택하여 업로드할 수 있습니다. {zipInfo} 업로드 제한은 계정별로 적용되며, 추가적인 시간별 및 일일 제한이 있을 수 있습니다. 파일을 이 페이지로 직접 드래그하여 업로드할 수도 있습니다." # Signed-in upload instructions
+  uploadFailed: "업로드에 실패했습니다. 다시 시도해 주세요." # Generic upload failure message
+  uploadLimitReached: "업로드 한도 도달" # Short per-file label for quota failures
+  rateLimitGuest: "오늘 업로드 한도를 초과했습니다. 계속 업로드하려면 계정을 만들거나 내일 다시 시도해 주세요." # Guest rate limit fallback
+  rateLimitAuthenticated: "업로드가 너무 많습니다. 잠시 기다린 후 다시 시도해 주세요." # Signed-in rate limit fallback
+  alreadyUploadedReason: "이미 업로드된 리플레이입니다" # Hover text for already-present skipped files
+  duplicateSkippedReason: "이 배치의 다른 리플레이와 중복됩니다" # Hover text for duplicate skipped files
+  zipInfo: '' # Admin-only instruction
+  publicSearchLabel: "업로드된 리플레이를 공개 검색 결과에 표시" # Label for privacy toggle
+  privacyHint: "파일을 업로드함으로써 귀하는 당사의 {link}(새 탭에서 열림)에 명시된 약관에 동의하는 것으로 간주됩니다." # Link to policy
+  privacyPolicy: 개인정보 처리방침 # Link text for privacy policy
+
+# Individual replay analysis page
+replay_page:
+  gameVersion: v{version} # !! DON'T EDIT Label for game version
+  jumpTo: '바로가기:' # Quick navigation label
+  graphs: 그래프 # Link to graphs section
+  minimap: 미니맵 # Link to minimap section
+  chat: 채팅 # Link to chat section
+  engineView: 엔진 뷰 # Link to engine view section
+  unitsStructures: 유닛/건물 # Link to units/structures section
+  buildOrders: 빌드 오더 # Link to build orders section
+  summaryTags: '요약 태그:' # Label for automatic analysis tags
+  player1: 플레이어 1 # Label for the first player
+  player2: 플레이어 2 # Label for the second player
+  showResult: 결과 보기 # Button to reveal winner (anti-spoiler)
+  downloadReplay: 리플레이 다운로드 # Button to download the file
+  downloadNotAvailable: 다운로드 불가 # Button label when download is unavailable
+  addToPack: + 팩에 추가 # Button to add to download pack
+  analyzeReplay: 리플레이 분석 # Button to trigger (re-)analysis
+  reAnalyze: 재분석 # Button label when re-triggering analysis
+  analyzing: 분석 중… # Loading state for analysis trigger
+  analysisQueued: 분석 대기 중 # Success message for analysis trigger
+  analysisReady: 리플레이 분석 완료 # Success message when analysis completes
+  analysisFailed: 리플레이 분석 실패. 다시 시도해 주세요. # Error message when analysis fails
+  analysisTimed: 리플레이 분석 시간 초과. 나중에 다시 시도해 주세요. # Error message when analysis polling times out
+  copyLink: 링크 복사 # Button to copy URL to clipboard
+  copyReplayId: 리플레이 ID # Button to copy internal ID to clipboard
+  linkOnlyWarning: 링크 전용 리플레이 # Warning message for link-only replays
+  linkOnlyTooltip: 이 리플레이는 공개 검색 결과에 표시되지 않지만, 직접 링크가 있는 사람은 누구나 볼 수 있습니다. # Tooltip for link-only replays
+  showDuration: 경기 시간 보기 # Button to reveal game length (anti-spoiler)
+  showTags: 태그 보기 (스포일러!) # Button to reveal tags
+  noAnalysis: 아직 분석 결과가 없습니다. # Message when no analysis data exists
+  noAnalysisNotice: 죄송합니다. 소유자의 요청으로 이 리플레이에 대한 자세한 정보를 아직 표시할 수 없습니다. 나중에 다시 확인해 주세요. # Message shown on noanalysis replays
+  lastAnalysis: "분석 시간: {time}" # Timestamp of most recent analysis
+  timeWarp: TIME WARP # Label for the game timeline slider
+  income: 수입 # Label for income graph
+  bank: 자원 보유량 # Label for bank graph
+  armyValue: 병력 가치 # Label for army value graph
+  resourcesLost: 잃은 자원 # Label for resources lost graph
+  oracle: + ORACLE # !! DON'T EDIT Label for ORACLE ML insights tab
+  combinedMG: 광물+가스 통합 # Label for Minerals/Gas graph
+  standard: 표준 # Standard analysis label
+  difference: 차이 # Analysis difference label
+  oracleUnlocked: ORACLE ML 분석 잠금 해제됨 # Success message when ML features are available
+  unlockOracle: ORACLE 분석 잠금 해제 # Button to unlock ML features
+  reGenerate: 재생성 # Button to force a new ORACLE inference
+  generating: 생성 중... # Loading state for ML generation
+  workers: 일꾼 # Label for workers graph/stat
+  minerals: 광물 # Short label for minerals in graph legend
+  gas: 가스 # Short label for vespene gas in graph legend
+  winProb: 승률 # Short label for win probability in live stats bar
+  economy: 경제 # Category label for economy graph dropdown
+  military: 군사 # Category label for military graph dropdown
+  performance: 성능 # Label for performance metrics graph
+  sq: SQ # Label for spending quotient graph option
+  performanceMetrics: '{name}의 성능 지표' # Header for performance metrics section
+  performanceMetricsTitle: 추가 지표 # General header for performance metrics section
+  showMetrics: 보기 # Button to expand performance metrics section
+  hideMetrics: 숨기기 # Button to collapse performance metrics section
+  metrics: 지표 선택 # Button label for metrics dropdown
+  compareNone: 비교 대상 선택 # Option to not compare metrics
+  compareOwn: "내 리플레이와 비교" # Option to compare metrics with own replays
+  comparePro: "프로 리플레이와 비교" # Option to compare metrics with pro replays
+  compareAll: "모든 리플레이와 비교" # Option to compare metrics with all replays
+  compareColumnOwn: 내 리플레이 # Column header for own replay comparison
+  compareColumnPro: 프로 리플레이 # Column header for pro replay comparison
+  compareColumnAll: 모든 리플레이 # Column header for all replay comparison
+  compareOwnRequiresLink: 자신의 리플레이와 비교하려면 선수 프로필에 연결되어야 합니다. # Error when comparing own replays without linked profile
+  loadComparisonFailed: 비교 데이터 로드 실패. # Error message when fetching comparison metrics fails
+  currentSq: 현재 SQ # Label for Current Spending Quotient
+  averageSq: 평균 SQ # Label for Average Spending Quotient
+  apm: APM # Label for Actions Per Minute
+  armyEfficiency: 병력 효율 # Ratio of army value destroyed to army value lost
+  timeToMaxSupply: 인구수 200 도달 시간 # Milestone: Reach 195/200 supply
+  timeTo44Workers: 일꾼 44기 도달 시간 # Milestone: 44 active workers
+  timeTo66Workers: 일꾼 66기 도달 시간 # Milestone: 66 active workers
+  timeTo600Army: 병력 가치 600 도달 시간 # Milestone: 600 minerals/gas army value
+  timeTo1800Army: 병력 가치 1800 도달 시간 # Milestone: 1800 minerals/gas army value
+  timeTo6000Army: 병력 가치 6000 도달 시간 # Milestone: 6000 minerals/gas army value
+  timeTo400Upgrades: 업그레이드 비용 400 도달 시간 # Milestone: 400 spent on upgrades
+  timeTo800Upgrades: 업그레이드 비용 800 도달 시간 # Milestone: 800 spent on upgrades
+  workersKilled: 일꾼 잡은 수 # Stat: total workers killed
+  workersLost: 일꾼 잃은 수 # Stat: total workers lost
+  workersKilled600: 6:00 시점 일꾼 잡은 수 # Stat: workers killed at 6 minutes
+  workersLost600: 6:00 시점 일꾼 잃은 수 # Stat: workers lost at 6 minutes
+  timeSupplyBlocked: 인구수 막힌 시간 # Stat: time spent supply blocked
+  structures: 건물 # Label for structures list
+  structuresProducing: 건물 (생산 중) # Label for active production
+  units: 유닛 # Label for units list
+  upgrades: 업그레이드 # Label for upgrades list
+  chatLog: 채팅 로그 # Section header for in-game chat
+  syncWithTimeWarp: TIME WARP 슬라이더와 동기화 # Checkbox label
+  noMessages: 이 창에 메시지가 없습니다. # Empty state for chat
+  left: 나감 # Indicator that a player left the game
+  showBuildDetails: 빌드 세부 정보 보기 # Button to expand build order
+  hideBuildDetails: 빌드 세부 정보 숨기기 # Button to collapse build order
+  showMore: 더 보기… # Button to show more build steps
+  showLess: 줄이기… # Button to hide build steps
+  buildTitle: '{name}의 빌드' # Header for build order section
+  copySALT: SALT 복사 # Button to copy SALT encoded build
+  noBuildSteps: 빌드 오더 단계를 찾을 수 없습니다. # Empty state for build order
+  axisValue: 가치 # Label for Y-axis on most graphs
+  axisWinChances: 승률 # Label for Y-axis on win probability graph
+  workersActive: '활성 일꾼: {count}' # Label showing worker count at current time
+  probabilityToWin: 승률 # Label for win probability metric
+  victory: 승리 # Status label
+  defeat: 패배 # Status label
+  noSalt: SALT 인코딩을 사용할 수 없습니다 # Error when copying SALT fails
+  saltCopied: SALT 빌드 오더 복사됨 # Success message
+  saltCopyFailed: SALT 빌드 오더 복사 실패 # Error message
+  favorite: 즐겨찾기 # Button label/title when replay is not yet favorited
+  favorited: 즐겨찾기 완료 # Button label/title when replay is already favorited
+  favoriteRequiresAccount: 리플레이를 즐겨찾기하려면 계정이 필요합니다 # Tooltip when logged out
+  addToPackRequiresAccount: 팩에 리플레이를 추가하려면 계정이 필요합니다 # Tooltip when logged out
+  claim:
+    button: 소유권 없음 # Button to start replay-player claim process
+    linkedToYourProfile: 내 프로필과 연결됨 # Indicator when replay player already matches current profile
+    requestSubmitted: "{name}에 대한 소유권 주장 요청이 제출되었습니다. 관리자가 검토할 예정입니다." # Success message
+    submitFailed: 리플레이 선수 소유권 주장 요청 제출 실패 # Error message
+    profilePrompt: 본인이신가요? # Tooltip text for hidden claim option for user without a profile
+    profileRequiredTitle: 선수 프로필 필요 # Replay claim prerequisite title
+    profileRequiredBody: 리플레이 선수의 소유권을 주장하려면 먼저 선수 프로필을 연결하거나 생성해야 합니다. # Replay claim prerequisite body
+    profileRequiredLink: 내 리플레이로 이동하여 선수 프로필을 생성하거나 연결한 후, 이 페이지로 돌아와 계정 소유권을 주장하세요. # Replay claim prerequisite CTA
+    modalTitle: 리플레이 선수 소유권 주장 # Modal title
+    modalBody1: "이 리플레이의 {name} 선수를 본인의 연결된 선수 프로필로 주장하시겠습니까?" # Warning prompt
+    modalBody2: 요청은 관리자의 승인을 받아야 합니다. # Approval warning
+    modalBody2b: 의도적으로 허위 요청을 제출할 경우 계정이 정지될 수 있습니다. # Fraud warning
+    modalBody3: 승인되면 본인의 연결된 선수 프로필이 이 리플레이 선수의 Battle.net 계정과 연결됩니다. # Outcome explanation
+    modalBody4: 리플레이 선수가 이미 다른 곳에 연결되어 있는 경우, 관리자가 충돌 내용을 검토한 후 승인합니다. # Conflict explanation
+    cancel: 취소 # Button to close modal
+    submit: 위 내용을 주의 깊게 읽었습니다 - 제출 # Button to submit claim
+    submitting: 제출 중… # Loading state
+    tooltip: "이 인게임 플레이어는 현재 REPLAYMAN 프로필과 연결되어 있지 않습니다. 본인이라면 이 버튼을 클릭하여 연결을 요청할 수 있습니다." # Tooltip for unclaimed player button
+
+# Player profile page
+player_page:
+  rank: 순위
+  replays: 리플레이
+  cc: 국가
+  rating: 레이팅
+  player: 선수
+  statistics: 경쟁전 통계 # Section header
+  aligulacRating: Aligulac 레이팅 # External rating label
+  aligulacRatingVP: vs. 프로토스 # External matchup rating label
+  aligulacRatingVT: vs. 테란 # External matchup rating label
+  aligulacRatingVZ: vs. 저그 # External matchup rating label
+  aligulacRatingInactive: 비활성 # Label for inactive rating
+  aligulacRatingInactiveTooltip: 이 선수는 현재 Aligulac에서 비활성 상태로 표시되어 있습니다. 표시된 레이팅은 마지막 활동 기간의 것입니다.
+  aligulacRatingStaleTooltip: Aligulac 레이팅이 최신이 아닐 수 있습니다 # Tooltip when rating is stale
+  aligulacRatingLoadingTooltip: Aligulac 레이팅을 불러오는 중입니다 # Tooltip when rating is loading
+  primaryRace: 주 종족 # Label for player's main race
+  country: 국가 # Label for player's country
+  team: 현재 팀 # Label for player's team
+  earnings: 총 상금 # Label for player's total prize money
+  editName: 이름 수정 # Button to change display name
+  nameUpdated: 표시 이름이 성공적으로 업데이트되었습니다 # Success toast
+  editNameModalTitle: 표시 이름 변경 # Modal title
+  newName: 새 표시 이름 # Input label
+  newRealName: 새 실명 # Input label
+  realNameHint: 현재 실명을 유지하려면 비워 두세요 # Input hint
+  replayList: 리플레이 목록 # Title for the replay list on the player page
+  profile: 일반 정보 # Section header
+  search: 선수 검색 # Title for player search box
+  report:
+    title: 프로필 신고 # Tooltip for report button
+    modalTitle: 선수 프로필 신고 # Title for report modal
+    modalBody: "이 프로필을 신고하는 이유를 제공해 주세요 (예: 불쾌한 이름, 잘못된 정보)." # Instructions for reporting
+    reasonPlaceholder: 신고 사유… # Textarea placeholder
+    reasonRequired: 사유를 입력해 주세요. # Validation error
+    submit: 신고 제출 # Submit button
+    submitted: 신고가 검토를 위해 제출되었습니다. # Success message
+    failed: 신고 제출에 실패했습니다. # Error message
+  placeholder: "이름, 국가 등으로 검색해 보세요 =)" # Search input placeholder
+  searchTooltip: '팁: 핸들(예: Serral), 실명(예: Joona), 2-3자리 국가 코드(US, KOR) 또는 정확한 ID 번호로 검색해 보세요.' # Search help tooltip
+  claim:
+    title: 프로필 소유권 주장 # Section header
+    button: 이 선수 프로필의 소유권 주장 # Button to start claim process
+    linkedToYou: 바로 본인입니다! # Indicator when already linked
+    alreadyLinkedElsewhere: 본인의 계정은 이미 다른 선수 프로필과 연결되어 있습니다. # Error message
+    alreadyLinked: 이 선수 프로필은 이미 다른 계정과 연결되어 있습니다. # Error message
+    requestSubmitted: 소유권 주장 요청이 제출되었습니다. 관리자가 귀하의 요청을 검토할 것입니다. # Success message
+    submitFailed: 소유권 주장 요청 제출 실패. # Error message
+    modalTitle: 선수 프로필 소유권 주장 # Modal title
+    modalBody1: 이 선수 프로필의 소유권을 주장하시겠습니까?
+    modalBody2: 요청은 관리자의 승인을 받아야 합니다.
+    modalBody2b: 의도적으로 허위 요청을 제출할 경우 계정이 정지될 수 있습니다.
+    modalBody3: 승인되면 이 선수 프로필이 영구적으로 본인의 사용자 프로필 페이지가 됩니다. 다른 선수 페이지는 주장할 수 없습니다.
+    modalBody4: 연결된 선수를 변경하려면 고객 지원팀에 문의해야 합니다.
+    cancel: 취소 # Button to close modal
+    submit: 위 내용을 주의 깊게 읽었습니다 - 제출 # Button to submit claim
+    submitting: 제출 중… # Loading state
+
+# Signup and account creation components
+signup:
+  title: "{name} 베타에 오신 것을 환영합니다." # Title for the signup page
+  invited: "클로즈 베타 참여 초대를 받으셨습니다!" # Success message
+  reopen: "회원가입 양식 다시 열기" # Link to show form again
+  signUp: 회원가입 # Button label
+  fillDetails: "{name} 참여 초대를 받으셨습니다! 아래에 세부 정보를 입력해 주세요." # Instructions
+  displayName: 표시 이름 # Form label
+  displayNamePlaceholder: 표시할 이름 # Input placeholder
+  emailAddress: 이메일 주소 # Form label
+  emailPlaceholder: you{'@'}example.com # Input placeholder
+  createAccount: 계정 생성 # Submit button
+  creatingAccount: 계정 생성 중… # Loading state
+  accountCreated: 계정 생성 완료! # Success message
+  welcomeEmailSentPre: "로그인 코드가 포함된 환영 이메일이 " # Success message part 1
+  welcomeEmailSentPost: "로 전송되었습니다." # Success message part 2
+  enterCodeToSignIn: "계정이 거의 준비되었습니다! 로그인을 위해 이메일로 전송된 코드를 입력해 주세요." # Instructions for second step
+  enterCode: 코드 입력 # Button to move to login step
+  nameAndEmailRequired: 표시 이름과 이메일은 모두 필수 항목입니다. # Validation error
+  invalidEmail: 유효한 이메일 주소를 입력해 주세요. # Validation error
+  signupFailed: "회원가입 실패 ({status}). 다시 시도해 주세요." # General error
+  networkError: "네트워크 오류. 다시 시도해 주세요." # Connectivity error
+
+# 404 error page
+not_found:
+  title: 페이지를 찾을 수 없습니다.
+  message: 죄송합니다, 여기에는 아무것도 없습니다.
+  goBack: 홈으로 돌아가기 # Link to return to home page
+
+# Diagnostic and privacy consent banner
+consent:
+  title: 진단 데이터 수집 동의 # Accessible label for the banner
+  text: "{name} 개발사인 Stego Research LLC가 Sentry.io를 통해 오류 보고서와 디버그 정보를 제공받아 제품을 개선할 수 있도록 도와주시는 것을 고려해 주세요. {link}(새 창에서 열림)에서 정책을 확인하실 수 있습니다." # Description of data collection
+  privacyLink: stego.ai/privacy # Link text for privacy policy
+  allow: 오류 보고서 전송 허용 # Button to opt-in
+  decline: 거부 (필수 쿠키만 사용) # Button to opt-out
+
+# Authentication and login components
+auth:
+  login: 로그인 또는 회원가입 # Header for login panel
+  enterEmail: '계정의 이메일 주소 또는 전화번호를 입력하세요:' # Label for email input
+  sendCode: 다음 # Button to request login code
+  verify: 확인 # Button to submit login code
+  enterCode8: 8자리 코드 # Input placeholder for code
+  codeHintPre: '' # Hint message part 1
+  codeHintPost: '와 연결된 계정을 찾으면 코드가 전송됩니다. 아래에 코드를 입력하고 절대로 타인과 공유하지 마세요.' # Hint message part 2
+  enter8Chars: 8자리 코드를 입력하세요. # Validation error
+  invalidCode: "유효하지 않은 코드입니다. 다시 시도하거나 닫으세요." # Error message
+  networkError: "네트워크 오류. 다시 시도하세요." # Connectivity error
+  httpError: "요청 실패 ({status}). 다시 시도하세요." # General error
+  loginSuccessful: 로그인 성공. # Toast message
+  loggedOut: 로그아웃 성공. # Toast message
+  sessionExpired: "세션이 만료되었습니다. 다시 로그인해 주세요." # Toast message
+  accountRequired: 이 페이지에 액세스하려면 계정이 필요합니다. # Access control message
+  noPermission: 권한이 없습니다. # Access control error
+  oracleQueued: Oracle 분석 대기 중 # Success message for ML trigger
+  signupPromptPre: '' # Message when user needs to sign up
+  signupPromptPost: '에 대한 계정을 찾을 수 없습니다. 계속하려면 계정을 생성하세요.' # Instructions to sign up
+  privacyConsent: "본인은 Stego Research {policy} 약관에 동의하며 관련 법규를 준수할 것에 동의합니다." # Checkbox label for terms
+  acceptPrivacy: 계속하려면 개인정보 처리방침에 동의해 주세요. # Validation error
+  completeChallenge: 계속하려면 봇 확인을 완료해 주세요. # Validation error for captcha
+  challengeError: 봇 확인을 로드하지 못했습니다. 다시 시도해 주세요. # Captcha loading error
+  retryChallenge: 재시도 # Button to reload captcha
+
+# Common/Generic labels and buttons
+common:
+  loading: 로딩 중… # Generic loading state
+  error: 오류 # Generic error label
+  success: 성공 # Generic success label
+  skipped: 건너뜀 # Generic skipped label
+  save: 저장 # Generic save button
+  saving: 저장 중… # Generic saving state
+  cancel: 취소 # Generic cancel button
+  next: 다음 # Pagination button
+  prev: 이전 # Pagination button
+  founder: 창립자 # Badge/Role title
+  linkedAccount: 연결된 프로필 # Badge title
+
+# Localization feedback banner
+i18n_banner:
+  text: "이 번역은 작업 진행 중인 결과물이며 오류가 포함될 수 있습니다. {link}에서 문제를 보고하거나 수정을 직접 제출할 수 있습니다."
+  linkText: "GitHub 저장소"
+  dismiss: "닫기"
+
+# Races
+race:
+  terran: 테란
+  protoss: 프로토스
+  zerg: 저그
+  random: 무작위
+
+# Metagame explorer functionality
+metagame:
+  title: 메타게임 탐색기
+  explore: 탐색
+  versions: 게임 버전
+  allVersions: 모든 버전
+  compareVersions: 버전 비교
+  stats: 통계
+  winRate: 승률
+  matches: 경기 수
+  frequency: 빈도
+  opening: 오프닝
+  midGame: 미드게임
+  lateGame: 레이트게임
+  buildPath: 빌드 경로
+  noData: 데이터 없음
+  loading: 메타게임 데이터 로딩 중…
+  selectRace: 종족 선택
+  vs: VS
+  trend: 추세
+  popularity: 인기도
+  strength: 강도
+  counter: 카운터 빌드
+  summary: 요약
+  replaysTitle: 일치하는 리플레이
